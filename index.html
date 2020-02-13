@@ -9,7 +9,8 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/31de0ff71f.js" crossorigin="anonymous"></script>
     <!-- dev styles -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.min.css">
     <link href="https://dgdp.uaa.mx/defaa/images/favicon.ico" rel="icon" type="image/x-icon">
     <title>Departamento de Control y Seguimiento Docente</title>
 </head>
@@ -17,12 +18,12 @@
     <div class="top-menu">
         <ul class="nav top-nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" href="#">Departamentos</a>
+                <a class="nav-link" href="#">Departamentos</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link top-active" href="#">UAA</a>
+                <a class="nav-link top-active" href="#">UAA</a>
             </li>
-          </ul>
+        </ul>
     </div>
     <div class="menu">
         <div class="left">
@@ -74,56 +75,10 @@
     <div id="formatos" class="third-section">
         <div class="information-section">
             <div class="formats-title">Click en el circulo de interes</div>
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="info-container">
-                            <div class="icon">
-                                <i class="far fa-calendar-check"></i>
-                            </div>
-                            <div class="icon-text">Año Sabático</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-container">
-                            <div class="icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="icon-text">Evaluación Bienal</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="info-container">
-                            <div class="icon">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                            </div>
-                            <div class="icon-text">Programa de los Estímulos al Desempeño Docente del Personal Docente</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-container">
-                            <div class="icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="icon-text">Programa de Carrera Docente</div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 info-card">
-                        <a href="#exampleModal" class="adjust" data-toggle="modal" >
-                            <!-- <div class="info-container ">
-                                <div class="icon-container icon-container-1">
-                                    <i class="far fa-calendar-check icon-1 icons"></i>
-                                </div>
-                                <div class="text-container">
-                                    <div class="icon-text">Año <br> Sabático</div>
-                                </div>
-                            </div> -->
+                        <a href="#sabaticoModal" class="adjust" data-toggle="modal" >
                             <div class="info-container">
                                 <div class="icon-container icon-container-1">
                                     <i class="far fa-calendar-check icon-1 icons"></i>
@@ -133,11 +88,11 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="sabaticoModal" tabindex="-1" role="dialog" aria-labelledby="sabaticoLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Año Sabático</h5>
+                                    <h5 class="modal-title" id="sabaticoLabel">Año Sabático</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -164,7 +119,7 @@
                         </div>
                     </div>
                     <div class="col-md-3  info-card">
-                        <a href="#exampleModal2" class="adjust" data-toggle="modal" >
+                        <a href="#bienalModal" class="adjust" data-toggle="modal" >
                             <div class="info-container">
                                 <div class="icon-container icon-container-2">
                                     <i class="fas fa-check icon-2 icons"></i>
@@ -174,11 +129,11 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="bienalModal" tabindex="-1" role="dialog" aria-labelledby="bienalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Evaluación Bienal</h5>
+                                    <h5 class="modal-title" id="bienalLabel">Evaluación Bienal</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -197,7 +152,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 info-card">
-                        <a href="#exampleModal3" class="adjust" data-toggle="modal" >
+                        <a href="#estimuloModal" class="adjust" data-toggle="modal" >
                             <div class="info-container">
                                 <div class="icon-container icon-container-3">
                                     <i class="fas fa-chalkboard-teacher icon-3 icons"></i>
@@ -207,11 +162,11 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="modal fade " id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade " id="estimuloModal" tabindex="-1" role="dialog" aria-labelledby="estimuloLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Estímulo al Desempeño Docente</h5>
+                                    <h5 class="modal-title" id="estimuloLabel">Estímulo al Desempeño Docente</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -235,7 +190,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 info-card">
-                        <a href="#exampleModal4" class="adjust" data-toggle="modal" >
+                        <a href="#carreraModal" class="adjust" data-toggle="modal" >
                             <div class="info-container">
                                 <div class="icon-container icon-container-4">
                                     <i class="fas fa-graduation-cap icon-4 icons"></i>
@@ -245,11 +200,11 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="carreraModal" tabindex="-1" role="dialog" aria-labelledby="carreraLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Programa de Carrera Docente</h5>
+                                    <h5 class="modal-title" id="carreraLabel">Programa de Carrera Docente</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -338,74 +293,8 @@
             <div class="title-gallery">
                 GALERIA
             </div>
-            
-
-            <!-- <div class="wrapper">
-                <div class="box a">A</div>
-                <div class="box b">B</div>
-                <div class="box c">C</div>
-                <div class="box d">D</div>
-            </div> -->
-            <style>
-                .grid { 
-                  display: grid;
-                  grid-template-columns: repeat(5, 1fr);
-                  grid-gap: 10px;
-                  align-items: start;
-                  justify-items: center;
-                  }
-                .grid img {
-                  border: 1px solid rgba(0,0,0,0.3);
-                  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
-                  max-width: 100%;
-                }
-                .grid img:nth-child(2) {
-                  grid-column: span 3;
-                  grid-row: span 2;
-                  }
-                
-                  .grid img:nth-child(6) {
-                  grid-column: span 1/3;
-                  }
-                
-                  .b-r{
-                    grid-column-start: 4 !important;
-                    grid-column-end: span 2 !important;
-                    grid-row-start: 3 !important;
-                    max-height: 140px;
-                    width: 100% !important;
-                    display:block;
-                    /* optionnal */
-                    object-fit: cover;
-                    object-position:center center;
-                  }
-                  .b-l{
-                    grid-column-start: 1 !important;
-                    grid-column-end: span 2 !important;
-                    grid-row-start: 3 !important;
-                    max-height: 140px;
-                    width: 100% !important;
-                    display:block;
-                    /* optionnal */
-                    object-fit: cover;
-                    object-position:center center;
-                  }
-                  .b-m{
-                    min-height: 140px;
-                    display:block;
-                    /* optionnal */
-                    object-fit: cover;
-                    object-position:center center; 
-                  }
-                  .fit-adjust{
-                      width: 70%;
-                  }
-                  
-            </style>
                 <main class="grid container fit-adjust">
-                    <div class="img-hover-zoom">
-                        <img src="./imgs/vertical4.jpg" alt="Sample photo">
-                    </div>
+                    <img src="./imgs/vertical4.jpg" alt="Sample photo">
                     <img src="./imgs/uaa1.jpg" alt="Sample photo">
                     <img src="./imgs/vertical3.jpg" alt="Sample photo">
                     <img src="./imgs/009-Induccion-para-profesores_1-1024x683.jpg" alt="Sample photo">
