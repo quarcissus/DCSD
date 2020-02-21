@@ -877,6 +877,24 @@ footer{
     
 }
 
+@media only screen and (max-width: 1600px) and (min-width: 1130px){
+    .line-div .texto{
+        width: 420px;
+        font-size:50px;
+        top:80px;
+        height: 220px !important;
+
+    }
+    .subtitle-land{
+        font-size: 20px;
+        width: 350px;
+    }
+    .cta{
+        top: 70%;
+        left: 35vw;
+    }
+}
+
 @media only screen and (max-width: 710px){
     .line-div .texto{
         transform: initial !important;
