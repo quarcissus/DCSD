@@ -703,6 +703,40 @@ footer{
 
 
 /*media querys*/
+
+
+@media only screen and (max-width: 1600px) {
+    .line-div .texto{
+        width: 420px;
+        font-size:50px;
+        top:80px;
+        height: 220px !important;
+
+    }
+    .subtitle-land{
+        font-size: 20px;
+        width: 350px;
+    }
+    .cta{
+        top: 70%;
+        left: 35vw;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .line-div .texto{
+        top: 40px;
+        left: 10vw;
+        transform:skew(15deg) !important;
+        font-weight: 600;
+        font-size: 36px;
+        height: 190px !important;
+        width: 300px;
+        font-family: 'Arvo', serif;
+        text-shadow: 1px 1px 3px rgb(128, 128, 128);
+
+    }
+}
 @media only screen and (max-width: 1050px){
     .line-div{
         padding-right: 100px !important;
@@ -877,23 +911,6 @@ footer{
     
 }
 
-@media only screen and (max-width: 1600px) and (min-width: 1130px){
-    .line-div .texto{
-        width: 420px;
-        font-size:50px;
-        top:80px;
-        height: 220px !important;
-
-    }
-    .subtitle-land{
-        font-size: 20px;
-        width: 350px;
-    }
-    .cta{
-        top: 70%;
-        left: 35vw;
-    }
-}
 
 @media only screen and (max-width: 710px){
     .line-div .texto{
