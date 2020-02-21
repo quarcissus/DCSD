@@ -219,6 +219,12 @@ transform: scaleX(1);
 .mail{
     color: #001736;
 }
+.trans-fourth-sect{
+    border-style: none none solid; 
+    border-bottom: 1.3px solid #131b253f;
+    width: 90%;
+    margin: 5px auto 30px auto;
+}
 footer{
     margin-top: 100px;
     height: 250px;
