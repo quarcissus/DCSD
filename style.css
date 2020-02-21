@@ -723,7 +723,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 1400px){
     .line-div .texto{
         top: 40px;
         left: 10vw;
