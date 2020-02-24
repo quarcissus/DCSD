@@ -1070,6 +1070,15 @@ footer{
     }
 }
 
+
+@media only screen and (max-width: 380px){
+    .menu .left a img{
+        height: 60px !important;
+        width:180px !important;
+        margin-left: 60px !important;
+    }
+}
+
 @media only screen and (max-width: 390px){
     .cta{
         font-size: 12px;
@@ -1089,6 +1098,13 @@ footer{
 }
 
 
+@media only screen and (max-width: 537px){  
+    .menu .left{
+        margin-right: 80px !important;
+        margin: 0 auto;
+    }
+
+}
 @media only screen and (max-width: 320px){
     .cta{
         font-size: 12px;
