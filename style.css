@@ -994,6 +994,20 @@ footer{
     }
 }
 
+@media only screen and (max-width: 650px){
+    .menu{
+        flex-direction: column-reverse;
+    }
+    .menu .right, .menu .left{
+        align-self: flex-start !important;
+    }
+    .menu .left{
+        margin-left: -30px;
+    }
+    .menu .right{
+        margin-left: 20px;
+    }
+}
 @media only screen and (max-width: 630px){
     .mision-container{
         padding: 0 !important;
@@ -1110,7 +1124,7 @@ footer{
         font-size: 12px;
         top: 70%;
         left:20vw;  
-        width: 50%;
+        width: 70%;
 
     }
     .img-skew{
