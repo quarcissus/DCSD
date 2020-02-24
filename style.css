@@ -1071,7 +1071,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 400px){
     .menu .left a img{
         height: 60px !important;
         width:180px !important;
