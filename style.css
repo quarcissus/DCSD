@@ -50,6 +50,11 @@ html, body{
 
 /* DEPARTMENT MENU */
 
+.menu-bars i{
+    color: #001736 !important;
+    font-size: 30px !important;
+    
+}
 .menu{
     display: flex;
     flex-flow: row;
@@ -804,6 +809,13 @@ footer{
     }
 }
 
+@media only screen and (max-width: 992px){
+    .menu .left{
+        order: 1 !important;
+        text-align: right;
+        margin-right: 10px !important;
+    }
+}
 
 @media only screen and (max-width: 910px){
     .line-div{
