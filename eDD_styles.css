@@ -958,6 +958,8 @@ footer{
     .right-m{
         height: 350px !important;
     }
+
+
 }
 
 @media only screen and (max-width: 500px){
@@ -1051,6 +1053,99 @@ footer{
 
     .top-v{
         height: 180px;
+    }
+}
+
+
+@media only screen and (max-width: 414px){
+    .cta{
+        top: 82% !important;
+        left: 17.5vw !important;
+    }
+
+    .text-container-left{
+        transform: translateX(-7px);
+    }
+
+    .text-container-left{
+        transform: translateX(-7px);
+    }
+
+    .title-left-formats{
+        text-align: center !important;
+        margin-top: 40px;
+    }
+
+    .subtitle-porcents{
+        text-align: left !important;
+    }
+
+    .subtitle-porcents div{
+        margin-top: 10px !important;
+    }
+
+    .teacher-evaluations_stu .text{
+        padding: 10px !important;
+    }
+
+
+    .teacher-evaluation_boss .text{
+        padding: 10px;
+    }
+
+    .links .row .col-md-3  {
+        margin-bottom: 20px !important;
+    }
+
+    .teacher-evaluation_dean .text{
+        padding: 10px
+    }
+}
+@media only screen and (max-width: 375px){
+    .cta{
+        top: 82% !important;
+        left: 15vw !important;
+    }
+
+}
+@media only screen and (max-width: 360px){
+    .cta{
+        top: 82% !important;
+        left: 12.5vw !important;
+    }
+
+    .text-container-left{
+        transform: translateX(-7px);
+    }
+
+    .title-left-formats{
+        text-align: center !important;
+        margin-top: 40px;
+    }
+
+    .subtitle-porcents{
+        text-align: left !important;
+    }
+
+    .subtitle-porcents div{
+        margin-top: 10px !important;
+    }
+
+    .teacher-evaluations_stu .text{
+        padding: 10px !important;
+    }
+
+
+    .teacher-evaluation_boss .text{
+        padding: 10px;
+    }
+
+    .links .row .col-md-3  {
+        margin-bottom: 20px !important;
+    }
+
+    .teacher-evaluation_dean .text{
+        padding: 10px
     }
 }
 @media only screen and (max-width: 320px){
