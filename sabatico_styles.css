@@ -47,6 +47,11 @@
 
 /* DEPARTMENT MENU */
 
+.menu-bars i{
+    color: #001736 !important;
+    font-size: 30px !important;
+    
+}
 .menu{
     display: flex;
     flex-flow: row;

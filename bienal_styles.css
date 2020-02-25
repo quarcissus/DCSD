@@ -47,6 +47,11 @@
 
 /* DEPARTMENT MENU */
 
+.menu-bars i{
+    color: #001736 !important;
+    font-size: 30px !important;
+    
+}
 .menu{
     display: flex;
     flex-flow: row;
@@ -100,7 +105,7 @@ dropdown-menu .active{
     left: 0;
     right: 50%;
     height: 2px;
-    background-color: #ee1111;
+    background-color: #ee1111;      
     transform: scaleX(0);
     transform-origin: bottom left;
     transition: transform 0.3s;
@@ -522,7 +527,7 @@ footer{
     }
     .right-m .text{
         padding: 20px 40px;
-        line-height: 1.8;
+        line-height: 1.6;
     
     }
 }
@@ -596,6 +601,13 @@ footer{
     }
 }
 
+@media only screen and (max-width: 992px){
+    .menu .left{
+        order: 1 !important;
+        text-align: right;
+        margin-right: 10px !important;
+    }
+}
 
 @media only screen and (max-width: 910px){
     .line-div{
@@ -774,6 +786,30 @@ footer{
     }
 }
 
+/* 
+* added
+*/
+
+@media only screen and (max-width: 650px){
+    .menu{
+        flex-direction: column-reverse;
+    }
+    .menu .right, .menu .left{
+        align-self: flex-start !important;
+    }
+    .menu .left{
+        text-align: left !important;
+        margin-left: -20px !important;
+    }
+    .menu .right{
+        margin-left: 0;
+    }
+}
+
+
+/* 
+* end added
+*/
 @media only screen and (max-width: 630px){
     .mision-container{
         padding: 0 !important;
@@ -791,7 +827,7 @@ footer{
     }
 
     .subtitle-land{
-        font-size: 25px;
+        font-size: 15px;
     }
     .cta{
         top: 70%;
@@ -836,6 +872,10 @@ footer{
     .mision_section img{
         margin-top: 100px !important;
     }
+    
+    .text-container-left{
+        margin-left: -18px !important;
+    }
 
 }
 
@@ -847,6 +887,21 @@ footer{
     }
     .img-skew{
         transform: translateX(100px) !important;
+    }
+    .mision-container .text{
+        margin-bottom: 300px !important;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    .menu .left a img{
+        height: 60px !important;
+        width:180px !important;
+        margin-left: 30px !important;
+    }
+    .text-container-left{
+        margin-left: -18px !important;
     }
 }
 
@@ -861,28 +916,38 @@ footer{
         transform: translateX(100px) !important;
     }
     .mision-container{
-        height: 550px !important;
+        height:450px !important;
     }
     .mision_section img{
-        margin-top: 190px !important;
-    }
-    .text-container-left{
-        padding-right: 70px !important;
+        margin-top: 170px !important;
     }
 }
 
 
+@media only screen and (max-width: 537px){  
+    .menu .left{
+        margin-right: 80px !important;
+        margin: 0 auto;
+    }
+
+    .top-v{
+        height: 180px;
+    }
+}
 @media only screen and (max-width: 320px){
     .cta{
         font-size: 12px;
         top: 70%;
         left:20vw;  
-        width: 50%;
+        width: 70%;
 
     }
     .img-skew{
         transform: translateX(100px) !important;
         margin-right: 20px;
+    }
+    .top-v{
+        height: 240px;
     }
 }
 
