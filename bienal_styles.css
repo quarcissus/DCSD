@@ -242,18 +242,6 @@ transform: scaleX(1);
     margin-bottom: 20px;
     color: #00173681;
 }
-/* MODAL FIX */
-.modal {
-    overflow-y: auto !important;
-}
-
-.modal-open {
-    overflow: auto !important;
-}
-
-.modal-open[style] {
-    padding-right: 0px !important;
-}
 .third-section{
     margin-top: -20px;
 }
@@ -366,36 +354,6 @@ transform: scaleX(1);
     margin: 0 -7px;
 }
 
-/*MODAL DE ICONOS */
-
-.modal-button{
-    background-color: white;
-    border: 2px solid #103073;
-    padding: 2px 13px;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1.2;
-    border-radius: 7px;
-    transition: all 0.5s ease;
-
-}
-
-
-.modal-title{
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgb(83, 83, 83);
-}
-.modal-button:hover{
-    background-color:#103073;
-    color: white;
-}
-
-
-.modal-body .info{
-    margin-bottom: 20px;
-}
 
 
 .trans-fourth-sect{
@@ -522,11 +480,6 @@ footer{
         /* padding-right: 150px !important; */
         flex: 0.8 !important;
     }
-    .right-m .text{
-        padding: 20px 40px;
-        line-height: 1.6;
-    
-    }
 }
 
 @media only screen and (max-width: 1400px){
@@ -546,23 +499,11 @@ footer{
     .line-div{
         padding-right: 200px !important;
     }
-    .mision-container{
-        padding: 20px 30px 30px 30 !important;
-    }
-    .mision-container .text{
-        padding: 10px !important;
-    }
 }
 @media only screen and (max-width: 1200px){
     
     .line-div{
         padding-right: 300px !important;
-    }
-    .mision-container{
-        padding: 10px 10px 10px 10px !important;
-    }
-    .mision-container .text{
-        padding: 5px !important;
     }
 }
 @media only screen and (max-width: 1050px){
@@ -585,13 +526,6 @@ footer{
         object-position:center center;
         transform:skew(15deg);
         margin:0 -10%;
-    }
-    .mision-container{
-        padding: 20px !important;
-        height: 500px;
-    }
-    .mision-container .text{
-        padding: 5px !important;
     }
 }
 
@@ -626,11 +560,6 @@ footer{
 @media only screen and (max-width: 880px){
     .line-div{
         flex: 1.1 !important;
-    }
-}
-@media only screen and (max-width: 866px){
-    .mision-container{
-        width: 400px;
     }
 }
 @media only screen and (max-width: 818px){
@@ -717,52 +646,6 @@ footer{
     .text-container-left .text{
         font-size: 15px;
     }
-
-    /*MISION SECTION*/
-    .mision_section{
-        flex-direction: column-reverse;
-    }
-    .right-m{
-        position: static !important;
-        width: 90vw !important;
-        margin: 0 auto;
-        padding: 10px;
-        overflow:visible !important;
-        
-    }
-    .mision-container{
-        width: 90vw !important;
-        height: 300px;
-        overflow: visible !important;
-    }
-
-    .left-m{
-        margin-left: 50px !important;
-    }
-    .left-m img{
-        width: 90vw !important;
-        height: 35vh !important;
-        display:block;
-        object-fit: cover;
-        object-position:center center;
-    }
-    .vision-container{
-        overflow: visible !important;
-    }
-
-    .top-v{
-        position: static;
-        width: 80vw !important;
-        margin-left: 0px;
-        height: 150px;
-        padding: 0;
-        box-shadow: none;
-        overflow: visible !important;
-    }
-
-    .fit-adjust{
-        width: 90%;
-    }
     .line-div{
         flex: 0.3 !important;
     }
@@ -781,14 +664,7 @@ footer{
         font-size:28px;
         
     }
-    .mision-container{
-        padding: 0 !important;
-    }
 }
-
-/* 
-* added
-*/
 
 @media only screen and (max-width: 650px){
     .menu{
@@ -811,9 +687,6 @@ footer{
 * end added
 */
 @media only screen and (max-width: 630px){
-    .mision-container{
-        padding: 0 !important;
-    }
     .cta{
         top: 70%;
         left: 18vw !important;
@@ -836,9 +709,6 @@ footer{
     .land-section{
         flex: 0.2 !important;
     }
-    .right-m{
-        height: 350px !important;
-    }
 }
 
 @media only screen and (max-width: 500px){
@@ -856,21 +726,10 @@ footer{
         margin-left: 20px !important;
     }
 }
-@media only screen and (max-width: 440px){
-    .mision-container{
-        height: 400px !important;
-    }
-}
 
 @media only screen and (max-width: 435px){
     .land-section{
         overflow: hidden !important;
-    }
-    .mision-container{
-        height: 450px !important;
-    }
-    .mision_section img{
-        margin-top: 100px !important;
     }
     
     .text-container-left{
@@ -887,9 +746,6 @@ footer{
     }
     .img-skew{
         transform: translateX(100px) !important;
-    }
-    .mision-container .text{
-        margin-bottom: 300px !important;
     }
 }
 
@@ -914,12 +770,6 @@ footer{
     .img-skew{
         width: 100vw !important;
         transform: translateX(100px) !important;
-    }
-    .mision-container{
-        height:450px !important;
-    }
-    .mision_section img{
-        margin-top: 170px !important;
     }
 }
 
@@ -987,9 +837,6 @@ footer{
     .img-skew{
         transform: translateX(100px) !important;
         margin-right: 20px;
-    }
-    .top-v{
-        height: 240px;
     }
 }
 
