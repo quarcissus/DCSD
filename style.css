@@ -995,6 +995,9 @@ footer{
     .mision-container{
         padding: 0 !important;
     }
+    .cta{
+        left: 23vw !important;
+    }
 }
 
 /* 
@@ -1051,7 +1054,11 @@ footer{
         height: 350px !important;
     }
 }
-
+@media only screen and (max-width: 520px){
+    .cta{
+        left: 15vw !important;
+    }
+}
 @media only screen and (max-width: 500px){
     .line-div .texto{
         font-size:25px;
@@ -1105,6 +1112,34 @@ footer{
 }
 
 
+@media only screen and (max-width: 414px){
+
+    .cta{
+        left: 20vw !important;
+        top: 85% !important;
+    }
+
+    .mision-container{
+        transform: translateX(-12px);
+    }
+}
+
+@media only screen and (max-width: 411px){
+
+    .cta{
+        left: 19vw !important;
+        top: 80% !important;
+    }
+
+
+    .mision-container{
+        transform: translateX(-12px);
+        
+    }
+}
+
+
+
 @media only screen and (max-width: 400px){
     .menu .left a img{
         height: 60px !important;
@@ -1145,12 +1180,24 @@ footer{
         height: 180px;
     }
 }
+
+
+@media only screen and (max-width: 360px){  
+    .text-container-left{
+        padding: 10px !important;
+    }
+
+    .mision-container{
+        transform: translateX(-12px);
+    }
+}
 @media only screen and (max-width: 320px){
     .cta{
         font-size: 12px;
-        top: 70%;
-        left:20vw;  
-        width: 70%;
+        top: 85%;
+        left:22vw !important;  
+        width: 55%;
+        border-radius: 25px 25px 25px 25px;
 
     }
     .img-skew{
@@ -1159,6 +1206,15 @@ footer{
     }
     .top-v{
         height: 240px;
+    }
+
+    .text-container-left{
+        padding: 7px !important;
+        transform: translateX(-8px);
+    }
+
+    .mision-container{
+        transform: translateX(-12px);
     }
 }
 
