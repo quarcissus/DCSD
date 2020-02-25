@@ -352,19 +352,18 @@ footer{
     line-height: 1.7;
     text-align: justify;
 }
-/*media querys*/
 
 @media only screen and (max-width: 1600px) {
     .line-div .texto{
         width: 420px;
         font-size:50px;
-        top:80px;
+        top:65px;
         height: 220px !important;
 
     }
     .subtitle-land{
-        font-size: 25px;
-        width: 300px;
+        font-size: 30px;
+        width: 350px;
         font-weight: 500;
         height: auto !important;
         left: 11vw;
@@ -379,15 +378,8 @@ footer{
     }
     .right-m .text{
         padding: 20px 40px;
-        line-height: 1.8;
-    }
-    .evaluacion_encouragement-cont{
-        margin-top: 30px !important;
-    }
-    .teacher_encouragement .text{
-        padding: 0 80px !important;
-        width: 80%;
-        margin: 0 auto;
+        line-height: 1.6;
+    
     }
 }
 
@@ -430,7 +422,7 @@ footer{
 @media only screen and (max-width: 1050px){
     .line-div{
         /* padding-right: 400px !important; */
-        flex:0.8 !important;
+        flex:0.9 !important;
         
     }
     .der{
@@ -438,9 +430,6 @@ footer{
     }
     .img-skew{
         margin-left: -100px !important;
-    }
-    .line-div .texto{
-        font-size: 45px;
     }
     .land-section div img{
         width:120% !important;
@@ -460,6 +449,13 @@ footer{
     }
 }
 
+@media only screen and (max-width: 992px){
+    .menu .left{
+        order: 1 !important;
+        text-align: right;
+        margin-right: 10px !important;
+    }
+}
 
 @media only screen and (max-width: 930px){
     .line-div{
@@ -480,12 +476,18 @@ footer{
     }
 }
 
+
+@media only screen and (max-width: 880px){
+    .line-div{
+        flex: 1.1 !important;
+    }
+}
 @media only screen and (max-width: 866px){
     .mision-container{
         width: 400px;
     }
 }
-@media only screen and (max-width: 810px){
+@media only screen and (max-width: 818px){
     .subtitle-land, .cta{
         overflow-x: visible !important;
     }
@@ -618,9 +620,6 @@ footer{
     .line-div{
         flex: 0.3 !important;
     }
-    .cta{
-        left: 15vw !important;
-    }
 }
 
 
@@ -639,18 +638,39 @@ footer{
     .mision-container{
         padding: 0 !important;
     }
-    .teacher_encouragement .text{
-        padding: 10px !important;
+}
+
+/* 
+* added
+*/
+
+@media only screen and (max-width: 650px){
+    .menu{
+        flex-direction: column-reverse;
+    }
+    .menu .right, .menu .left{
+        align-self: flex-start !important;
+    }
+    .menu .left{
+        text-align: left !important;
+        margin-left: -20px !important;
+    }
+    .menu .right{
+        margin-left: 0;
     }
 }
 
+
+/* 
+* end added
+*/
 @media only screen and (max-width: 630px){
     .mision-container{
         padding: 0 !important;
     }
     .cta{
         top: 70%;
-        left: 11vw !important;
+        left: 18vw !important;
     }
 }
 
@@ -661,11 +681,11 @@ footer{
     }
 
     .subtitle-land{
-        font-size: 15px;
+        font-size: 25px;
     }
     .cta{
         top: 70%;
-        left: 4vw !important;
+        left: 20vw;
     }
     .land-section{
         flex: 0.2 !important;
@@ -673,7 +693,6 @@ footer{
     .right-m{
         height: 350px !important;
     }
-    
 }
 
 @media only screen and (max-width: 500px){
@@ -682,7 +701,7 @@ footer{
     }
     .cta{
         top: 70%;
-        left: 2vw;
+        left: 12vw;
     }
     .right-m{
         height: 400px !important;
@@ -707,24 +726,36 @@ footer{
     .mision_section img{
         margin-top: 100px !important;
     }
-    .cta{
-        font-size: 13px;
-        top: 70%;
-        left: 19vw;
+    
+    .text-container-left{
+        margin-left: -18px !important;
     }
+
 }
 
 @media only screen and (max-width: 450px){
     .cta{
         font-size: 12px;
         top: 70%;
-        left: 10vw !important;
+        left: 16vw;
     }
     .img-skew{
         transform: translateX(100px) !important;
     }
-    .teacher_encouragement .text{
-        padding: 10px !important;
+    .mision-container .text{
+        margin-bottom: 300px !important;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    .menu .left a img{
+        height: 60px !important;
+        width:180px !important;
+        margin-left: 30px !important;
+    }
+    .text-container-left{
+        margin-left: -18px !important;
     }
 }
 
@@ -739,35 +770,103 @@ footer{
         transform: translateX(100px) !important;
     }
     .mision-container{
-        height: 550px !important;
+        height:450px !important;
     }
     .mision_section img{
-        margin-top: 190px !important;
+        margin-top: 170px !important;
     }
 }
 
 
-@media only screen and (max-width: 335px){
+@media only screen and (max-width: 537px){  
+    .menu .left{
+        margin-right: 80px !important;
+        margin: 0 auto;
+    }
+
+    .top-v{
+        height: 180px;
+    }
+}
+@media only screen and (max-width: 320px){
     .cta{
-        font-size: 15px;
+        font-size: 12px;
         top: 70%;
-        left:8vw !important;  
-        width: 80%;
+        left:20vw;  
+        width: 70%;
 
     }
     .img-skew{
         transform: translateX(100px) !important;
         margin-right: 20px;
     }
+    .top-v{
+        height: 240px;
+    }
 }
 
 @media only screen and (max-width: 296px){
     .cta{
-        font-size: 14px;
+        font-size: 12px;
         top: 70%;
-        left:13vw;
-        width: 70%;
+        left:20vw;
+        width: 50%;
 
+    }
+
+}
+
+
+/*
+    *   HEIGTH 
+*/
+
+@media only screen and (max-height: 700px){
+    .line-div .texto{
+        top: 50px !important;
+    }
+
+}
+
+
+@media only screen and (max-height: 652px){
+    .line-div .texto{
+        top: 30px !important;
+    }
+
+}
+
+
+@media only screen and (max-height: 600px){
+    .line-div .texto{
+        top: 10px !important;
+    }
+
+}
+
+
+@media only screen and (max-height: 540px){
+    .line-div .texto{
+        top: 0px !important;
+    }
+
+}
+
+@media only screen and (max-height: 520px){
+    .line-div .texto{
+        font-size: 40px !important;
+        top: 20px !important;
+    }
+
+}
+
+@media only screen and (max-height: 470px){
+    .subtitle-land{
+        padding-top: 0 !important;
+        top: 210px;
+    }
+    .line-div .texto{
+        top: 30px !important;
     }
 
 }

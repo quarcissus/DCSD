@@ -618,37 +618,79 @@ footer{
     .line-div .texto{
         width: 420px;
         font-size:50px;
-        top:80px;
+        top:65px;
         height: 220px !important;
 
     }
     .subtitle-land{
-        font-size: 20px;
+        font-size: 30px;
         width: 350px;
+        font-weight: 500;
+        height: auto !important;
+        left: 11vw;
     }
     .cta{
         top: 70%;
-        left: 35vw;
+        left: 30vw;
+    }
+    .line-div{
+        /* padding-right: 150px !important; */
+        flex: 0.8 !important;
+    }
+    .right-m .text{
+        padding: 20px 40px;
+        line-height: 1.6;
+    
     }
 }
 
 @media only screen and (max-width: 1400px){
     .line-div .texto{
-        top: 40px;
-        left: 10vw;
         transform:skew(15deg) !important;
         font-weight: 600;
-        font-size: 36px;
-        height: 190px !important;
-        width: 300px;
         font-family: 'Arvo', serif;
         text-shadow: 1px 1px 3px rgb(128, 128, 128);
+    }
+    .line-div{
+        padding-right: 100px !important;
+    }
+}
 
+@media only screen and (max-width: 1300px){
+
+    .line-div{
+        padding-right: 200px !important;
+    }
+    .mision-container{
+        padding: 20px 30px 30px 30 !important;
+    }
+    .mision-container .text{
+        padding: 10px !important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    
+    .line-div{
+        padding-right: 300px !important;
+    }
+    .mision-container{
+        padding: 10px 10px 10px 10px !important;
+    }
+    .mision-container .text{
+        padding: 5px !important;
     }
 }
 @media only screen and (max-width: 1050px){
     .line-div{
-        padding-right: 100px !important;
+        /* padding-right: 400px !important; */
+        flex:0.9 !important;
+        
+    }
+    .der{
+        width: 70vw !important;
+    }
+    .img-skew{
+        margin-left: -100px !important;
     }
     .land-section div img{
         width:120% !important;
@@ -659,12 +701,26 @@ footer{
         transform:skew(15deg);
         margin:0 -10%;
     }
+    .mision-container{
+        padding: 20px !important;
+        height: 500px;
+    }
+    .mision-container .text{
+        padding: 5px !important;
+    }
 }
 
+@media only screen and (max-width: 992px){
+    .menu .left{
+        order: 1 !important;
+        text-align: right;
+        margin-right: 10px !important;
+    }
+}
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 930px){
     .line-div{
-        padding-right: 200px !important;
+        flex: 1 !important;
     }
     .land-section div img{
         width:120% !important;
@@ -675,15 +731,24 @@ footer{
         transform:skew(15deg);
         margin:0 -10%;
     }
+
+    .cta{
+        left: 40vw !important;
+    }
 }
 
-@media only screen and (max-width: 855px){
+
+@media only screen and (max-width: 880px){
+    .line-div{
+        flex: 1.1 !important;
+    }
+}
+@media only screen and (max-width: 866px){
     .mision-container{
         width: 400px;
     }
 }
-@media only screen and (max-width: 810px){
-    
+@media only screen and (max-width: 818px){
     .subtitle-land, .cta{
         overflow-x: visible !important;
     }
@@ -692,6 +757,7 @@ footer{
         padding: 0 !important;
         text-align: center;
         overflow: visible !important;
+        flex: 0.4 !important;
         
     }
     .land-section{
@@ -703,20 +769,14 @@ footer{
     .land-section div img{
         transform: initial;
     }
-    .land-section div + div{
-        margin:0;
-        overflow-y: hidden !important;
-    }
     .land-section div {
         transform: initial;
         overflow-y: visible !important;
     }
-    .line-div{
-        width: 100%;
-        max-height: 75px !important;
-        min-height: 75px !important;
-        margin-bottom: 25px !important;
-        overflow-y: visible !important;
+    .der{
+        width: 100vw !important;
+        margin: 0 !important;
+        padding:0 !important;
     }
     .line-div .texto{
         transform: initial !important;
@@ -731,33 +791,30 @@ footer{
         width: 100%;
         padding: 0;
         max-height: 150px !important;
-        min-height: 75px !important;
+        min-height: 50px !important;
+        margin: 0 !important;
     }
     .cta{
         transform:initial !important;
         top: 70%;
-        left: 27vw;
+        left: 28vw !important;
     }
 }
 
 @media only screen and (max-width: 770px){
     *{overflow-x: hidden !important}
-
-    .fit-adjust{
-        width: 90%;
+    .text-container-left, .left{
+        overflow: visible !important;
     }
+    
     .row-container{
         flex-direction: column;
     }
 
-    .left{
-        
-        width: 90vw !important;
-    }
     .text-container-left{
         position: static;
         box-shadow: none;
-        width: 90vw !important;
+        width: 90vw;
         padding: 20px;
         height: 100%;
     }
@@ -776,10 +833,61 @@ footer{
         font-size: 15px;
     }
 
-    
+    /*MISION SECTION*/
+    .mision_section{
+        flex-direction: column-reverse;
+    }
+    .right-m{
+        position: static !important;
+        width: 90vw !important;
+        margin: 0 auto;
+        padding: 10px;
+        overflow:visible !important;
+        
+    }
+    .mision-container{
+        width: 90vw !important;
+        height: 300px;
+        overflow: visible !important;
+    }
+
+    .left-m{
+        margin-left: 50px !important;
+    }
+    .left-m img{
+        width: 90vw !important;
+        height: 35vh !important;
+        display:block;
+        object-fit: cover;
+        object-position:center center;
+    }
+    .vision-container{
+        overflow: visible !important;
+    }
+
+    .top-v{
+        position: static;
+        width: 80vw !important;
+        margin-left: 0px;
+        height: 150px;
+        padding: 0;
+        box-shadow: none;
+        overflow: visible !important;
+    }
+
+    .fit-adjust{
+        width: 90%;
+    }
+    .line-div{
+        flex: 0.3 !important;
+    }
 }
 
+
 @media only screen and (max-width: 710px){
+    .line-div{
+        flex: 0.2 !important;
+    }
     .line-div .texto{
         transform: initial !important;
         position: initial;
@@ -788,33 +896,100 @@ footer{
         font-size:28px;
         
     }
+    .mision-container{
+        padding: 0 !important;
+    }
+}
+
+/* 
+* added
+*/
+
+@media only screen and (max-width: 650px){
+    .menu{
+        flex-direction: column-reverse;
+    }
+    .menu .right, .menu .left{
+        align-self: flex-start !important;
+    }
+    .menu .left{
+        text-align: left !important;
+        margin-left: -20px !important;
+    }
+    .menu .right{
+        margin-left: 0;
+    }
+}
+
+
+/* 
+* end added
+*/
+@media only screen and (max-width: 630px){
+    .mision-container{
+        padding: 0 !important;
+    }
+    .cta{
+        top: 70%;
+        left: 18vw !important;
+    }
 }
 
 
 @media only screen and (max-width: 570px){
     .line-div .texto{
-        font-size:22px;
+        font-size:35px;
     }
 
     .subtitle-land{
-        font-size: 15px;
+        font-size: 25px;
     }
     .cta{
         top: 70%;
         left: 20vw;
     }
+    .land-section{
+        flex: 0.2 !important;
+    }
+    .right-m{
+        height: 350px !important;
+    }
 }
 
 @media only screen and (max-width: 500px){
+    .line-div .texto{
+        font-size:25px;
+    }
     .cta{
         top: 70%;
         left: 12vw;
+    }
+    .right-m{
+        height: 400px !important;
+    }
+    .left-m{
+        margin-left: 20px !important;
+    }
+}
+@media only screen and (max-width: 440px){
+    .mision-container{
+        height: 400px !important;
     }
 }
 
 @media only screen and (max-width: 435px){
     .land-section{
         overflow: hidden !important;
+    }
+    .mision-container{
+        height: 450px !important;
+    }
+    .mision_section img{
+        margin-top: 100px !important;
+    }
+    
+    .text-container-left{
+        margin-left: -18px !important;
     }
 
 }
@@ -826,29 +1001,68 @@ footer{
         left: 16vw;
     }
     .img-skew{
-        margin-top: 20px !important;
+        transform: translateX(100px) !important;
+    }
+    .mision-container .text{
+        margin-bottom: 300px !important;
     }
 }
 
-@media only screen and (max-width: 380px){
+
+@media only screen and (max-width: 400px){
+    .menu .left a img{
+        height: 60px !important;
+        width:180px !important;
+        margin-left: 30px !important;
+    }
+    .text-container-left{
+        margin-left: -18px !important;
+    }
+}
+
+@media only screen and (max-width: 390px){
     .cta{
         font-size: 12px;
         top: 70%;
         left: 10vw;
     }
-    .text-container-left{
-        padding-right:50px !important;
+    .img-skew{
+        width: 100vw !important;
+        transform: translateX(100px) !important;
+    }
+    .mision-container{
+        height:450px !important;
+    }
+    .mision_section img{
+        margin-top: 170px !important;
     }
 }
 
 
+@media only screen and (max-width: 537px){  
+    .menu .left{
+        margin-right: 80px !important;
+        margin: 0 auto;
+    }
+
+    .top-v{
+        height: 180px;
+    }
+}
 @media only screen and (max-width: 320px){
     .cta{
         font-size: 12px;
         top: 70%;
         left:20vw;  
-        width: 50%;
+        width: 70%;
 
+    }
+    .img-skew{
+        transform: translateX(100px) !important;
+        margin-right: 20px;
+    }
+    .top-v{
+        height: 240px;
     }
 }
 
@@ -861,7 +1075,59 @@ footer{
 
     }
 
-    .img-skew{
-        margin-top: 50px !important;
+}
+
+
+/*
+    *   HEIGTH 
+*/
+
+@media only screen and (max-height: 700px){
+    .line-div .texto{
+        top: 50px !important;
     }
+
+}
+
+
+@media only screen and (max-height: 652px){
+    .line-div .texto{
+        top: 30px !important;
+    }
+
+}
+
+
+@media only screen and (max-height: 600px){
+    .line-div .texto{
+        top: 10px !important;
+    }
+
+}
+
+
+@media only screen and (max-height: 540px){
+    .line-div .texto{
+        top: 0px !important;
+    }
+
+}
+
+@media only screen and (max-height: 520px){
+    .line-div .texto{
+        font-size: 40px !important;
+        top: 20px !important;
+    }
+
+}
+
+@media only screen and (max-height: 470px){
+    .subtitle-land{
+        padding-top: 0 !important;
+        top: 210px;
+    }
+    .line-div .texto{
+        top: 30px !important;
+    }
+
 }
