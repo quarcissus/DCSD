@@ -320,7 +320,7 @@ transform: scaleX(1);
 }
 
 .icon-2{
-    color: #de0059;
+    color: #f0003c;
 }
 .icon-3{
     color: #ffb259 !important;
@@ -391,7 +391,7 @@ transform: scaleX(1);
 .text-container-left .title{
     text-transform: uppercase;
     font-size: 30px;
-    color: #f00060;
+    color: #f0003c;
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif !important;
