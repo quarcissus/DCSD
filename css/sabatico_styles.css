@@ -7,7 +7,7 @@
 }
 
 .top-menu{
-    background-color: #001736;
+    background-color: #00224e;
     max-height: 35px;
     display: flex;
     justify-content: flex-end;
@@ -105,7 +105,7 @@ dropdown-menu .active{
     left: 0;
     right: 50%;
     height: 2px;
-    background-color: #ee1111;      
+    background-color: #ee1111;
     transform: scaleX(0);
     transform-origin: bottom left;
     transition: transform 0.3s;
@@ -199,7 +199,7 @@ transform: scaleX(1);
     width: 280px;
     padding-top: 15px;
     border-top: 1px solid #9fa3a7;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -233,127 +233,6 @@ transform: scaleX(1);
 .cta:link{
     text-decoration: none;
 }
-/********************* SECOND SECTION PART************** */
-.formats-title{
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #00173681;
-}
-.third-section{
-    margin-top: -20px;
-}
-.adjust{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.col-md-3 a:link{
-    text-decoration: none;
-}
-
-.info-container{
-    color: black;
-    width: 134px;
-    transition: all 1s ease-in;
-    text-align: center;
-}
-
-.info-container:link{
-    text-decoration: none;
-}
-.info-container-1{
-    min-width: 133px !important;
-    min-height: 134px !important;
-}
-.icon-container{
-    border: 7px solid #b0b2d257;
-    padding: 35px;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-}
-.icon-container-1,.icon-container-2,
-.icon-container-3,.icon-container-4{
-    transition: all 0.7s ease-out;
-}
-
-
-.icon-container-1:hover{
-    box-shadow: 1px 1px 10px rgb(29, 29, 29);
-    border: 7px solid #131b25 !important;
-}
-.icon-container-1:hover .icon-1{
-    text-shadow: 1px 1px 10px rgb(184, 184, 184);
-}
-.icon-container-2:hover{
-    box-shadow: 1px 1px 10px rgb(104, 104, 104);
-    border: 7px solid #de0059 !important;
-}
-.icon-container-2:hover .icon-2{
-    text-shadow: 1px 1px 10px rgb(184, 184, 184);
-}
-.icon-container-3:hover{
-    box-shadow: 1px 1px 10px rgb(192, 192, 192);
-    border: 7px solid #ffb259 !important;
-}
-.icon-container-3:hover .icon-3{
-    text-shadow: 1px 1px 10px rgb(218, 218, 218);
-}
-.icon-container-4:hover{
-    box-shadow: 1px 1px 10px rgb(146, 146, 146);
-    border: 7px solid #b0b2d2 !important;
-}
-.icon-container-4:hover .icon-4{
-    text-shadow: 1px 1px 10px rgb(228, 228, 228);
-}
-.icon-container i{
-    /* font-size: 70px; */
-    font-size: 50px;
-}
-
-
-.icon-1{
-    color: #131b25 !important;
-}
-
-.icon-2{
-    color: #de0059;
-}
-.icon-3{
-    color: #ffb259 !important;
-}
-.icon-4{
-    color:#b0b2d2 !important;
-}
-.icons{
-    max-width: 73px;
-    max-height: 62px;
-    text-align: center;
-}
-
-.icon-text{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: rgb(47, 47, 47);
-}
-.icon-text:link{
-    text-decoration: none !important;
-}
-
-.icon-text-3{
-    width: 150%;
-    margin: 0 -30px;
-}
-
-.icon-text-4{
-    width: 110%;
-    margin: 0 -7px;
-}
-
 
 
 .trans-fourth-sect{
@@ -363,89 +242,46 @@ transform: scaleX(1);
     margin: 50px auto 0 auto;
 }
 
-/*presentation section*/
-.row-container{
-    height: 100%;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-.left{
-    width: 50vw;
-    position: relative;
-}
-.text-container-left{
-    width: 550px;
-    height: 450px;
-    background-color:white;
-    position: absolute;
-    top: 80px;
-    right: -80px;
-    padding: 30px 50px;
-    text-align: justify;
-    font-family: 'Montserrat', sans-serif !important;
-    box-shadow: 1px 1px 10px rgba(144, 144, 144, 0.233);
-
-}
-.text-container-left .title{
-    text-transform: uppercase;
-    font-size: 30px;
-    color: #f00060;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600;
-}
-
-.text-container-left .text{
-    color: black;
-    font-family: 'Enriqueta', serif;    
-    font-size: 18px;
-}
-.right img{
-    width: 40vw;
-    height: 100vh;
-    display:block;
-    object-fit: cover;
-    object-position:center center;
-}
-
 footer{
     margin-top: 100px;
-    height: 250px;
-    background-color: #001736;
-}
-.footer-wrapper{
-    padding-top: 50px;
-}
-.footer-wrapper .row div img{
-    width: 100%v;
-    height: 150px;
-    display:block;
-    object-fit: cover;
-    object-position:center center;
+    min-height: 250px;
+    background-color: #00224e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
 }
 
-.uaa-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.footer_logo{
+    width: 100%;
+}
+
+.uaa-links a, .uaa-links i{
+    font-size: 20px;
+    color: #fff;
 }
 
 .uaa-links div{
-    margin-top: 20px;
-    font-family: 'Montserrat', sans-serif !important;
-    color: white;
+    margin-bottom: 20px;
 }
-.uaa-links div a:link{
+
+.uaa-links div:hover i, .uaa-links div:hover a{
+    color: rgb(81, 206, 255);
+}
+.uaa-links a:link, .l-t-wrapper div a:link{
     text-decoration: none;
 }
-.uaa-links div i{
-    color: #b0b2d2;
-    font-size: 20px;
-    
+
+.l-t-wrapper{
+    color: #fff;
+    font-size: 18px;
+}
+
+.l-t-wrapper div a{
+    color: #fff;
+}
+.l-t-wrapper div{
+    margin-bottom: 10px;
 }
 
 .left-text{
@@ -455,7 +291,73 @@ footer{
     margin-top: 10px;
 }
 
+.link{
+    color:black;
+    font-weight: 500;
+}
 
+.link:visited{
+    color: black !important;
+}
+.second-section{
+    margin-top: 20px;
+}
+
+.second-section .title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #f00034;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+}
+
+.row{
+    min-height: 100px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.row-line{
+    border-bottom: 2.5px solid rgb(180, 180, 180);
+}
+.link{
+    font-size: 16px;
+    color: rgb(90, 90, 90);
+    font-weight: 600;
+}
+.link:hover{
+    color: black;
+}
+
+.link:link{
+    text-decoration: none;
+}
+
+.row-line div a:link{
+    text-decoration: none;
+}
+
+
+.teacher_encouragement .title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #f00060;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.teacher_encouragement .text{
+    padding: 0 90px;
+    font-weight: 600;
+    line-height: 1.7;
+    text-align: justify;
+}
 
 @media only screen and (max-width: 1600px) {
     .line-div .texto{
@@ -479,6 +381,9 @@ footer{
     .line-div{
         /* padding-right: 150px !important; */
         flex: 0.8 !important;
+    }
+    .footer_logo{
+        width: 75%;
     }
 }
 
@@ -534,6 +439,9 @@ footer{
         order: 1 !important;
         text-align: right;
         margin-right: 10px !important;
+    }
+    .l-t-wrapper div{
+        font-size: 14px;
     }
 }
 
@@ -625,14 +533,6 @@ footer{
         flex-direction: column;
     }
 
-    .text-container-left{
-        position: static;
-        box-shadow: none;
-        width: 90vw;
-        padding: 20px;
-        height: 100%;
-    }
-
     .right img{
     object-position:center center;
     width: 90vw;
@@ -643,14 +543,26 @@ footer{
     margin-top: 20px;
     }
 
-    .text-container-left .text{
-        font-size: 15px;
+    .fit-adjust{
+        width: 90%;
     }
     .line-div{
         flex: 0.3 !important;
     }
 }
 
+@media only screen and (max-width: 767px){
+    .footer_logo{
+        transform: translateX(9px);
+        width: 50%;
+    }
+    .footer-wrapper{
+        text-align: center;
+    }
+    footer{
+        padding-top: 30px;
+    }
+}
 
 @media only screen and (max-width: 710px){
     .line-div{
@@ -665,6 +577,10 @@ footer{
         
     }
 }
+
+/* 
+* added
+*/
 
 @media only screen and (max-width: 650px){
     .menu{
@@ -687,6 +603,7 @@ footer{
 * end added
 */
 @media only screen and (max-width: 630px){
+
     .cta{
         top: 70%;
         left: 18vw !important;
@@ -719,21 +636,11 @@ footer{
         top: 70%;
         left: 12vw;
     }
-    .right-m{
-        height: 400px !important;
-    }
-    .left-m{
-        margin-left: 20px !important;
-    }
 }
 
 @media only screen and (max-width: 435px){
     .land-section{
         overflow: hidden !important;
-    }
-    
-    .text-container-left{
-        margin-left: -18px !important;
     }
 
 }
@@ -756,9 +663,6 @@ footer{
         width:180px !important;
         margin-left: 30px !important;
     }
-    .text-container-left{
-        margin-left: -18px !important;
-    }
 }
 
 @media only screen and (max-width: 390px){
@@ -779,58 +683,86 @@ footer{
         margin-right: 80px !important;
         margin: 0 auto;
     }
-
-    .top-v{
-        height: 180px;
-    }
 }
 
-
-@media only screen and (max-width: 411px){
+@media only screen and (max-width: 720px){
     .cta{
-        top: 82% !important;
-        left: 18vw !important;
-    }
+        left: 10vw !important;
+        top: 80% !important;
 
-    .text-container-left{
-        transform: translateX(-3px);
     }
+}
+@media only screen and (max-width: 768px){
+    .cta{
+        left: 20vw !important;
+        top: 80% !important;
 
+    }
 }
 
+@media only screen and (max-width: 600px){
+    .cta{
+        left: 10vw !important;
+        top: 80% !important;
+
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .cta{
+        left: 2vw !important;
+        top: 80% !important;
+
+    }
+}
 @media only screen and (max-width: 414px){
     .cta{
         top: 82% !important;
         left: 17.5vw !important;
     }
 
-    .text-container-left{
-        transform: translateX(-7px);
+}
+@media only screen and (max-width: 414px){
+    .cta{
+        top: 82% !important;
+        left: 11vw !important;
+    }
+
+    .teacher_encouragement .text{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 411px){
+    .cta{
+        top: 82% !important;
+        left: 11vw !important;
+    }
+
+    .teacher_encouragement .text{
+        padding: 10px;
     }
 }
 @media only screen and (max-width: 375px){
     .cta{
         top: 82% !important;
-        left: 13vw !important;
+        left: 7vw !important;
     }
 
 }
 @media only screen and (max-width: 360px){
     .cta{
         top: 82% !important;
-        left: 12.5vw !important;
+        left: 4.5vw !important;
     }
-
-    .text-container-left{
-        transform: translateX(-7px);
+    .teacher_encouragement .text{
+        padding:10px;
     }
-
 }
 @media only screen and (max-width: 320px){
     .cta{
         font-size: 12px;
         top: 70%;
-        left:17vw !important;  
+        left:15vw !important;  
         width: 70%;
 
     }

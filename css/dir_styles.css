@@ -7,7 +7,7 @@
 }
 
 .top-menu{
-    background-color: #001736;
+    background-color: #00224e;
     max-height: 35px;
     display: flex;
     justify-content: flex-end;
@@ -232,22 +232,59 @@ transform: scaleX(1);
 }
 footer{
     margin-top: 100px;
-    height: 250px;
-    background-color: #001736;
-}
-.footer-wrapper{
-    padding-top: 50px;
-}
-.footer-wrapper .row div img{
-    width: 100%v;
-    height: 150px;
-    display:block;
-    object-fit: cover;
-    object-position:center center;
+    min-height: 250px;
+    background-color: #00224e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
 }
 
+.footer_logo{
+    width: 100%;
+}
 
+.uaa-links a, .uaa-links i{
+    font-size: 20px;
+    color: #fff;
+}
 
+.uaa-links div{
+    margin-bottom: 20px;
+}
+
+.uaa-links div:hover i, .uaa-links div:hover a{
+    color: rgb(81, 206, 255);
+}
+.uaa-links a:link, .l-t-wrapper div a:link{
+    text-decoration: none;
+}
+
+.l-t-wrapper{
+    color: #fff;
+    font-size: 18px;
+}
+
+.l-t-wrapper div a{
+    color: #fff;
+}
+.l-t-wrapper div{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1600px){
+    .footer_logo{
+        width: 75%;
+    }
+
+}
+
+@media only screen and (max-width: 990px){
+    .card-wrapper, .card-wrapper-2{
+        margin-bottom: 20px;
+    }
+
+}
 
 @media only screen and (max-width: 414px){
     .card-wrapper, .card-wrapper-2{
@@ -268,6 +305,9 @@ footer{
         order: 1 !important;
         text-align: right;
         margin-right: 10px !important;
+    }
+    .l-t-wrapper div{
+        font-size: 14px;
     }
 }
 
@@ -293,6 +333,19 @@ footer{
 /* 
 * added
 */
+@media only screen and (max-width: 767px){
+    .footer_logo{
+        transform: translateX(9px);
+        width: 50%;
+    }
+    .footer-wrapper{
+        text-align: center;
+    }
+    footer{
+        padding-top: 30px;
+    }
+}
+
 
 @media only screen and (max-width: 650px){
     .menu{
