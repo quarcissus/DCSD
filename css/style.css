@@ -538,7 +538,7 @@ transform: scaleX(1);
 .mision-container .title{
     text-transform: uppercase;
     font-size: 30px;
-    color: #f00060;
+    color: #f0003c;
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif !important;
@@ -577,7 +577,7 @@ transform: scaleX(1);
 .top-v .title{
     text-transform: uppercase;
     font-size: 30px;
-    color: #f00060;
+    color: #f0003c;
     margin-bottom: 15px;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif !important;
@@ -607,7 +607,7 @@ transform: scaleX(1);
 .title-gallery{
     text-transform: uppercase;
     font-size: 38px;
-    color: #f00060;
+    color: #f0003c;
     margin-bottom: 15px;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif !important;
