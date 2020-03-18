@@ -100,7 +100,7 @@ html, body{
     color: #fff;
 }
 
-.hover-6:before {
+.hover-effect:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -112,7 +112,7 @@ html, body{
     transform-origin: bottom left;
     transition: transform 0.3s;
 }
-.hover-6:after {
+.hover-effect:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -124,10 +124,10 @@ html, body{
     transform-origin: bottom right;
     transition: transform 0.3s;
 }
-.hover-6:hover:before {
+.hover-effect:hover:before {
 transform: scaleX(1);
 }
-.hover-6:hover:after {
+.hover-effect:hover:after {
 transform: scaleX(1);
 }
 
@@ -157,7 +157,28 @@ transform: scaleX(1);
     transform-origin: bottom left;
     transition: transform 0.3s;
 }
+.pop-up{
+    position: absolute;
+    bottom: 23px;
+    right: -10px;
+    font-size: 15px;
+    background-color: #f01111;
+    border-radius: 89px 89px 88px 0px;
+    -moz-border-radius: 89px 89px 88px 0px;
+    -webkit-border-radius: 89px 89px 88px 0px;
+    color: white;
+    padding: 2px 4px;
+    transform: rotate(-10deg);
 
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+.nav-item{
+    position: relative;
+}
 
 /*landing page*/
 /* .bg-land{
@@ -695,7 +716,7 @@ footer{
 }
 
 .uaa-links div:hover i, .uaa-links div:hover a{
-    color: rgb(81, 206, 255);
+    color: rgb(126, 149, 158);
 }
 .uaa-links a:link, .l-t-wrapper div a:link{
     text-decoration: none;
@@ -830,6 +851,9 @@ footer{
     .l-t-wrapper div{
         font-size: 14px;
     }
+    .pop-up{
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 930px){
@@ -849,6 +873,7 @@ footer{
     .cta{
         left: 40vw !important;
     }
+    
 }
 
 
@@ -856,6 +881,7 @@ footer{
     .line-div{
         flex: 1.1 !important;
     }
+    
 }
 @media only screen and (max-width: 866px){
     .mision-container{
