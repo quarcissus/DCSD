@@ -8,6 +8,7 @@
 
 html, body{
     overflow-x: hidden;
+    scroll-behavior:smooth;
 }
 .top-menu{
     background-color: #00224e;
@@ -168,34 +169,32 @@ transform: scaleX(1);
     -webkit-border-radius: 89px 89px 88px 0px;
     color: white;
     padding: 2px 4px;
-    transform: rotate(-10deg);
+    transform: rotate(-10deg) !important;
 
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+
 }
 .nav-item{
     position: relative;
 }
 
-/*landing page*/
-/* .bg-land{
-    background: url("./imgs/BOLETIN-422-2-1024x683.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 110%;
-    height: 80vh;
-    margin: auto;
-    transform: translateY(-7px);
-    clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
-} */
+.red_section_wrapper{
+    width: 100vw;
+    padding: 0 30px;
+}
 
-/*skewed*/
-
+.red_section_wrapper{
+    width: 100%;
+    border: 1.5px solid red;
+    border-top: none;
+    background-color: rgb(255, 152, 152);
+    color: rgb(170, 0, 0);
+    font-size: 20px;
+}
 .full-land {
     overflow-x:hidden !important;
 }
