@@ -5,7 +5,13 @@
   margin: 0;
   padding: 0;
 }
-
+.new-item {
+	position: relative;
+	border: 2px solid red;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
 html,
 body {
   overflow-x: hidden;
@@ -355,4 +361,23 @@ footer {
 }
 .l-t-wrapper div {
   margin-bottom: 10px;
+}
+.pop-up {
+	position: absolute;
+	top: 0;
+	right: -45px;
+	font-size: 15px;
+	background-color: #f01111;
+	border-radius: 89px 89px 88px 88px;
+	-moz-border-radius: 89px 89px 88px 88px;
+	-webkit-border-radius: 89px 89px 88px 88px;
+	color: white;
+	padding: 2px 4px;
+	transform: rotate(-10deg) !important;
+
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
 }
