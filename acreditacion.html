@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/31de0ff71f.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <!-- dev styles -->
+    <link rel="stylesheet" href="./css/acreditacion.css" />
+    <!-- <link rel="stylesheet" href="style.min.css"> -->
+    <link href="https://dgdp.uaa.mx/defaa/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Departamento de Control y Seguimiento Docente</title>
+</head>
+
+<body>
+    <div class="top-menu">
+        <ul class="nav top-nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.uaa.mx/dgdp/">Departamentos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link top-active" href="https://www.uaa.mx/">UAA</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <div class="left">
+            <a href="#"><img src="./imgs/logo_completo.gif" alt="" /></a>
+        </div>
+        <div class="right">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-bars"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link link " href="#">Inicio
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Funciones
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./acreditacion.html">Acreditación de cursos</a>
+                                <a class="dropdown-item" href="./eBienal.html">Evaluacion Bienal</a>
+                                <a class="dropdown-item" href="./evalDesDoc.html">Evaluacion al desempeño docente</a>
+                                <a class="dropdown-item" href="./estmDesDoc.html">Estimulo al desempeño docente</a>
+                                <a class="dropdown-item" href="./sabatico.html">Seguimiento de año sabatico</a>
+                                <a class="dropdown-item" href="./sabatico.html">Seguimiento de año sabatico</a>
+                            </div>
+                        </li>
+                        <li class="nav-item new-item">
+                            <a class="nav-link link hover-effect" href="./avisos.html">Avisos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link hover-effect" href="./directorio.html">Directorio</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="acred-container">
+        <hr>
+        <div class="title">ACREDITACIÓN DE CURSOS</div>
+        <section class="table-wrap">
+            <table id="acreditation-table" class="table table-hover table-bordered ">
+                <thead class="thead-dark acreditation-head">
+                    <tr>
+                        <th scope="col">Centro</th>
+                        <th scope="col">Departamento</th>
+                        <th scope="col">Nombre del curso</th>
+                        <th scope="col">Solicitud de curso</th>
+                        <th scope="col">Entrego programa del curso</th>
+                        <th scope="col">Entrego lista de participantes</th>
+                        <th scope="col">Autorización del Curso</th>
+                        <th scope="col">Creditos otorgados</th>
+                        <th scope="col">Requiere acta</th>
+                        <th scope="col">Solicitud de Acta a Control Escolar</th>
+                        <th scope="col">Entrega de acta a DCSD </th>
+                        <th scope="col">Devolucion de acta llena y firmada</th>
+                        <th scope="col">Elaboración de constancias</th>
+                        <th scope="col">Entrega de constancias</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td class="center">C. Del Diseño y de la construción</td>
+                        <td class="department">Diseño de interiores</td>
+                        <td class="curseName">Escalas del diseño interior</td>
+                        <td class="request">Si</td>
+                        <td class="cursePlan">Si</td>
+                        <td class="participants">Si</td>
+                        <td class="curseAutorization">si</td>
+                        <td class="curseCredits">3</td>
+                        <td class="certificate">Si</td>
+                        <td class="requestoToControl"></td>
+                        <td class="certificatoToDSCD"></td>
+                        <td class="certificateDevolution"></td>
+                        <td class="recordsGeneration"></td>
+                        <td class="recordsDelivered"></td>
+                    </tr>
+                    <tr>
+                        <td class="center">C. Del Diseño y de la construción</td>
+                        <td class="department">Diseño de interiores</td>
+                        <td class="curseName">Construcción de terminología metodológica del diseño interior</td>
+                        <td class="request">Si</td>
+                        <td class="cursePlan">Si</td>
+                        <td class="participants">Si</td>
+                        <td class="curseAutorization">si</td>
+                        <td class="curseCredits">3</td>
+                        <td class="certificate">Si</td>
+                        <td class="requestoToControl"></td>
+                        <td class="certificatoToDSCD"></td>
+                        <td class="certificateDevolution"></td>
+                        <td class="recordsGeneration"></td>
+                        <td class="recordsDelivered"></td>
+                    </tr>
+                    <tr>
+                        <td class="center">C. Sociales y Humanidades</td>
+                        <td class="department">Comunicación</td>
+                        <td class="curseName">WireCast y streaming de contenido</td>
+                        <td class="request">Si</td>
+                        <td class="cursePlan">Si</td>
+                        <td class="participants">Si</td>
+                        <td class="curseAutorization">si</td>
+                        <td class="curseCredits">3</td>
+                        <td class="certificate">Si</td>
+                        <td class="requestoToControl"></td>
+                        <td class="certificatoToDSCD"></td>
+                        <td class="certificateDevolution"></td>
+                        <td class="recordsGeneration"></td>
+                        <td class="recordsDelivered"></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <footer>
+        <div class="container footer-wrapper">
+            <div class="row">
+                <div class="col-md-4 logo_wrap">
+                    <img class="footer_logo" src="./imgs/logo_gris.png" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <div class="uaa-links">
+                        <div>
+                            <i class="fab fa-facebook-square"> </i><a href="https://www.facebook.com/uaa.mexico/"
+                                target="_blank">&nbsp;Facebook UAA</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-twitter-square twitter"> </i><a
+                                href="https://twitter.com/uaa_mx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_blank">&nbsp;Twitter UAA</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram-square"></i><a href="https://www.instagram.com/uaa_mx/?hl=es-la"
+                                target="_blank">&nbsp;Instagram UAA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 left-text">
+                    <div class="l-t-wrapper">
+                        <div>
+                            Av. Universidad # 940, Ciudad Universitaria, C.
+                            P. 20131,
+                        </div>
+                        <div>Aguascalientes, Ags. MÉXICO.</div>
+                        <div>Tel. conmutador: +52 (449) 910 74 00</div>
+                        <div>
+                            <a href="https://www.uaa.mx/portal/" target="_blank">uaa.mx/</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"
+        integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
