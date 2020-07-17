@@ -8,7 +8,7 @@
 }
 
 hr {
-    margin: 0 !important;
+	margin: 0 !important;
 }
 
 .top-menu {
@@ -63,71 +63,71 @@ hr {
 
 
 .navbar-nav .nav-item .link {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    padding: 10px 0;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	padding: 10px 0;
 }
 
 .hover-effect:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 50%;
-    height: 2px;
-    background-color: #ee1111;
-    transform: scaleX(0);
-    transform-origin: bottom left;
-    transition: transform 0.3s;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+	height: 2px;
+	background-color: #ee1111;
+	transform: scaleX(0);
+	transform-origin: bottom left;
+	transition: transform 0.3s;
 }
 
 .hover-effect:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 50%;
-    height: 2px;
-    background-color: #ee1111;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 50%;
+	height: 2px;
+	background-color: #ee1111;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.3s;
 }
 
 .hover-effect:hover:before {
-    transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 .hover-effect:hover:after {
-    transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 
 .hover-active:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 50%;
-    height: 2px;
-    background-color: #ee1111;
-    transform: scaleX(1);
-    transform-origin: bottom right;
-    transition: transform 0.3s;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 50%;
+	height: 2px;
+	background-color: #ee1111;
+	transform: scaleX(1);
+	transform-origin: bottom right;
+	transition: transform 0.3s;
 }
 
 .hover-active:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 50%;
-    height: 2px;
-    background-color: #ee1111;
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    transition: transform 0.3s;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+	height: 2px;
+	background-color: #ee1111;
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	transition: transform 0.3s;
 }
 
 .menu {
@@ -334,6 +334,7 @@ footer {
 	color: rgb(56, 56, 56);
 	font-weight: 500;
 }
+
 .fa-arrow-left,
 .fa-arrow-right {
 	color: #ee1111;
@@ -346,6 +347,7 @@ footer {
 }
 
 @media only screen and (max-width: 990px) {
+
 	.card-wrapper,
 	.card-wrapper-2 {
 		margin-bottom: 20px;
@@ -353,6 +355,7 @@ footer {
 }
 
 @media only screen and (max-width: 414px) {
+
 	.card-wrapper,
 	.card-wrapper-2 {
 		margin-bottom: 20px;
@@ -360,6 +363,7 @@ footer {
 }
 
 @media only screen and (max-width: 411px) {
+
 	.card-wrapper,
 	.card-wrapper-2 {
 		margin-bottom: 20px;
