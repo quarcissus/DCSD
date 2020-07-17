@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+hr {
+    margin: 0 !important;
+}
+
 .top-menu {
     background-color: #00224e;
     max-height: 35px;
@@ -54,6 +58,77 @@
     color: #001736 !important;
     font-size: 30px !important;
 
+}
+
+/* HOVER EFECT */
+
+
+.navbar-nav .nav-item .link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.hover-effect:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    height: 2px;
+    background-color: #ee1111;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s;
+}
+
+.hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    height: 2px;
+    background-color: #ee1111;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+.hover-effect:hover:before {
+    transform: scaleX(1);
+}
+
+.hover-effect:hover:after {
+    transform: scaleX(1);
+}
+
+
+.hover-active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    height: 2px;
+    background-color: #ee1111;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+.hover-active:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    height: 2px;
+    background-color: #ee1111;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.3s;
 }
 
 .menu {
