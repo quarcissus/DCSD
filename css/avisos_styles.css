@@ -80,6 +80,12 @@ body {
   border-bottom: 1px solid rgb(195, 195, 195);
 }
 
+.new-item {
+  font-weight: 600 !important;
+  color: #1f09e4 !important;
+  font-size: 18px !important;
+}
+
 .left {
   margin-left: 40px;
 }

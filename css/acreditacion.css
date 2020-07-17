@@ -136,6 +136,12 @@ hr {
 	justify-content: space-between;
 }
 
+.new-item {
+	font-weight: 600;
+	color: #1f09e4;
+	font-size: 18px;
+}
+
 .left {
 	margin-left: 40px;
 }

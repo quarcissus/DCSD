@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+
 /* top menu and main menu */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.top-menu{
+.top-menu {
     background-color: #00224e;
     max-height: 35px;
     display: flex;
@@ -14,67 +15,77 @@
     align-items: center;
 }
 
-.top-nav{
+.top-nav {
     margin-right: 30px;
 }
-.top-menu .nav-link{
+
+.top-menu .nav-link {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 13px;
 }
 
-.top-active{
+.top-active {
     border: 2px solid #b0b2d2;
     border-top: none;
     border-bottom: none;
     transition: all 1s ease;
 }
 
-.top-active:hover{
+.top-active:hover {
     background-color: #b0b2d2 !important;
     color: #001736 !important;
     font-weight: 500;
 }
-.right .nav-link{
+
+.right .nav-link {
     color: black;
     margin-right: 20px;
 }
 
-.nav-link:link{
+.nav-link:link {
     text-decoration: none;
 }
 
 /* DEPARTMENT MENU */
 
-.menu-bars i{
+.menu-bars i {
     color: #001736 !important;
     font-size: 30px !important;
-    
+
 }
-.menu{
+
+.menu {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    
+
 }
-.left{
+
+.new-item {
+    font-weight: 600 !important;
+    color: #1f09e4 !important;
+    font-size: 18px !important;
+}
+
+.left {
     margin-left: 40px;
 }
 
-.left img{
+.left img {
     height: 90px;
     width: 270px;
     margin-left: 20px;
 }
 
-.right{
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.right .nav-link{
+.right .nav-link {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 700;
     font-size: 16px;
@@ -83,12 +94,12 @@
     padding: 5px 5px 2px 5px !important;
 }
 
-dropdown-menu .active{
+dropdown-menu .active {
     background-color: #001736 !important;
 }
 
-.aviso{
-    color: rgb(100, 100, 100 ) !important;
+.aviso {
+    color: rgb(100, 100, 100) !important;
 }
 
 /* HOVER EFECT */
@@ -114,6 +125,7 @@ dropdown-menu .active{
     transform-origin: bottom left;
     transition: transform 0.3s;
 }
+
 .hover-6:after {
     content: "";
     position: absolute;
@@ -126,14 +138,16 @@ dropdown-menu .active{
     transform-origin: bottom right;
     transition: transform 0.3s;
 }
+
 .hover-6:hover:before {
-transform: scaleX(1);
-}
-.hover-6:hover:after {
-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
-.hover-active:after{
+.hover-6:hover:after {
+    transform: scaleX(1);
+}
+
+.hover-active:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -159,7 +173,7 @@ transform: scaleX(1);
     transition: transform 0.3s;
 }
 
-.title-directory{
+.title-directory {
     text-align: center;
     text-transform: uppercase;
     font-size: 38px;
@@ -169,16 +183,17 @@ transform: scaleX(1);
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 600;
 }
-.card-wrapper{
+
+.card-wrapper {
     min-height: 200px;
     padding: 1rem;
     position: relative;
-    background: linear-gradient(to right, rgba(193,9,37,1), rgba(255,178,89,1));
+    background: linear-gradient(to right, rgba(193, 9, 37, 1), rgba(255, 178, 89, 1));
     padding: 3px;
     border-radius: 40px 0px 40px 0;
 }
 
-.card-wrapper-2{
+.card-wrapper-2 {
     min-height: 200px;
     padding: 1rem;
     position: relative;
@@ -186,10 +201,13 @@ transform: scaleX(1);
     padding: 3px;
     border-radius: 40px 0px 40px 0;
 }
-.card-wrapper:hover, .card-wrapper-2:hover{
+
+.card-wrapper:hover,
+.card-wrapper-2:hover {
     box-shadow: 1px 1px 15px rgba(211, 211, 211, 0.465);
 }
-.directory-card{
+
+.directory-card {
     min-height: 200px;
     border-radius: 40px 0px 40px 0;
     padding: 15px;
@@ -199,42 +217,48 @@ transform: scaleX(1);
     background-color: rgb(255, 255, 255);
 }
 
-.directory-title{
+.directory-title {
     font-size: 20px;
     font-weight: 700;
     line-height: 1;
     color: #001d44;
 }
-.directory-body div{
-    
+
+.directory-body div {
+
     margin-bottom: 10px;
 }
-.directory-body .name{
+
+.directory-body .name {
     margin-top: 10px;
     font-weight: 500;
     font-size: 17px;
 }
 
-.directory-body .position{
+.directory-body .position {
     font-size: 14px;
 }
 
-.aa-body{
+.aa-body {
     margin-top: 10px;
 }
-.adjust-dir-2{
+
+.adjust-dir-2 {
     margin-top: 40px;
 }
-.mail{
+
+.mail {
     color: #001736;
 }
-.trans-fourth-sect{
-    border-style: none none solid; 
+
+.trans-fourth-sect {
+    border-style: none none solid;
     border-bottom: 1.3px solid #131b253f;
     width: 90%;
     margin: 5px auto 30px auto;
 }
-footer{
+
+footer {
     margin-top: 100px;
     min-height: 250px;
     background-color: #00224e;
@@ -244,92 +268,105 @@ footer{
     padding-top: 30px;
 }
 
-.footer_logo{
+.footer_logo {
     width: 100%;
 }
 
-.uaa-links a, .uaa-links i{
+.uaa-links a,
+.uaa-links i {
     font-size: 20px;
     color: #fff;
 }
 
-.uaa-links div{
+.uaa-links div {
     margin-bottom: 20px;
 }
 
-.uaa-links div:hover i, .uaa-links div:hover a{
+.uaa-links div:hover i,
+.uaa-links div:hover a {
     color: rgb(81, 206, 255);
 }
-.uaa-links a:link, .l-t-wrapper div a:link{
+
+.uaa-links a:link,
+.l-t-wrapper div a:link {
     text-decoration: none;
 }
 
-.l-t-wrapper{
+.l-t-wrapper {
     color: #fff;
     font-size: 18px;
 }
 
-.l-t-wrapper div a{
+.l-t-wrapper div a {
     color: #fff;
 }
-.l-t-wrapper div{
+
+.l-t-wrapper div {
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 1600px){
-    .footer_logo{
+@media only screen and (max-width: 1600px) {
+    .footer_logo {
         width: 75%;
     }
 
 }
 
-@media only screen and (max-width: 990px){
-    .card-wrapper, .card-wrapper-2{
+@media only screen and (max-width: 990px) {
+
+    .card-wrapper,
+    .card-wrapper-2 {
         margin-bottom: 20px;
     }
 
 }
 
-@media only screen and (max-width: 414px){
-    .card-wrapper, .card-wrapper-2{
+@media only screen and (max-width: 414px) {
+
+    .card-wrapper,
+    .card-wrapper-2 {
         margin-bottom: 20px;
     }
 
 }
-@media only screen and (max-width: 411px){
-    .card-wrapper, .card-wrapper-2{
+
+@media only screen and (max-width: 411px) {
+
+    .card-wrapper,
+    .card-wrapper-2 {
         margin-bottom: 20px;
     }
 
 }
 
 
-@media only screen and (max-width: 992px){
-    .menu .left{
+@media only screen and (max-width: 992px) {
+    .menu .left {
         order: 1 !important;
         text-align: right;
         margin-right: 10px !important;
     }
-    .l-t-wrapper div{
+
+    .l-t-wrapper div {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 770px) {
 
-    .row-container{
+    .row-container {
         flex-direction: column;
     }
 
 
-    .right img{
-    object-position:center center;
-    width: 90vw;
-    height: 35vh;
-    display:block;
-    object-fit: cover;
-    object-position:center center;
-    margin-top: 20px;
+    .right img {
+        object-position: center center;
+        width: 90vw;
+        height: 35vh;
+        display: block;
+        object-fit: cover;
+        object-position: center center;
+        margin-top: 20px;
     }
 
 }
@@ -337,57 +374,63 @@ footer{
 /* 
 * added
 */
-@media only screen and (max-width: 767px){
-    .footer_logo{
+@media only screen and (max-width: 767px) {
+    .footer_logo {
         transform: translateX(9px);
         width: 50%;
     }
-    .footer-wrapper{
+
+    .footer-wrapper {
         text-align: center;
     }
-    footer{
+
+    footer {
         padding-top: 30px;
     }
 }
 
 
-@media only screen and (max-width: 650px){
-    .menu{
+@media only screen and (max-width: 650px) {
+    .menu {
         flex-direction: column-reverse;
     }
-    .menu .right, .menu .left{
+
+    .menu .right,
+    .menu .left {
         align-self: flex-start !important;
     }
-    .menu .left{
+
+    .menu .left {
         text-align: left !important;
         margin-left: -20px !important;
     }
-    .menu .right{
+
+    .menu .right {
         margin-left: 0;
     }
 }
 
 
 
-@media only screen and (max-width: 400px){
-    .menu .left a img{
+@media only screen and (max-width: 400px) {
+    .menu .left a img {
         height: 60px !important;
-        width:180px !important;
+        width: 180px !important;
         margin-left: 30px !important;
     }
 }
 
-@media only screen and (max-width: 537px){  
-    .menu .left{
+@media only screen and (max-width: 537px) {
+    .menu .left {
         margin-right: 80px !important;
         margin: 0 auto;
     }
 }
 
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 414px) {
 
-    .links .row .col-md-3  {
+    .links .row .col-md-3 {
         margin-bottom: 20px !important;
     }
 }
