@@ -12,8 +12,7 @@ let centers = {
   ing: "C. de la Ingeniería ",
   empre: "C. Empresariales",
 };
-let curseInformation = [
-  {
+let curseInformation = [{
     center: centers["constr"],
     department: "Diseño de interiores",
     curseName: "Escalas del diseño interior",
@@ -64,8 +63,7 @@ let curseInformation = [
   {
     center: centers["ing"],
     department: "Ingenieria Robotica",
-    curseName:
-      "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
+    curseName: "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
     request: "Si",
     cursePlan: "No",
     participants: "Si",
@@ -113,8 +111,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: "Economía",
-    curseName:
-      'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
+    curseName: 'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -162,8 +159,7 @@ let curseInformation = [
   {
     center: centers["media"],
     department: "Actividades Artísticas y Culturales",
-    curseName:
-      "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
+    curseName: "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -227,8 +223,7 @@ let curseInformation = [
   {
     center: centers["hum"],
     department: "Comunicación",
-    curseName:
-      "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
+    curseName: "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -276,8 +271,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: "Estadística",
-    curseName:
-      "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
+    curseName: "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -341,8 +335,7 @@ let curseInformation = [
   {
     center: centers["salud"],
     department: "Optometría",
-    curseName:
-      "Diseño Instruccional para las Asignaturas de la Licenciatura de Optometria",
+    curseName: "Diseño Instruccional para las Asignaturas de la Licenciatura de Optometria",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -486,8 +479,7 @@ let curseInformation = [
   {
     center: centers["ing"],
     department: "Ingeniería Robótica",
-    curseName:
-      "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
+    curseName: "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -519,8 +511,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: "Ingeniería Bioquímica",
-    curseName:
-      "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
+    curseName: "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -552,8 +543,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: "Ingeniería Bioquímica",
-    curseName:
-      "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
+    curseName: "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -649,8 +639,7 @@ let curseInformation = [
   {
     center: centers["artes"],
     department: "Arte y Gestión Cultural",
-    curseName:
-      "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
+    curseName: "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -666,8 +655,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño de Interiores",
-    curseName:
-      "Metodolgía del Diseño de Interiores: Acotación y Definición de las Escalas de Intervención del Proyecto de Diseño Interior",
+    curseName: "Metodolgía del Diseño de Interiores: Acotación y Definición de las Escalas de Intervención del Proyecto de Diseño Interior",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -683,8 +671,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño de Interiores",
-    curseName:
-      "Escalas del Espacio Interior. 1 Parte: Definición de Conceptos y Escala del Diseño Interior",
+    curseName: "Escalas del Espacio Interior. 1 Parte: Definición de Conceptos y Escala del Diseño Interior",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -700,8 +687,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño de Interiores",
-    curseName:
-      "Escalas del Espacio Interior. 2 Parte: Definición de Conceptos y Escala del Diseño Interior",
+    curseName: "Escalas del Espacio Interior. 2 Parte: Definición de Conceptos y Escala del Diseño Interior",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -925,8 +911,7 @@ let curseInformation = [
   {
     center: centers["media"],
     department: "Actividades Deportivas",
-    curseName:
-      "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
+    curseName: "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -990,8 +975,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño Gráfico",
-    curseName:
-      "Experiencia e interfaz de usuario en aplicaciones web y móviles",
+    curseName: "Experiencia e interfaz de usuario en aplicaciones web y móviles",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1039,8 +1023,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño Industrial",
-    curseName:
-      "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
+    curseName: "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
     request: "Si",
     cursePlan: "No",
     participants: "No",
@@ -1056,8 +1039,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño Urbano",
-    curseName:
-      "Transposición de Significados en el Proceso Creactivo de Diseño",
+    curseName: "Transposición de Significados en el Proceso Creactivo de Diseño",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1105,8 +1087,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Ingeniería Civil",
-    curseName:
-      "Herramientas Didácticas Complementarias para Plataformas Virtuales",
+    curseName: "Herramientas Didácticas Complementarias para Plataformas Virtuales",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1122,8 +1103,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Ingeniería Civil",
-    curseName:
-      "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
+    curseName: "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1187,8 +1167,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño de Moda",
-    curseName:
-      "Taller de Bordado con Técnicas Artesanales Mexicanas Modulo III",
+    curseName: "Taller de Bordado con Técnicas Artesanales Mexicanas Modulo III",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1204,8 +1183,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño Gráfico",
-    curseName:
-      "Análisis de las Tendencias Actuales en el Diseño Gráfico Modulo II",
+    curseName: "Análisis de las Tendencias Actuales en el Diseño Gráfico Modulo II",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1413,8 +1391,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: "Diseño Industrial",
-    curseName:
-      "Taller de Herramientas en Base de Datos Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
+    curseName: "Taller de Herramientas en Base de Datos Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1462,8 +1439,7 @@ let curseInformation = [
   {
     center: centers["artes"],
     department: "Artes y la Cultura",
-    curseName:
-      "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
+    curseName: "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -1495,8 +1471,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: "Microbiología",
-    curseName:
-      "Introducción a la Investigación Experimental: Redacción Cientifica",
+    curseName: "Introducción a la Investigación Experimental: Redacción Cientifica",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -1576,8 +1551,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: "Economía",
-    curseName:
-      "Uso de series uniformes desestacionalizadas para el análisis económico",
+    curseName: "Uso de series uniformes desestacionalizadas para el análisis económico",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1658,8 +1632,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: "Mercadotecnia",
-    curseName:
-      "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
+    curseName: "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1691,8 +1664,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: "Recursos Humanos",
-    curseName:
-      "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
+    curseName: "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1740,8 +1712,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: "Recursos Humanos",
-    curseName:
-      "Como Detectar Mentiras en el Proceso de Selección de Recursos Humanos",
+    curseName: "Como Detectar Mentiras en el Proceso de Selección de Recursos Humanos",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1852,40 +1823,39 @@ let curseInformation = [
   },
   {
     center: centers["econom"],
-    department: "",
-    curseName: "",
-    request: "Si",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "No",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "No",
-    certificatoToDSCD: "No",
-    certificateDevolution: "No",
-    recordsGeneration: "No",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["econom"],
-    department: "",
-    curseName: "",
-    request: "Si",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "No",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "No",
-    certificatoToDSCD: "No",
-    certificateDevolution: "No",
-    recordsGeneration: "No",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["econom"],
     department: "Finanzas",
     curseName: "Certificación INFOSEL",
+    request: "No",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "No",
+    curseCredits: "-",
+    act: "No",
+    requestoToControl: "No",
+    certificatoToDSCD: "No",
+    certificateDevolution: "No",
+    recordsGeneration: "No",
+    recordsDelivered: "No",
+  },
+  {
+    center: centers["salud"],
+    department: "Cultura física y salud pública",
+    curseName: "Trabajo comunitario en salud pública",
+    request: "No",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "No",
+    curseCredits: "-",
+    act: "No",
+    requestoToControl: "No",
+    certificatoToDSCD: "No",
+    certificateDevolution: "No",
+    recordsGeneration: "No",
+    recordsDelivered: "No",
+  }, {
+    center: centers["salud"],
+    department: "Cultura física y salud pública",
+    curseName: "preparándonos para la visita de CIEES",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
