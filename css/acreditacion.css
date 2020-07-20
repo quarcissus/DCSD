@@ -341,6 +341,20 @@ footer {
 	font-weight: 500;
 }
 
+.paragraph:first-of-type {
+	margin-bottom: 0;
+}
+
+.paragraph:last-of-type {
+	margin-bottom: 0;
+	color: #646464;
+}
+
+.form-centers {
+	width: 50%;
+	margin: auto;
+}
+
 .fa-arrow-left,
 .fa-arrow-right {
 	color: #ee1111;

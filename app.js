@@ -1,6 +1,64 @@
 const acreditationList = document.querySelector("#acreditation-table tbody");
+const cursesSelect = document.getElementById("cursesSelect");
+let curseselected = "";
+cursesSelect.addEventListener("change", function () {
+  switch (cursesSelect.value) {
+    case "110000":
+      curseselected = "agro";
+      cleanCursesTable()
+      break;
+    case "120000":
+      curseselected = "basic";
+      cleanCursesTable()
+
+      break;
+    case "130000":
+      curseselected = "salud";
+      cleanCursesTable()
+
+      break;
+    case "140000":
+      curseselected = "constr";
+      cleanCursesTable()
+
+      break;
+    case "150000":
+      curseselected = "econom";
+      cleanCursesTable()
+
+      break;
+    case "160000":
+      curseselected = "hum";
+      cleanCursesTable()
+
+      break;
+    case "170000":
+      curseselected = "media";
+      cleanCursesTable()
+
+      break;
+    case "180000":
+      curseselected = "artes";
+      cleanCursesTable()
+
+      break;
+    case "190000":
+      curseselected = "ing";
+      cleanCursesTable()
+
+      break;
+    case "200000":
+      curseselected = "empre";
+      cleanCursesTable()
+
+      break;
+    default:
+      curseselected = "";
+      cleanCursesTable()
 
 
+  }
+});
 let centers = {
   agro: {
     id: 110000,
@@ -1912,6 +1970,11 @@ function cursesOrdering() {
 
 function acreditationCurses() {
   for (let i = 0; i < cursesOrdering().length; i++) {
+    console.log(curseselected)
+    if (curseselected !== "" && curseInformation[i].center.name !== centers[curseselected].name) {
+      continue;
+
+    }
     const row = document.createElement("tr");
     row.innerHTML = `
         <td class="center">${curseInformation[i].center.name}</td>
@@ -1931,4 +1994,11 @@ function acreditationCurses() {
     `;
     acreditationList.appendChild(row);
   }
+}
+
+function cleanCursesTable() {
+  while (acreditationList.firstChild) {
+    acreditationList.removeChild(acreditationList.firstChild);
+  }
+  acreditationCurses();
 }
