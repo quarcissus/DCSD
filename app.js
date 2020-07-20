@@ -101,7 +101,6 @@ let centers = {
     name: "C. Empresariales",
   },
 };
-let idCenter = {};
 let curseInformation = [{
     center: centers["constr"],
     department: "Diseño de interiores",
@@ -1995,6 +1994,8 @@ function acreditationCurses() {
     acreditationList.appendChild(row);
   }
 }
+
+
 
 function cleanCursesTable() {
   while (acreditationList.firstChild) {
