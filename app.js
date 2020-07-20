@@ -1969,7 +1969,6 @@ function cursesOrdering() {
 
 function acreditationCurses() {
   for (let i = 0; i < cursesOrdering().length; i++) {
-    console.log(curseselected)
     if (curseselected !== "" && curseInformation[i].center.name !== centers[curseselected].name) {
       continue;
 
