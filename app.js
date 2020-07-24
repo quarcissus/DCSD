@@ -59,45 +59,144 @@ cursesSelect.addEventListener("change", function () {
 });
 let centers = {
   agro: {
-    id: 110000,
+    id: 11,
     name: "C. Agropecuarias",
   },
   basic: {
-    id: 120000,
+    id: 12,
     name: "C. Básicas",
   },
   salud: {
-    id: 130000,
+    id: 13,
     name: "C. de la Salud",
   },
   constr: {
-    id: 140000,
+    id: 14,
     name: "C. del Diseño y Construcción",
   },
   econom: {
-    id: 150000,
+    id: 15,
     name: "C. Economicas y Administrativas",
   },
   hum: {
-    id: 160000,
+    id: 16,
     name: "C. Sociales y Humanitarias",
   },
   media: {
-    id: 170000,
+    id: 17,
     name: "Educación Media",
   },
   artes: {
-    id: 180000,
+    id: 18,
     name: "Artes y la Cultura",
   },
   ing: {
-    id: 190000,
+    id: 19,
     name: "C. de la Ingeniería ",
   },
   empre: {
-    id: 200000,
+    id: 20,
     name: "C. Empresariales",
   },
+};
+
+let departments = {
+  alimentos: {
+    name: "C. de los Alimentos",
+    id: "1105",
+    center: "11",
+  },
+  agronomicas: {
+    name: "C. Agronómicas",
+    id: "1107",
+    center: "11",
+  },
+  veterinarias: {
+    name: "C. Veterinarias",
+    id: "1108",
+    center: "11",
+  },
+  biologia: {
+    name: "Biología",
+    id: "1201",
+    center: "12",
+  },
+  estadistica: {
+    name: "Estadística",
+    id: "1202",
+    center: "12",
+  },
+  fisiologia: {
+    name: "Fisiología y Farmacología",
+    id: "1203",
+    center: "12",
+  },
+  ingBio: {
+    name: "Ing. Bioquímica",
+    id: "1204",
+    center: "12",
+  },
+  matFis: {
+    name: "Matemáticas y Física",
+    id: "1205",
+    center: "12",
+  },
+  microbio: {
+    name: "Microbiología",
+    id: "1206",
+    center: "12",
+  },
+  morfo: {
+    name: "Morfología",
+    id: "1207",
+    center: "12",
+  },
+  quimica: {
+    name: "Química",
+    id: "1208",
+    center: "12",
+  },
+  sisInfo: {
+    name: "Sistemas de Información",
+    id: "1209",
+    center: "12",
+  },
+  sisEle: {
+    name: "Sistemas Electrónicos",
+    id: "1210",
+    center: "12",
+  },
+  cCompu: {
+    name: "Ciencias de la Computación",
+    id: "1211",
+    center: "12",
+  },
+  enfe: {
+    name: "Enfermería",
+    id: "1302",
+    center: "13",
+  },
+  estoma: {
+    name: "Estomatología",
+    id: "1303",
+    center: "13",
+  },
+  med: {
+    name: "Medicina",
+    id: "1304",
+    center: "13",
+  },
+  opt: {
+    name: "Optometría",
+    id: "1305",
+    center: "13",
+  },
+  culFisica: {
+    name: "Cultura Física y Salud Pública",
+    id: "1309",
+    center: "13",
+  },
+
 };
 let curseInformation = [{
     center: centers["constr"],
@@ -1956,6 +2055,26 @@ let curseInformation = [{
     recordsGeneration: "Pendiente",
     recordsDelivered: "No",
   },
+  {
+    center: centers["basic"],
+    department: "Biología",
+    curseKey: "8647",
+    controlKey: "20264",
+    curseName: "Manejo seguro de sustancias químicas peligrosas",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    receptionDate: "15/07/2020",
+    participantsNumber: "11",
+    curseCredits: "1",
+    act: "No",
+    requestoToControl: "Pendiente",
+    certificatoToDSCD: "Pendiente",
+    certificateDevolution: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "",
+  },
 ];
 acreditationCurses();
 
@@ -1975,20 +2094,44 @@ function acreditationCurses() {
     }
     const row = document.createElement("tr");
     row.innerHTML = `
-        <td class="center">${curseInformation[i].center.name}</td>
-        <td class="department">${curseInformation[i].department}</td>
+        <td class="number">${i + 1}</td>
+        <td class="year">2020</td>
         <td class="curseName">${curseInformation[i].curseName}</td>
+        <td class="curseKey">${curseInformation[i].curseKey}</td>
+        <td class="controlKey">${curseInformation[i].controlKey}</td>
+        <td class="centerKey">${curseInformation[i].center.id}</td>
+        <td class="center">${curseInformation[i].center.name}</td>
+        <td class="departmentKey">${curseInformation[i].departmentKey}</td>
+        <td class="department">${curseInformation[i].department}</td>
+        <td class="receptionDate">${curseInformation[i].receptionDate}</td>
         <td class="request">${curseInformation[i].request}</td>
         <td class="cursePlan">${curseInformation[i].cursePlan}</td>
         <td class="participants">${curseInformation[i].participants}</td>
-        <td class="curseAutorization">${curseInformation[i].curseAutorization}</td>
+        <td class="participantsNumber">${
+          curseInformation[i].participantsNumber
+        }</td>
         <td class="curseCredits">${curseInformation[i].curseCredits}</td>
+        
+        <td class="curseAutorization">${
+          curseInformation[i].curseAutorization
+        }</td>
+        
         <td class="act">${curseInformation[i].act}</td>
-        <td class="requestoToControl">${curseInformation[i].requestoToControl}</td>
-        <td class="certificatoToDSCD">${curseInformation[i].certificatoToDSCD}</td>
-        <td class="certificateDevolution">${curseInformation[i].certificateDevolution}</td>
-        <td class="recordsGeneration">${curseInformation[i].recordsGeneration}</td>
-        <td class="recordsDelivered">${curseInformation[i].recordsDelivered}</td>
+        <td class="requestoToControl">${
+          curseInformation[i].requestoToControl
+        }</td>
+        <td class="certificatoToDSCD">${
+          curseInformation[i].certificatoToDSCD
+        }</td>
+        <td class="certificateDevolution">${
+          curseInformation[i].certificateDevolution
+        }</td>
+        <td class="recordsGeneration">${
+          curseInformation[i].recordsGeneration
+        }</td>
+        <td class="recordsDelivered">${
+          curseInformation[i].recordsDelivered
+        }</td>
     `;
     acreditationList.appendChild(row);
   }
