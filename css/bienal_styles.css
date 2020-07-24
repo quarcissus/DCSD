@@ -271,6 +271,10 @@ dropdown-menu .active {
     margin-top: -20px;
 }
 
+.information-section * {
+    text-decoration: none !important;
+}
+
 .adjust {
     display: flex;
     justify-content: center;
@@ -308,7 +312,8 @@ dropdown-menu .active {
 .icon-container-1,
 .icon-container-2,
 .icon-container-3,
-.icon-container-4 {
+.icon-container-4,
+.icon-container-5 {
     transition: all 0.7s ease-out;
 }
 
@@ -349,6 +354,15 @@ dropdown-menu .active {
     text-shadow: 1px 1px 10px rgb(228, 228, 228);
 }
 
+.icon-container-5:hover {
+    box-shadow: 1px 1px 10px rgb(192, 192, 192);
+    border: 7px solid #020744 !important;
+}
+
+.icon-container-5:hover .icon-5 {
+    text-shadow: 1px 1px 10px rgb(218, 218, 218);
+}
+
 .icon-container i {
     /* font-size: 70px; */
     font-size: 50px;
@@ -369,6 +383,10 @@ dropdown-menu .active {
 
 .icon-4 {
     color: #b0b2d2 !important;
+}
+
+.icon-5 {
+    color: #020744 !important;
 }
 
 .icons {
