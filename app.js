@@ -58,6 +58,10 @@ cursesSelect.addEventListener("change", function () {
   }
 });
 let centers = {
+  dgdp: {
+    id: 6,
+    name: "DGDP",
+  },
   agro: {
     id: 11,
     name: "C. Agropecuarias",
@@ -101,118 +105,683 @@ let centers = {
 };
 
 let departments = {
-  alimentos: {
+  4: {
+    name: "Desarrollo Curricular",
+    id: "4",
+    center: "6",
+  },
+  1105: {
     name: "C. de los Alimentos",
     id: "1105",
     center: "11",
   },
-  agronomicas: {
+  1107: {
     name: "C. Agronómicas",
     id: "1107",
     center: "11",
   },
-  veterinarias: {
+  1108: {
     name: "C. Veterinarias",
     id: "1108",
     center: "11",
   },
-  biologia: {
+  1201: {
     name: "Biología",
     id: "1201",
     center: "12",
   },
-  estadistica: {
+  1202: {
     name: "Estadística",
     id: "1202",
     center: "12",
   },
-  fisiologia: {
+  1203: {
     name: "Fisiología y Farmacología",
     id: "1203",
     center: "12",
   },
-  ingBio: {
+  1204: {
     name: "Ing. Bioquímica",
     id: "1204",
     center: "12",
   },
-  matFis: {
+  1205: {
     name: "Matemáticas y Física",
     id: "1205",
     center: "12",
   },
-  microbio: {
+  1206: {
     name: "Microbiología",
     id: "1206",
     center: "12",
   },
-  morfo: {
+  1207: {
     name: "Morfología",
     id: "1207",
     center: "12",
   },
-  quimica: {
+  1208: {
     name: "Química",
     id: "1208",
     center: "12",
   },
-  sisInfo: {
+  1209: {
     name: "Sistemas de Información",
     id: "1209",
     center: "12",
   },
-  sisEle: {
+  1210: {
     name: "Sistemas Electrónicos",
     id: "1210",
     center: "12",
   },
-  cCompu: {
+  1211: {
     name: "Ciencias de la Computación",
     id: "1211",
     center: "12",
   },
-  enfe: {
+  1302: {
     name: "Enfermería",
     id: "1302",
     center: "13",
   },
-  estoma: {
+  1303: {
     name: "Estomatología",
     id: "1303",
     center: "13",
   },
-  med: {
+  1304: {
     name: "Medicina",
     id: "1304",
     center: "13",
   },
-  opt: {
+  1305: {
     name: "Optometría",
     id: "1305",
     center: "13",
   },
-  culFisica: {
+  1309: {
     name: "Cultura Física y Salud Pública",
     id: "1309",
     center: "13",
   },
-
+  1310: {
+    name: "Nutrición",
+    id: "1310",
+    center: "13",
+  },
+  1311: {
+    name: "Terapia física",
+    id: "1311",
+    center: "13",
+  },
+  1403: {
+    name: "Diseño Industrial",
+    id: "1403",
+    center: "14",
+  },
+  1405: {
+    name: "Diseño de Moda",
+    id: "1405",
+    center: "14",
+  },
+  1406: {
+    name: "Diseño Gráfico",
+    id: "1406",
+    center: "14",
+  },
+  1407: {
+    name: "Urbanismo",
+    id: "1407",
+    center: "14",
+  },
+  1408: {
+    name: "Arquitectura",
+    id: "1408",
+    center: "14",
+  },
+  1409: {
+    name: "Diseño de Interiores",
+    id: "1409",
+    center: "14",
+  },
+  1410: {
+    name: "Ingeniería Civil",
+    id: "1410",
+    center: "14",
+  },
+  1501: {
+    name: "Administración",
+    id: "1501",
+    center: "15",
+  },
+  1502: {
+    name: "Contaduría",
+    id: "1502",
+    center: "15",
+  },
+  1503: {
+    name: "Economía",
+    id: "1503",
+    center: "15",
+  },
+  1504: {
+    name: "Finanzas",
+    id: "1504",
+    center: "15",
+  },
+  1505: {
+    name: "Mercadotecnia",
+    id: "1505",
+    center: "15",
+  },
+  1506: {
+    name: "Recursos Humanos",
+    id: "1506",
+    center: "15",
+  },
+  1507: {
+    name: "Turismo",
+    id: "1507",
+    center: "15",
+  },
+  1601: {
+    name: "Comunicación",
+    id: "1601",
+    center: "16",
+  },
+  1602: {
+    name: "Derecho",
+    id: "1602",
+    center: "16",
+  },
+  1603: {
+    name: "Educación",
+    id: "1603",
+    center: "16",
+  },
+  1604: {
+    name: "Filosofía",
+    id: "1604",
+    center: "16",
+  },
+  1605: {
+    name: "Historia",
+    id: "1605",
+    center: "16",
+  },
+  1606: {
+    name: "Idiomas",
+    id: "1606",
+    center: "16",
+  },
+  1608: {
+    name: "Psicología",
+    id: "1608",
+    center: "16",
+  },
+  1609: {
+    name: "Sociología y Antropología",
+    id: "1609",
+    center: "16",
+  },
+  1610: {
+    name: "Trabajo Social",
+    id: "1610",
+    center: "16",
+  },
+  1611: {
+    name: "Ciencias Políticas",
+    id: "1611",
+    center: "16",
+  },
+  1701: {
+    name: "Actividades Artisticas y Culturales",
+    id: "1701",
+    center: "17",
+  },
+  1702: {
+    name: "Actividades Deportivas",
+    id: "1702",
+    center: "17",
+  },
+  1704: {
+    name: "Ciencias Sociales,Economicas e Historia",
+    id: "1704",
+    center: "17",
+  },
+  1705: {
+    name: "Filosofía y letras",
+    id: "1705",
+    center: "17",
+  },
+  1707: {
+    name: "Idiomas",
+    id: "1707",
+    center: "17",
+  },
+  1708: {
+    name: "Matemáticas y Física",
+    id: "1708",
+    center: "17",
+  },
+  1709: {
+    name: "Ciencias QuÍmico-BiolÓgicas",
+    id: "1709",
+    center: "17",
+  },
+  1801: {
+    name: "Arte y Gestión Cultural",
+    id: "1801",
+    center: "18",
+  },
+  1802: {
+    name: "Letras",
+    id: "1802",
+    center: "18",
+  },
+  1803: {
+    name: "Música",
+    id: "1803",
+    center: "18",
+  },
+  1805: {
+    name: "Artes Escenicas y Audiovisuales",
+    id: "1805",
+    center: "18",
+  },
+  1902: {
+    name: "Ingeniería Automotriz",
+    id: "1902",
+    center: "19",
+  },
+  1903: {
+    name: "Ingeniería Robótica",
+    id: "1903",
+    center: "19",
+  },
+  1904: {
+    name: "Ingeniería Biomédica",
+    id: "1904",
+    center: "19",
+  },
+  2002: {
+    name: "Agronegocios",
+    id: "2002",
+    center: "20",
+  },
+  2003: {
+    name: "Comercio electrónico",
+    id: "2003",
+    center: "20",
+  },
 };
-let curseInformation = [{
-    center: centers["constr"],
-    department: "Diseño de interiores",
-    curseName: "Escalas del diseño interior",
+let curseInformation = [
+  {
+    center: centers["dgdp"],
+    department: 4,
+    curseName: "Metodología institucional para el diseño curricular",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
-    curseAutorization: "Si",
-    curseCredits: "3",
-    act: "Si",
+    curseAutorization: "16/01/2020",
+    curseCredits: "4",
     requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
+    fullAct: "Pendiente",
+    recordsGeneration: "28/01/2020",
+    recordsDelivered: "28/01/2020",
+
+    requestoToControlReception: "Pendiente",
+    curseKey: "",
+    controlKey: "",
+    receptionDate: "15/01/2020",
+    participantsNumber: "35",
+    number: 1,
+  },
+  {
+    center: centers["basic"],
+    department: 1201,
+    curseName: "Manejo seguro de sustancias químicas peligrosas",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    receptionDate: "15/07/2020",
+    participantsNumber: "11",
+    curseCredits: "1",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8647",
+    controlKey: "20264",
+    receptionDate: "15/07/2020",
+    participantsNumber: "11",
+    number: 2,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1202,
+    curseName: "Didáctica de la Estadística Básica",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "2",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8648",
+    controlKey: "20265",
+    receptionDate: "07/07/2020",
+    participantsNumber: "23",
+    number: 3,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1202,
+    curseName:
+      "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "Por analizar",
+    curseCredits: "1",
+    fullAct: "No",
+    requestoToControl: "Pendiente",
     recordsGeneration: "Pendiente",
     recordsDelivered: "No",
+
+    curseKey: "8650",
+    controlKey: "20269",
+    receptionDate: "07/07/2020",
+    participantsNumber: "23",
+    number: 4,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1202,
+    curseName: "Herramientas Digitales para la Educación Virtual",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "1",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8649",
+    controlKey: "20266",
+    receptionDate: "13/07/2020",
+    participantsNumber: "23",
+    number: 5,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1202,
+    curseName: "Software Estadístico R como Apoyo a la Docencia",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "2",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8651",
+    controlKey: "20270",
+    receptionDate: "07/07/2020",
+    participantsNumber: "23",
+    number: 6,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1203,
+    curseName: "Bioestadística Básica y Uso del programa Graph Pad Prism",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "1",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8652",
+    controlKey: "20271",
+    receptionDate: "13/07/2020",
+    participantsNumber: "10",
+    number: 7,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1203,
+    curseName: "Farmacología de los Antibióticos",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "2",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8653",
+    controlKey: "20272",
+    receptionDate: "13/07/2020",
+    participantsNumber: "10",
+    number: 8,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["constr"],
+    department: 1203,
+    curseName: "Herramientas tecnológicas en la docencia universitaria",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "4",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8654",
+    controlKey: "20273",
+    receptionDate: "13/07/2020",
+    participantsNumber: "10",
+    number: 9,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1204,
+    curseName:
+      "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "4",
+    act: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8655",
+    controlKey: "20274",
+    receptionDate: "07/07/2020",
+    participantsNumber: "16",
+    number: 10,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1204,
+    curseName:
+      "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "3",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8657",
+    controlKey: "20275",
+    receptionDate: "07/07/2020",
+    participantsNumber: "10",
+    number: 11,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1204,
+    curseName: "Uso de Hongos en Biorremediación",
+    request: "No",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "4",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8658",
+    controlKey: "20276",
+    receptionDate: "07/07/2020",
+    participantsNumber: "11",
+    number: 12,
+    requestoToControlReception: "Pendiente",
+  },
+
+  {
+    center: centers["basic"],
+    department: 1205,
+    curseName:
+      "Elaboración de reactivos para Álgebra y Álgebra lineal con Wiris",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "3",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8659",
+    controlKey: "20277",
+    receptionDate: "13/07/2020",
+    participantsNumber: "39",
+    number: 13,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1205,
+    curseName: "Elaboración de reactivos para Cálculo Diferencial con Wiris",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "3",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8660",
+    controlKey: "20278",
+    receptionDate: "13/07/2020",
+    participantsNumber: "46",
+    number: 14,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1205,
+    curseName: "Elaboración de reactivos para Cálculo Integral con Wiris",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "3",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8661",
+    controlKey: "20281",
+    receptionDate: "13/07/2020",
+    participantsNumber: "40",
+    number: 15,
+    requestoToControlReception: "Pendiente",
+  },
+  {
+    center: centers["basic"],
+    department: 1205,
+    curseName:
+      "Elaboración de reactivos para ecuaciones diferenciales con Wiris",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "23/07/2020",
+    curseCredits: "3",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8662",
+    controlKey: "20280",
+    receptionDate: "13/07/2020",
+    participantsNumber: "40",
+    number: 16,
+    requestoToControlReception: "Pendiente",
+  },
+  ,
+  {
+    center: centers["basic"],
+    department: 1205,
+    curseName: "Reactivos de opción múltiple con Wiris",
+    request: "Si",
+    cursePlan: "Si",
+    participants: "Si",
+    curseAutorization: "13/01/2020",
+    curseCredits: "4",
+    fullAct: "Pendiente",
+    requestoToControl: "Pendiente",
+    recordsGeneration: "Pendiente",
+    recordsDelivered: "Pendiente",
+
+    curseKey: "8478",
+    controlKey: "19829",
+    receptionDate: "13/12/2019",
+    participantsNumber: "11",
+    number: 17,
+    requestoToControlReception: "Pendiente",
   },
   {
     center: centers["constr"],
@@ -249,7 +818,8 @@ let curseInformation = [{
   {
     center: centers["ing"],
     department: "Ingenieria Robotica",
-    curseName: "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
+    curseName:
+      "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
     request: "Si",
     cursePlan: "No",
     participants: "Si",
@@ -297,7 +867,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: "Economía",
-    curseName: 'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
+    curseName:
+      'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -345,7 +916,8 @@ let curseInformation = [{
   {
     center: centers["media"],
     department: "Actividades Artísticas y Culturales",
-    curseName: "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
+    curseName:
+      "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -409,7 +981,8 @@ let curseInformation = [{
   {
     center: centers["hum"],
     department: "Comunicación",
-    curseName: "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
+    curseName:
+      "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -438,38 +1011,7 @@ let curseInformation = [{
     recordsGeneration: "Pendiente",
     recordsDelivered: "No",
   },
-  {
-    center: centers["basic"],
-    department: "Estadística",
-    curseName: "Herramientas Digitales para la Educación Virtual",
-    request: "No",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["basic"],
-    department: "Estadística",
-    curseName: "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
-    request: "Si",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
+
   {
     center: centers["basic"],
     department: "Microbiología",
@@ -486,42 +1028,12 @@ let curseInformation = [{
     recordsGeneration: "Pendiente",
     recordsDelivered: "No",
   },
-  {
-    center: centers["basic"],
-    department: "Fisiología y Farmacología",
-    curseName: "Bioestadística Básica y Uso del programa Graph Pad Prism",
-    request: "No",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["basic"],
-    department: "Fisiología y Farmacología",
-    curseName: "Herramientas Tecnológicas en la Docencia Universtiaria",
-    request: "No",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
+
   {
     center: centers["salud"],
     department: "Optometría",
-    curseName: "Diseño Instruccional para las Asignaturas de la Licenciatura de Optometria",
+    curseName:
+      "Diseño Instruccional para las Asignaturas de la Licenciatura de Optometria",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -566,38 +1078,7 @@ let curseInformation = [{
     recordsGeneration: "Pendiente",
     recordsDelivered: "No",
   },
-  {
-    center: centers["basic"],
-    department: "Estadística",
-    curseName: "Didáctica de la Estadística Básica",
-    request: "Si",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["basic"],
-    department: "Estadística",
-    curseName: "Software Estadístico R como Apoyo a la Docencia",
-    request: "Si",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
+
   {
     center: centers["basic"],
     department: "Sistemas de la Información",
@@ -665,7 +1146,8 @@ let curseInformation = [{
   {
     center: centers["ing"],
     department: "Ingeniería Robótica",
-    curseName: "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
+    curseName:
+      "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -678,70 +1160,7 @@ let curseInformation = [{
     recordsGeneration: "Pendiente",
     recordsDelivered: "No",
   },
-  {
-    center: centers["basic"],
-    department: "Fisiología y Farmacología",
-    curseName: "Farmacología de los Antibióticos",
-    request: "No",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["basic"],
-    department: "Ingeniería Bioquímica",
-    curseName: "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
-    request: "No",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["basic"],
-    department: "Ingeniería Bioquímica",
-    curseName: "Uso de Hongos en Biorremediación",
-    request: "No",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
-  {
-    center: centers["basic"],
-    department: "Ingeniería Bioquímica",
-    curseName: "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
-    request: "No",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "Por analizar",
-    curseCredits: "-",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "No",
-  },
+
   {
     center: centers["econom"],
     department: "Administración",
@@ -825,7 +1244,8 @@ let curseInformation = [{
   {
     center: centers["artes"],
     department: "Arte y Gestión Cultural",
-    curseName: "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
+    curseName:
+      "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -841,7 +1261,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño de Interiores",
-    curseName: "Metodolgía del Diseño de Interiores: Acotación y Definición de las Escalas de Intervención del Proyecto de Diseño Interior",
+    curseName:
+      "Metodolgía del Diseño de Interiores: Acotación y Definición de las Escalas de Intervención del Proyecto de Diseño Interior",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -857,7 +1278,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño de Interiores",
-    curseName: "Escalas del Espacio Interior. 1 Parte: Definición de Conceptos y Escala del Diseño Interior",
+    curseName:
+      "Escalas del Espacio Interior. 1 Parte: Definición de Conceptos y Escala del Diseño Interior",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -873,7 +1295,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño de Interiores",
-    curseName: "Escalas del Espacio Interior. 2 Parte: Definición de Conceptos y Escala del Diseño Interior",
+    curseName:
+      "Escalas del Espacio Interior. 2 Parte: Definición de Conceptos y Escala del Diseño Interior",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -1097,7 +1520,8 @@ let curseInformation = [{
   {
     center: centers["media"],
     department: "Actividades Deportivas",
-    curseName: "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
+    curseName:
+      "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1161,7 +1585,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño Gráfico",
-    curseName: "Experiencia e interfaz de usuario en aplicaciones web y móviles",
+    curseName:
+      "Experiencia e interfaz de usuario en aplicaciones web y móviles",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1209,7 +1634,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño Industrial",
-    curseName: "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
+    curseName:
+      "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
     request: "Si",
     cursePlan: "No",
     participants: "No",
@@ -1225,7 +1651,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño Urbano",
-    curseName: "Transposición de Significados en el Proceso Creactivo de Diseño",
+    curseName:
+      "Transposición de Significados en el Proceso Creactivo de Diseño",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1273,7 +1700,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Ingeniería Civil",
-    curseName: "Herramientas Didácticas Complementarias para Plataformas Virtuales",
+    curseName:
+      "Herramientas Didácticas Complementarias para Plataformas Virtuales",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1289,7 +1717,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Ingeniería Civil",
-    curseName: "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
+    curseName:
+      "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1353,7 +1782,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño de Moda",
-    curseName: "Taller de Bordado con Técnicas Artesanales Mexicanas Modulo III",
+    curseName:
+      "Taller de Bordado con Técnicas Artesanales Mexicanas Modulo III",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1369,7 +1799,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño Gráfico",
-    curseName: "Análisis de las Tendencias Actuales en el Diseño Gráfico Modulo II",
+    curseName:
+      "Análisis de las Tendencias Actuales en el Diseño Gráfico Modulo II",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1577,7 +2008,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: "Diseño Industrial",
-    curseName: "Taller de Herramientas en Base de Datos Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
+    curseName:
+      "Taller de Herramientas en Base de Datos Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
     request: "Si",
     cursePlan: "Si",
     participants: "No",
@@ -1625,7 +2057,8 @@ let curseInformation = [{
   {
     center: centers["artes"],
     department: "Artes y la Cultura",
-    curseName: "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
+    curseName:
+      "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -1657,7 +2090,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: "Microbiología",
-    curseName: "Introducción a la Investigación Experimental: Redacción Cientifica",
+    curseName:
+      "Introducción a la Investigación Experimental: Redacción Cientifica",
     request: "No",
     cursePlan: "Si",
     participants: "Si",
@@ -1737,7 +2171,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: "Economía",
-    curseName: "Uso de series uniformes desestacionalizadas para el análisis económico",
+    curseName:
+      "Uso de series uniformes desestacionalizadas para el análisis económico",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1818,7 +2253,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: "Mercadotecnia",
-    curseName: "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
+    curseName:
+      "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1850,7 +2286,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: "Recursos Humanos",
-    curseName: "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
+    curseName:
+      "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1898,7 +2335,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: "Recursos Humanos",
-    curseName: "Como Detectar Mentiras en el Proceso de Selección de Recursos Humanos",
+    curseName:
+      "Como Detectar Mentiras en el Proceso de Selección de Recursos Humanos",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2055,26 +2493,6 @@ let curseInformation = [{
     recordsGeneration: "Pendiente",
     recordsDelivered: "No",
   },
-  {
-    center: centers["basic"],
-    department: "Biología",
-    curseKey: "8647",
-    controlKey: "20264",
-    curseName: "Manejo seguro de sustancias químicas peligrosas",
-    request: "Si",
-    cursePlan: "Si",
-    participants: "Si",
-    curseAutorization: "23/07/2020",
-    receptionDate: "15/07/2020",
-    participantsNumber: "11",
-    curseCredits: "1",
-    act: "No",
-    requestoToControl: "Pendiente",
-    certificatoToDSCD: "Pendiente",
-    certificateDevolution: "Pendiente",
-    recordsGeneration: "Pendiente",
-    recordsDelivered: "",
-  },
 ];
 acreditationCurses();
 
@@ -2094,15 +2512,17 @@ function acreditationCurses() {
     }
     const row = document.createElement("tr");
     row.innerHTML = `
-        <td class="number">${i + 1}</td>
+        <td class="number">${curseInformation[i].number}</td>
         <td class="year">2020</td>
         <td class="curseName">${curseInformation[i].curseName}</td>
         <td class="curseKey">${curseInformation[i].curseKey}</td>
         <td class="controlKey">${curseInformation[i].controlKey}</td>
         <td class="centerKey">${curseInformation[i].center.id}</td>
         <td class="center">${curseInformation[i].center.name}</td>
-        <td class="departmentKey">${curseInformation[i].departmentKey}</td>
-        <td class="department">${curseInformation[i].department}</td>
+        <td class="departmentKey">${curseInformation[i].department}</td>
+        <td class="department">${
+          departments[curseInformation[i].department].name
+        }</td>
         <td class="receptionDate">${curseInformation[i].receptionDate}</td>
         <td class="request">${curseInformation[i].request}</td>
         <td class="cursePlan">${curseInformation[i].cursePlan}</td>
@@ -2111,21 +2531,13 @@ function acreditationCurses() {
           curseInformation[i].participantsNumber
         }</td>
         <td class="curseCredits">${curseInformation[i].curseCredits}</td>
-        
-        <td class="curseAutorization">${
-          curseInformation[i].curseAutorization
-        }</td>
-        
-        <td class="act">${curseInformation[i].act}</td>
         <td class="requestoToControl">${
           curseInformation[i].requestoToControl
         }</td>
         <td class="certificatoToDSCD">${
-          curseInformation[i].certificatoToDSCD
+          curseInformation[i].requestoToControlReception
         }</td>
-        <td class="certificateDevolution">${
-          curseInformation[i].certificateDevolution
-        }</td>
+        <td class="fullAct">${curseInformation[i].fullAct}</td>
         <td class="recordsGeneration">${
           curseInformation[i].recordsGeneration
         }</td>
