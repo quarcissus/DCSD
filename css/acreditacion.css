@@ -360,6 +360,28 @@ footer {
 	color: #ee1111;
 }
 
+.search-options {
+	margin-right: 2vw;
+}
+
+.form-check-adjust {
+	display: flex;
+}
+
+.clave-search {
+	width: 40%;
+	margin: auto;
+}
+
+#key-form {
+	width: 40%;
+}
+
+
+.not-shown {
+	display: none;
+}
+
 @media only screen and (max-width: 1600px) {
 	.footer_logo {
 		width: 75%;

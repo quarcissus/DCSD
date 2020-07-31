@@ -1,5 +1,10 @@
 const acreditationList = document.querySelector("#acreditation-table tbody");
 const cursesSelect = document.getElementById("cursesSelect");
+const keySelecter = document.getElementById("inlineCheckbox1")
+const curseSelecter = document.getElementById("inlineCheckbox2")
+const keySection = document.getElementById("keyContainer")
+const curseSection = document.getElementById("curseContainer")
+const key = document.getElementById("clave")
 let curseselected = "";
 cursesSelect.addEventListener("change", function () {
   switch (cursesSelect.value) {
@@ -57,6 +62,30 @@ cursesSelect.addEventListener("change", function () {
       cleanCursesTable();
   }
 });
+
+keySelecter.addEventListener("change", function () {
+  if (this.checked) {
+    keySection.classList.remove("not-shown")
+  } else {
+    keySection.classList.add("not-shown")
+  }
+})
+
+key.addEventListener("input", function (e) {
+  console.log(key.value)
+
+  cleanCursesTable()
+
+
+})
+
+curseSelecter.addEventListener("change", function () {
+  if (this.checked) {
+    curseSection.classList.remove("not-shown")
+  } else {
+    curseSection.classList.add("not-shown")
+  }
+})
 let centers = {
   dgdp: {
     id: 6,
@@ -416,8 +445,7 @@ let departments = {
     center: "20",
   },
 };
-let curseInformation = [
-  {
+let curseInformation = [{
     center: centers["dgdp"],
     department: 4,
     curseName: "Metodología institucional para el diseño curricular",
@@ -485,8 +513,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: 1202,
-    curseName:
-      "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
+    curseName: "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -612,8 +639,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: 1204,
-    curseName:
-      "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
+    curseName: "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -634,8 +660,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: 1204,
-    curseName:
-      "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
+    curseName: "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -678,8 +703,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: 1205,
-    curseName:
-      "Elaboración de reactivos para Álgebra y Álgebra lineal con Wiris",
+    curseName: "Elaboración de reactivos para Álgebra y Álgebra lineal con Wiris",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -742,8 +766,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: 1205,
-    curseName:
-      "Elaboración de reactivos para ecuaciones diferenciales con Wiris",
+    curseName: "Elaboración de reactivos para ecuaciones diferenciales con Wiris",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -760,8 +783,7 @@ let curseInformation = [
     participantsNumber: "40",
     number: 16,
     requestoToControlReception: "Pendiente",
-  },
-  ,
+  }, ,
   {
     center: centers["basic"],
     department: 1205,
@@ -807,8 +829,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: 1206,
-    curseName:
-      "Actualización en materia de normatividad aplicable a laboratorios clínicos y farmacias",
+    curseName: "Actualización en materia de normatividad aplicable a laboratorios clínicos y farmacias",
     request: "Si",
     cursePlan: "Si",
     participants: "8",
@@ -851,8 +872,7 @@ let curseInformation = [
   {
     center: centers["basic"],
     department: 1206,
-    curseName:
-      "Introducción a la Investigación Experimental: Redacción Cientifica",
+    curseName: "Introducción a la Investigación Experimental: Redacción Cientifica",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1354,8 +1374,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: 1403,
-    curseName:
-      "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
+    curseName: "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
     request: "Si",
     cursePlan: "No",
     participants: "No",
@@ -1442,8 +1461,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: 1406,
-    curseName:
-      "Experiencia e interfaz de usuario en aplicaciones web y móviles",
+    curseName: "Experiencia e interfaz de usuario en aplicaciones web y móviles",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1553,8 +1571,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: 1407,
-    curseName:
-      "Transposición de Significados en el Proceso Creactivo de Diseño",
+    curseName: "Transposición de Significados en el Proceso Creactivo de Diseño",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1729,8 +1746,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: 1410,
-    curseName:
-      "Herramientas Didácticas Complementarias para Plataformas Virtuales",
+    curseName: "Herramientas Didácticas Complementarias para Plataformas Virtuales",
     request: "Si",
     cursePlan: "No",
     participants: "Si",
@@ -1774,8 +1790,7 @@ let curseInformation = [
   {
     center: centers["constr"],
     department: 1410,
-    curseName:
-      "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
+    curseName: "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1907,8 +1922,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: 1503,
-    curseName:
-      'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
+    curseName: 'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2106,8 +2120,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: 1505,
-    curseName:
-      "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
+    curseName: "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2151,8 +2164,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: 1506,
-    curseName:
-      "Como detectar mentiras en el proceso de selección de recursos humanos",
+    curseName: "Como detectar mentiras en el proceso de selección de recursos humanos",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2196,8 +2208,7 @@ let curseInformation = [
   {
     center: centers["econom"],
     department: 1506,
-    curseName:
-      "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
+    curseName: "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2351,8 +2362,7 @@ let curseInformation = [
   {
     center: centers["hum"],
     department: 1601,
-    curseName:
-      "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
+    curseName: "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2396,8 +2406,7 @@ let curseInformation = [
   {
     center: centers["media"],
     department: 1701,
-    curseName:
-      "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
+    curseName: "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2419,8 +2428,7 @@ let curseInformation = [
   {
     center: centers["media"],
     department: 1702,
-    curseName:
-      "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
+    curseName: "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2530,8 +2538,7 @@ let curseInformation = [
   {
     center: centers["artes"],
     department: 1801,
-    curseName:
-      "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
+    curseName: "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2662,8 +2669,7 @@ let curseInformation = [
   {
     center: centers["artes"],
     department: 1802,
-    curseName:
-      "Estrategias de escritura para evitar el plagio: la paráfrasis y la citación.",
+    curseName: "Estrategias de escritura para evitar el plagio: la paráfrasis y la citación.",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2817,8 +2823,7 @@ let curseInformation = [
   {
     center: centers["artes"],
     department: 1803,
-    curseName:
-      "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
+    curseName: "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2928,8 +2933,7 @@ let curseInformation = [
   {
     center: centers["ing"],
     department: 1903,
-    curseName:
-      "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
+    curseName: "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2973,8 +2977,7 @@ let curseInformation = [
   {
     center: centers["ing"],
     department: 1903,
-    curseName:
-      "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
+    curseName: "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",

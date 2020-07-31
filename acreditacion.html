@@ -75,27 +75,53 @@
     <section class="acred-container">
 
         <div class="title">ACREDITACIÓN DE CURSOS DE ACTUALIZACIÓN DISCIPLINAR</div>
-        <p class="paragraph">
-            Haga click en el nombre del curso a visualizar y utilice las
-            teclas "<i class="fas fa-arrow-left"></i>" &nbsp;"<i class="fas fa-arrow-right"></i>" del teclado para
-            desplazarse hacia la izquierda y derecha
-        </p>
-        <p class="paragraph text-center">Busqueda por centros</p>
-        <select id="cursesSelect" class="form-control form-centers">
-            <option value="">Visualizar todos los centros</option>
-            <option value=110000>C. de C. Agropecuarias</option>
-            <option value=120000>C. de C. Básicas</option>
-            <option value=130000>C. de C. de la Salud</option>
-            <option value=140000>C. de C. del Diseño y la Construcción</option>
-            <option value=150000>C. de C. Económicas y Administrativas</option>
-            <option value=160000>C. de C. Sociales y Humanitarias</option>
-            <option value=170000>C. de Educación Media</option>
-            <option value=180000>C. de las Artes y la Cultura</option>
-            <option value=190000>C. de C. de la Ingeniería</option>
-            <option value=200000>C. de C. Empresariales</option>
-        </select>
+
+        <div class="text-center">
+            <p class="paragraph form-check-inline search-options ">Realizar busqueda por :</p>
+            <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Clave</label>
+            </div>
+            <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Centro</label>
+            </div>
+
+
+        </div>
+
+        <div id="keyContainer" class="form-group clave-search text-center not-shown">
+            <p class="paragraph text-center">Busqueda por clave</p>
+            <input type="text" class="form-control" id="clave" placeholder="Clave que desea buscar">
+        </div>
+
+        <div id="curseContainer" class="not-shown">
+            <p class="paragraph text-center ">Busqueda por centros</p>
+            <select id="cursesSelect" class="form-control form-centers">
+                <option value="">Visualizar todos los centros</option>
+                <option value=110000>C. de C. Agropecuarias</option>
+                <option value=120000>C. de C. Básicas</option>
+                <option value=130000>C. de C. de la Salud</option>
+                <option value=140000>C. de C. del Diseño y la Construcción</option>
+                <option value=150000>C. de C. Económicas y Administrativas</option>
+                <option value=160000>C. de C. Sociales y Humanitarias</option>
+                <option value=170000>C. de Educación Media</option>
+                <option value=180000>C. de las Artes y la Cultura</option>
+                <option value=190000>C. de C. de la Ingeniería</option>
+                <option value=200000>C. de C. Empresariales</option>
+            </select>
+        </div>
+
+
+
         <section class="table-wrap">
             <p class="paragraph"></p>
+
+            <p class="paragraph">
+                Haga click en el nombre del curso a visualizar y utilice las
+                teclas "<i class="fas fa-arrow-left"></i>" &nbsp;"<i class="fas fa-arrow-right"></i>" del teclado para
+                desplazarse hacia la izquierda y derecha
+            </p>
             <table id="acreditation-table" class="table table-hover table-bordered ">
                 <thead class="thead-dark acreditation-head">
                     <tr>
