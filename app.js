@@ -1,91 +1,109 @@
 const acreditationList = document.querySelector("#acreditation-table tbody");
 const cursesSelect = document.getElementById("cursesSelect");
-const keySelecter = document.getElementById("inlineCheckbox1")
-const curseSelecter = document.getElementById("inlineCheckbox2")
-const keySection = document.getElementById("keyContainer")
-const curseSection = document.getElementById("curseContainer")
-const key = document.getElementById("clave")
+const keySelecter = document.getElementById("inlineCheckbox1");
+const curseSelecter = document.getElementById("inlineCheckbox2");
+const keySection = document.getElementById("keyContainer");
+const curseSection = document.getElementById("curseContainer");
+const key = document.getElementById("clave");
 let curseselected = "";
 cursesSelect.addEventListener("change", function () {
   switch (cursesSelect.value) {
     case "110000":
       curseselected = "agro";
       cleanCursesTable();
+      acreditationCurses();
       break;
     case "120000":
       curseselected = "basic";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "130000":
       curseselected = "salud";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "140000":
       curseselected = "constr";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "150000":
       curseselected = "econom";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "160000":
       curseselected = "hum";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "170000":
       curseselected = "media";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "180000":
       curseselected = "artes";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "190000":
       curseselected = "ing";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     case "200000":
       curseselected = "empre";
       cleanCursesTable();
+      acreditationCurses();
 
       break;
     default:
       curseselected = "";
       cleanCursesTable();
+      acreditationCurses();
   }
 });
 
 keySelecter.addEventListener("change", function () {
   if (this.checked) {
-    keySection.classList.remove("not-shown")
+    document.getElementById("inlineCheckbox2").disabled = true;
+    keySection.classList.remove("not-shown");
   } else {
-    keySection.classList.add("not-shown")
+    keySection.classList.add("not-shown");
+    document.getElementById("inlineCheckbox2").disabled = false;
+    key.value = "";
+    cleanCursesTable();
+    acreditationCurses();
   }
-})
+});
 
 key.addEventListener("input", function (e) {
-  console.log(key.value)
-
-  cleanCursesTable()
-
-
-})
+  filterKey(key.value);
+});
 
 curseSelecter.addEventListener("change", function () {
   if (this.checked) {
-    curseSection.classList.remove("not-shown")
+    document.getElementById("inlineCheckbox1").disabled = true;
+    curseSection.classList.remove("not-shown");
   } else {
-    curseSection.classList.add("not-shown")
+    curseSection.classList.add("not-shown");
+    document.getElementById("inlineCheckbox1").disabled = false;
+    curseselected = "";
+    cleanCursesTable();
+    acreditationCurses();
+
   }
-})
+});
 let centers = {
   dgdp: {
     id: 6,
@@ -460,8 +478,8 @@ let curseInformation = [{
     recordsDelivered: "28/01/2020",
 
     requestoToControlReception: "Pendiente",
-    curseKey: "",
-    controlKey: "",
+    curseKey: " ",
+    controlKey: " ",
     receptionDate: "15/01/2020",
     participantsNumber: "35",
     number: 1,
@@ -844,7 +862,7 @@ let curseInformation = [{
     controlKey: "19830",
     receptionDate: "13/12/2019",
     participantsNumber: "20",
-    number: 18,
+    number: 19,
     requestoToControlReception: "2/14/2020",
   },
 
@@ -876,7 +894,7 @@ let curseInformation = [{
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
-    curseAutorization: "7/23/2020",
+    curseAutorization: "Cancelado",
     curseCredits: "6",
     fullAct: "No",
     requestoToControl: "Pendiente",
@@ -1421,7 +1439,7 @@ let curseInformation = [{
     request: "Si",
     cursePlan: "Si",
     participants: "No",
-    curseAutorization: "24/7/2020",
+    curseAutorization: "Cancelado",
     curseCredits: "3",
     fullAct: "Pendiente",
     requestoToControl: "Pendiente",
@@ -3065,7 +3083,7 @@ let curseInformation = [{
   {
     center: centers["empre"],
     department: 2003,
-    curseName: "Análisis de datos con MS Excel en Comercio electrónico",
+    curseName: "Manejo de herramientas tecnológicas en el aula y en clases en línea en Comercio Electrónico",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -3092,8 +3110,84 @@ function cursesOrdering() {
   });
 }
 
-function acreditationCurses() {
+
+
+function acreditationCurses(filtered = [], flag) {
+  if (!flag) {
+    flag = false
+  }
+  cleanCursesTable();
+  if (filtered.length !== 0 && !flag) {
+    cleanCursesTable();
+
+    for (let i = 0; i < filtered.length; i++) {
+
+      if (typeof curseInformation[i] == 'undefined') {
+        continue
+      }
+
+      filtered = filtered.sort(function (a, b) {
+        if (a.number > b.number) {
+          return 1
+        }
+        if (a.number < b.number) {
+          return -1
+        }
+
+        return 0;
+      })
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td class="number">${filtered[i].number}</td>
+        <td class="year">2020</td>
+        <td class="curseName">${filtered[i].curseName}</td>
+        <td class="curseKey">${filtered[i].curseKey}</td>
+        <td class="controlKey">${filtered[i].controlKey}</td>
+        <td class="centerKey">${filtered[i].center.id}</td>
+        <td class="center">${filtered[i].center.name}</td>
+        <td class="departmentKey">${filtered[i].department}</td>
+        <td class="department">${departments[filtered[i].department].name}</td>
+        <td class="receptionDate">${filtered[i].receptionDate}</td>
+        <td class="request">${filtered[i].request}</td>
+        <td class="cursePlan">${filtered[i].cursePlan}</td>
+        <td class="participants">${filtered[i].participants}</td>
+        <td class="participantsNumber">${filtered[i].participantsNumber}</td>
+        <td class="curseCredits">${filtered[i].curseCredits}</td>
+        <td class="autorization">${filtered[i].curseAutorization}</td>
+        <td class="requestoToControl">${filtered[i].requestoToControl}</td>
+        <td class="certificatoToDSCD">${
+          filtered[i].requestoToControlReception
+        }</td>
+        <td class="fullAct">${filtered[i].fullAct}</td>
+        <td class="recordsGeneration">${filtered[i].recordsGeneration}</td>
+        <td class="recordsDelivered">${filtered[i].recordsDelivered}</td>
+    `;
+      acreditationList.appendChild(row);
+    }
+    return;
+  } else {
+    if (flag) {
+      return;
+    }
+
+  }
+
   for (let i = 0; i < cursesOrdering().length; i++) {
+    if (typeof curseInformation[i] == 'undefined') {
+      continue
+    }
+    curseInformation = curseInformation.sort(function (a, b) {
+      if (a.number > b.number) {
+        return 1
+      }
+      if (a.number < b.number) {
+        return -1
+      }
+
+      return 0;
+    })
+
+
     if (
       curseselected !== "" &&
       curseInformation[i].center.name !== centers[curseselected].name
@@ -3121,6 +3215,8 @@ function acreditationCurses() {
           curseInformation[i].participantsNumber
         }</td>
         <td class="curseCredits">${curseInformation[i].curseCredits}</td>
+        <td class="autorization">${curseInformation[i].curseAutorization}</td>
+
         <td class="requestoToControl">${
           curseInformation[i].requestoToControl
         }</td>
@@ -3139,9 +3235,39 @@ function acreditationCurses() {
   }
 }
 
+function filterKey(key) {
+  let found = [];
+  let not_res = document.querySelector(".not-res")
+  not_res.classList.add("not-shown")
+  if (key.length >= 1) {
+    for (let i = 0; i < curseInformation.length; i++) {
+      if (typeof curseInformation[i] == 'undefined') {
+        continue
+      }
+      if (curseInformation[i].curseKey.includes(key)) {
+        found.push(curseInformation[i]);
+
+      }
+    }
+    if (found.length === 0) {
+      let not_res = document.querySelector(".not-res")
+      not_res.classList.remove("not-shown")
+      acreditationCurses(found, true);
+
+
+    } else {
+      acreditationCurses(found, false);
+    }
+
+  } else {
+    if (key === "") {
+      acreditationCurses();
+    }
+  }
+}
+
 function cleanCursesTable() {
   while (acreditationList.firstChild) {
     acreditationList.removeChild(acreditationList.firstChild);
   }
-  acreditationCurses();
 }
