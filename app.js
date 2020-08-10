@@ -101,8 +101,6 @@ curseSelecter.addEventListener("change", function () {
     curseselected = "";
     cleanCursesTable();
     acreditationCurses();
-    s
-
   }
 });
 let centers = {
@@ -469,7 +467,8 @@ let departments = {
     center: "20",
   },
 };
-let curseInformation = [{
+let curseInformation = [
+  {
     center: centers["dgdp"],
     department: 4,
     curseName: "Metodología institucional para el diseño curricular",
@@ -537,7 +536,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: 1202,
-    curseName: "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
+    curseName:
+      "Herramientas Digitales en la Enseñanza de Probabilidad y Estadística",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -663,7 +663,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: 1204,
-    curseName: "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
+    curseName:
+      "Herramientas para Aula Virtual y MS Teams en Ciencias Básicas y Ingenierías ",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -684,7 +685,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: 1204,
-    curseName: "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
+    curseName:
+      "Proceso de Producción, Extracción, y Purificación de Aceite de la Cannabis",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -727,7 +729,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: 1205,
-    curseName: "Elaboración de reactivos para Álgebra y Álgebra lineal con Wiris",
+    curseName:
+      "Elaboración de reactivos para Álgebra y Álgebra lineal con Wiris",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -790,7 +793,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: 1205,
-    curseName: "Elaboración de reactivos para ecuaciones diferenciales con Wiris",
+    curseName:
+      "Elaboración de reactivos para ecuaciones diferenciales con Wiris",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -807,7 +811,8 @@ let curseInformation = [{
     participantsNumber: "40",
     number: 16,
     requestoToControlReception: "Pendiente",
-  }, ,
+  },
+  ,
   {
     center: centers["basic"],
     department: 1205,
@@ -853,7 +858,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: 1206,
-    curseName: "Actualización en materia de normatividad aplicable a laboratorios clínicos y farmacias",
+    curseName:
+      "Actualización en materia de normatividad aplicable a laboratorios clínicos y farmacias",
     request: "Si",
     cursePlan: "Si",
     participants: "8",
@@ -896,7 +902,8 @@ let curseInformation = [{
   {
     center: centers["basic"],
     department: 1206,
-    curseName: "Introducción a la Investigación Experimental: Redacción Cientifica",
+    curseName:
+      "Introducción a la Investigación Experimental: Redacción Cientifica",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1398,7 +1405,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: 1403,
-    curseName: "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
+    curseName:
+      "Taller de Herramientas Digitales Apoyando la Docencia en la Carrera de Diseño Industrial",
     request: "Si",
     cursePlan: "No",
     participants: "No",
@@ -1485,7 +1493,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: 1406,
-    curseName: "Experiencia e interfaz de usuario en aplicaciones web y móviles",
+    curseName:
+      "Experiencia e interfaz de usuario en aplicaciones web y móviles",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1595,7 +1604,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: 1407,
-    curseName: "Transposición de Significados en el Proceso Creactivo de Diseño",
+    curseName:
+      "Transposición de Significados en el Proceso Creactivo de Diseño",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1770,7 +1780,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: 1410,
-    curseName: "Herramientas Didácticas Complementarias para Plataformas Virtuales",
+    curseName:
+      "Herramientas Didácticas Complementarias para Plataformas Virtuales",
     request: "Si",
     cursePlan: "No",
     participants: "Si",
@@ -1814,7 +1825,8 @@ let curseInformation = [{
   {
     center: centers["constr"],
     department: 1410,
-    curseName: "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
+    curseName:
+      "Recursos en Línea y Software Open Source de Aplicación a la Docencia de la Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -1946,7 +1958,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: 1503,
-    curseName: 'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
+    curseName:
+      'Herramientas Educativas Digitales "Apps educativas para el contexto digital"',
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2144,7 +2157,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: 1505,
-    curseName: "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
+    curseName:
+      "Tropicalización de los Hábitos de Consumo, Sectores de Recuperación en la Nueva Normalidad",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2188,7 +2202,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: 1506,
-    curseName: "Como detectar mentiras en el proceso de selección de recursos humanos",
+    curseName:
+      "Como detectar mentiras en el proceso de selección de recursos humanos",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2232,7 +2247,8 @@ let curseInformation = [{
   {
     center: centers["econom"],
     department: 1506,
-    curseName: "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
+    curseName:
+      "LMA: Lean Maturity Assessment como Instrumento de productividad de Clase Mundial",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2386,7 +2402,8 @@ let curseInformation = [{
   {
     center: centers["hum"],
     department: 1601,
-    curseName: "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
+    curseName:
+      "Uso de WordPress para Creación de Páginas Web y Blogs Para Materias Prácticas de Comunicación",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2430,7 +2447,8 @@ let curseInformation = [{
   {
     center: centers["media"],
     department: 1701,
-    curseName: "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
+    curseName:
+      "Uso de Aula Virtual de la Plataforma Educativa Institucional Ámbito Académico en el Rol de Profesor",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2452,7 +2470,8 @@ let curseInformation = [{
   {
     center: centers["media"],
     department: 1702,
-    curseName: "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
+    curseName:
+      "Taller de Diseño de Experiencias de Aprendizaje y Elavoración de Material Propio",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2562,7 +2581,8 @@ let curseInformation = [{
   {
     center: centers["artes"],
     department: 1801,
-    curseName: "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
+    curseName:
+      "Arte y Misticismo de las Culturas Infígenas Rarámuri y Wixárika",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2693,7 +2713,8 @@ let curseInformation = [{
   {
     center: centers["artes"],
     department: 1802,
-    curseName: "Estrategias de escritura para evitar el plagio: la paráfrasis y la citación.",
+    curseName:
+      "Estrategias de escritura para evitar el plagio: la paráfrasis y la citación.",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2847,7 +2868,8 @@ let curseInformation = [{
   {
     center: centers["artes"],
     department: 1803,
-    curseName: "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
+    curseName:
+      "Taller de Diseño, Redacción y Evalaución de Proyectos Culturales",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -2957,7 +2979,8 @@ let curseInformation = [{
   {
     center: centers["ing"],
     department: 1903,
-    curseName: "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
+    curseName:
+      "Diseño de Técnicas de Control para Sistemas Neumáticos, Hidráulicos y Eléctricos",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -3001,7 +3024,8 @@ let curseInformation = [{
   {
     center: centers["ing"],
     department: 1903,
-    curseName: "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
+    curseName:
+      "Metodologías de Evaluación en los Aprendizajes Orientados a Proyectos de Ingeniería",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -3089,7 +3113,8 @@ let curseInformation = [{
   {
     center: centers["empre"],
     department: 2003,
-    curseName: "Manejo de herramientas tecnológicas en el aula y en clases en línea en Comercio Electrónico",
+    curseName:
+      "Manejo de herramientas tecnológicas en el aula y en clases en línea en Comercio Electrónico",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -3133,7 +3158,8 @@ let curseInformation = [{
   {
     center: centers["dgdp"],
     department: 5,
-    curseName: "Pasos básicos para la conformación de evidencias de aprendizaje a través de diferentes estrategias y tecnologías",
+    curseName:
+      "Pasos básicos para la conformación de evidencias de aprendizaje a través de diferentes estrategias y tecnologías",
     request: "Si",
     cursePlan: "Si",
     participants: "Si",
@@ -3175,162 +3201,106 @@ let curseInformation = [{
   },
 ];
 acreditationCurses();
-
-function cursesOrdering() {
-  return curseInformation.sort(function (a, b) {
-    return a.center.id - b.center.id;
-  });
-}
-
-
-
 function acreditationCurses(filtered = [], flag) {
   if (!flag) {
-    flag = false
+    flag = false;
   }
-  cleanCursesTable();
   if (filtered.length !== 0 && !flag) {
-    cleanCursesTable();
-
-    for (let i = 0; i < filtered.length; i++) {
-
-      if (typeof curseInformation[i] == 'undefined') {
-        continue
-      }
-
-      filtered = filtered.sort(function (a, b) {
-        if (a.number > b.number) {
-          return 1
-        }
-        if (a.number < b.number) {
-          return -1
-        }
-
-        return 0;
-      })
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td class="number">${filtered[i].number}</td>
-        <td class="year">2020</td>
-        <td class="curseName">${filtered[i].curseName}</td>
-        <td class="curseKey">${filtered[i].curseKey}</td>
-        <td class="controlKey">${filtered[i].controlKey}</td>
-        <td class="centerKey">${filtered[i].center.id}</td>
-        <td class="center">${filtered[i].center.name}</td>
-        <td class="departmentKey">${filtered[i].department}</td>
-        <td class="department">${departments[filtered[i].department].name}</td>
-        <td class="receptionDate">${filtered[i].receptionDate}</td>
-        <td class="request">${filtered[i].request}</td>
-        <td class="cursePlan">${filtered[i].cursePlan}</td>
-        <td class="participants">${filtered[i].participants}</td>
-        <td class="participantsNumber">${filtered[i].participantsNumber}</td>
-        <td class="curseCredits">${filtered[i].curseCredits}</td>
-        <td class="autorization">${filtered[i].curseAutorization}</td>
-        <td class="requestoToControl">${filtered[i].requestoToControl}</td>
-        <td class="certificatoToDSCD">${
-          filtered[i].requestoToControlReception
-        }</td>
-        <td class="fullAct">${filtered[i].fullAct}</td>
-        <td class="recordsGeneration">${filtered[i].recordsGeneration}</td>
-        <td class="recordsDelivered">${filtered[i].recordsDelivered}</td>
-    `;
-      acreditationList.appendChild(row);
-    }
+    createTable(filtered, "filtered");
     return;
   } else {
     if (flag) {
       return;
     }
-
   }
+  createTable(curseInformation, "center");
+}
 
-  for (let i = 0; i < cursesOrdering().length; i++) {
-    if (typeof curseInformation[i] == 'undefined') {
-      continue
+function sortCourses(courses) {
+  courses = courses.sort(function (a, b) {
+    if (a.number > b.number) {
+      return 1;
     }
-    curseInformation = curseInformation.sort(function (a, b) {
-      if (a.number > b.number) {
-        return 1
-      }
-      if (a.number < b.number) {
-        return -1
-      }
+    if (a.number < b.number) {
+      return -1;
+    }
 
-      return 0;
-    })
+    return 0;
+  });
+}
 
-
+function createTable(courses, type) {
+  cleanCursesTable();
+  for (let i = 0; i < courses.length; i++) {
+    if (typeof courses[i] == "undefined") {
+      continue;
+    }
+    sortCourses(courses);
     if (
       curseselected !== "" &&
-      curseInformation[i].center.name !== centers[curseselected].name
+      courses[i].center.name !== centers[curseselected].name &&
+      type === "center"
     ) {
       continue;
     }
-    const row = document.createElement("tr");
-    row.innerHTML = `
-        <td class="number">${curseInformation[i].number}</td>
-        <td class="year">2020</td>
-        <td class="curseName">${curseInformation[i].curseName}</td>
-        <td class="curseKey">${curseInformation[i].curseKey}</td>
-        <td class="controlKey">${curseInformation[i].controlKey}</td>
-        <td class="centerKey">${curseInformation[i].center.id}</td>
-        <td class="center">${curseInformation[i].center.name}</td>
-        <td class="departmentKey">${curseInformation[i].department}</td>
-        <td class="department">${
-          departments[curseInformation[i].department].name
-        }</td>
-        <td class="receptionDate">${curseInformation[i].receptionDate}</td>
-        <td class="request">${curseInformation[i].request}</td>
-        <td class="cursePlan">${curseInformation[i].cursePlan}</td>
-        <td class="participants">${curseInformation[i].participants}</td>
-        <td class="participantsNumber">${
-          curseInformation[i].participantsNumber
-        }</td>
-        <td class="curseCredits">${curseInformation[i].curseCredits}</td>
-        <td class="autorization">${curseInformation[i].curseAutorization}</td>
-
-        <td class="requestoToControl">${
-          curseInformation[i].requestoToControl
-        }</td>
-        <td class="certificatoToDSCD">${
-          curseInformation[i].requestoToControlReception
-        }</td>
-        <td class="fullAct">${curseInformation[i].fullAct}</td>
-        <td class="recordsGeneration">${
-          curseInformation[i].recordsGeneration
-        }</td>
-        <td class="recordsDelivered">${
-          curseInformation[i].recordsDelivered
-        }</td>
-    `;
-    acreditationList.appendChild(row);
+    createRow(courses[i]);
   }
+}
+function createRow(curseInformation) {
+  const row = document.createElement("tr");
+  row.innerHTML = `
+        <td class="number">${curseInformation.number}</td>
+        <td class="year">2020</td>
+        <td class="curseName">${curseInformation.curseName}</td>
+        <td class="curseKey">${curseInformation.curseKey}</td>
+        <td class="controlKey">${curseInformation.controlKey}</td>
+        <td class="centerKey">${curseInformation.center.id}</td>
+        <td class="center">${curseInformation.center.name}</td>
+        <td class="departmentKey">${curseInformation.department}</td>
+        <td class="department">${
+          departments[curseInformation.department].name
+        }</td>
+        <td class="receptionDate">${curseInformation.receptionDate}</td>
+        <td class="request">${curseInformation.request}</td>
+        <td class="cursePlan">${curseInformation.cursePlan}</td>
+        <td class="participants">${curseInformation.participants}</td>
+        <td class="participantsNumber">${
+          curseInformation.participantsNumber
+        }</td>
+        <td class="curseCredits">${curseInformation.curseCredits}</td>
+        <td class="autorization">${curseInformation.curseAutorization}</td>
+
+        <td class="requestoToControl">${curseInformation.requestoToControl}</td>
+        <td class="certificatoToDSCD">${
+          curseInformation.requestoToControlReception
+        }</td>
+        <td class="fullAct">${curseInformation.fullAct}</td>
+        <td class="recordsGeneration">${curseInformation.recordsGeneration}</td>
+        <td class="recordsDelivered">${curseInformation.recordsDelivered}</td>
+    `;
+  acreditationList.appendChild(row);
 }
 
 function filterKey(key) {
   let found = [];
-  let not_res = document.querySelector(".not-res")
-  not_res.classList.add("not-shown")
+  let not_res = document.querySelector(".not-res");
+  not_res.classList.add("not-shown");
   if (key.length >= 1) {
     for (let i = 0; i < curseInformation.length; i++) {
-      if (typeof curseInformation[i] == 'undefined') {
-        continue
+      if (typeof curseInformation[i] == "undefined") {
+        continue;
       }
       if (curseInformation[i].curseKey.includes(key)) {
         found.push(curseInformation[i]);
-
       }
     }
     if (found.length === 0) {
-      let not_res = document.querySelector(".not-res")
-      not_res.classList.remove("not-shown")
+      let not_res = document.querySelector(".not-res");
+      not_res.classList.remove("not-shown");
       acreditationCurses(found, true);
-
-
     } else {
       acreditationCurses(found, false);
     }
-
   } else {
     if (key === "") {
       acreditationCurses();
