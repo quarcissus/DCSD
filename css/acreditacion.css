@@ -410,6 +410,10 @@ input[type=checkbox] {
 	font-size: 3vw;
 }
 
+tr {
+	cursor: pointer !important;
+}
+
 @media only screen and (max-width: 1600px) {
 	.footer_logo {
 		width: 75%;
