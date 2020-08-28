@@ -23,12 +23,11 @@ $(".table-wrap").scroll(function () {
 
 
 let initTopPosition = $('.table-wrap').offset().top;
-setScrollHeight(initTopPosition);
+setScrollHeight();
 
 let curseselected = "";
 cursesSelect.addEventListener("change", function () {
-  initTopPosition = $('.table-wrap').offset().top;
-  setScrollHeight(initTopPosition);
+  setScrollHeight(true);
   switch (cursesSelect.value) {
     case "110000":
       curseselected = "C Agropecuarias";
@@ -97,8 +96,7 @@ cursesSelect.addEventListener("change", function () {
 });
 
 keySelecter.addEventListener("change", function () {
-  initTopPosition = $('.table-wrap').offset().top;
-  setScrollHeight(initTopPosition);
+  setScrollHeight(true);
   if (this.checked) {
     document.getElementById("inlineCheckbox2").disabled = true;
     keySection.classList.remove("not-shown");
@@ -118,7 +116,7 @@ key.addEventListener("input", function (e) {
 
 curseSelecter.addEventListener("change", function () {
   initTopPosition = $('.table-wrap').offset().top;
-  setScrollHeight(initTopPosition);
+  setScrollHeight(true);
   if (this.checked) {
     document.getElementById("inlineCheckbox1").disabled = true;
     curseSection.classList.remove("not-shown");
@@ -3545,18 +3543,27 @@ function cleanCursesTable() {
   }
 }
 
-function setScrollHeight() {
-  $(window).scroll(function () {
+function setScrollHeight(flag = false) {
+  if (!flag) {
+    $(window).scroll(function () {
+      let initTopPosition = $('.table-wrap').offset().top;
+      if ($(window).scrollTop() > initTopPosition)
+        $('.scrollTop').css({
+          'position': 'fixed',
+          'top': '0px'
+        });
+      else
+        $('.scrollTop').css({
+          'position': 'static',
+          // 'top': (initTopPosition - 20) + 'px'
+        });
+    });
+  } else {
+    console.log("entro")
     let initTopPosition = $('.table-wrap').offset().top;
-    if ($(window).scrollTop() > initTopPosition)
-      $('.scrollTop').css({
-        'position': 'fixed',
-        'top': '0px'
-      });
-    else
-      $('.scrollTop').css({
-        'position': 'absolute',
-        'top': (initTopPosition - 20) + 'px'
-      });
-  });
+    $('.scrollTop').css({
+      'position': 'static',
+      // 'top': (initTopPosition - 20) + 'px'
+    });
+  }
 }
