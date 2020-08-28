@@ -330,6 +330,23 @@ footer {
 	overflow-x: scroll;
 }
 
+.scrollTop {
+	width: 100vw;
+	overflow-x: scroll;
+	position: static;
+	top: 0;
+}
+
+
+.scrollTopDiv {
+	height: 20px;
+}
+
+.scrollTop {
+	height: 20px;
+	overflow-y: hidden;
+}
+
 .paragraph {
 	text-align: center;
 	font-size: -webkit-calc(0.5vw + 1rem);
@@ -358,6 +375,10 @@ footer {
 .fa-arrow-left,
 .fa-arrow-right {
 	color: #ee1111;
+}
+
+.options-search {
+	margin-bottom: 20px;
 }
 
 .search-options {
