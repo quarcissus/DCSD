@@ -8,6 +8,7 @@ const key = document.getElementById("clave");
 const wrapScroll = document.querySelector(".scrollTop");
 const scrollDiv = document.querySelector(".scrollTopDiv");
 const tableScroll = document.querySelector(".table-wrap");
+const lineaments = document.querySelector("#lineamiento");
 
 const table_width = acreditationList.offsetWidth * 1.3;
 scrollDiv.setAttribute("style", "width:" + table_width + "px");
@@ -488,8 +489,7 @@ let departments = {
     center: "20",
   },
 };
-let curseInformation = [
-  {
+let curseInformation = [{
     number: "1",
     curseName: "Metodología institucional para el diseño curricular",
     curseKey: "-",
@@ -572,8 +572,7 @@ let curseInformation = [
   },
   {
     number: "4",
-    curseName:
-      "Herramientas digitales en la enseñanza de Probabilidad y Estadística",
+    curseName: "Herramientas digitales en la enseñanza de Probabilidad y Estadística",
     curseKey: "8650",
     controlKey: "20269",
     centerKey: "12",
@@ -727,8 +726,7 @@ let curseInformation = [
   },
   {
     number: "10",
-    curseName:
-      "Herramientas para aula virtual y MS Teams en C Básicas e Ingenierías",
+    curseName: "Herramientas para aula virtual y MS Teams en C Básicas e Ingenierías",
     curseKey: "8655",
     controlKey: "20274",
     centerKey: "12",
@@ -755,8 +753,7 @@ let curseInformation = [
   },
   {
     number: "11",
-    curseName:
-      "Proceso de producción, extracción y purificación de aceite de cannabis",
+    curseName: "Proceso de producción, extracción y purificación de aceite de cannabis",
     curseKey: "8657",
     controlKey: "20275",
     centerKey: "12",
@@ -810,8 +807,7 @@ let curseInformation = [
   },
   {
     number: "13",
-    curseName:
-      "Elaboración de reactivos para Álgebra y Álgebra lineal con Wiris",
+    curseName: "Elaboración de reactivos para Álgebra y Álgebra lineal con Wiris",
     curseKey: "8659",
     controlKey: "20277",
     centerKey: "12",
@@ -892,8 +888,7 @@ let curseInformation = [
   },
   {
     number: "16",
-    curseName:
-      "Elaboración de reactivos para ecuaciones diferenciales con Wiris",
+    curseName: "Elaboración de reactivos para ecuaciones diferenciales con Wiris",
     curseKey: "8662",
     controlKey: "20280",
     centerKey: "12",
@@ -973,8 +968,7 @@ let curseInformation = [
   },
   {
     number: "19",
-    curseName:
-      "Actualización en materia de normatividad aplicable a laboratorios clínicos y farmacias",
+    curseName: "Actualización en materia de normatividad aplicable a laboratorios clínicos y farmacias",
     curseKey: "8480",
     controlKey: "19830",
     centerKey: "12",
@@ -1028,8 +1022,7 @@ let curseInformation = [
   },
   {
     number: "21",
-    curseName:
-      "Introducción a la investigación experimental: Redacción científica",
+    curseName: "Introducción a la investigación experimental: Redacción científica",
     curseKey: "8664",
     controlKey: "20283",
     centerKey: "12",
@@ -1594,8 +1587,7 @@ let curseInformation = [
   },
   {
     number: "42",
-    curseName:
-      "Aspectos conceptuales y didácticos en el diseño de un curso (grupo 1 y2)",
+    curseName: "Aspectos conceptuales y didácticos en el diseño de un curso (grupo 1 y2)",
     curseKey: "8684",
     controlKey: "20302",
     centerKey: "14",
@@ -1649,8 +1641,7 @@ let curseInformation = [
   },
   {
     number: "44",
-    curseName:
-      "Taller de herramientas digitales apoyando la docencia en Diseño Industrial",
+    curseName: "Taller de herramientas digitales apoyando la docencia en Diseño Industrial",
     curseKey: "8686",
     controlKey: "20304",
     centerKey: "14",
@@ -1729,8 +1720,7 @@ let curseInformation = [
   },
   {
     number: "47",
-    curseName:
-      "Taller de bordado con técnicas artesanales mexicanas, Módulo I, II y III (sostenibilidad de la técnica)",
+    curseName: "Taller de bordado con técnicas artesanales mexicanas, Módulo I, II y III (sostenibilidad de la técnica)",
     curseKey: "8689",
     controlKey: "20307",
     centerKey: "14",
@@ -1892,8 +1882,7 @@ let curseInformation = [
   },
   {
     number: "53",
-    curseName:
-      "Transposición de significados en el proceso creativo del diseño",
+    curseName: "Transposición de significados en el proceso creativo del diseño",
     curseKey: "8695",
     controlKey: "20313",
     centerKey: "14",
@@ -2105,8 +2094,7 @@ let curseInformation = [
   },
   {
     number: "61",
-    curseName:
-      "Herramientas didácticas complementarias para plataformas virtuales",
+    curseName: "Herramientas didácticas complementarias para plataformas virtuales",
     curseKey: "-",
     controlKey: "-",
     centerKey: "14",
@@ -2160,8 +2148,7 @@ let curseInformation = [
   },
   {
     number: "63",
-    curseName:
-      "Recursos en línea y software open source de aplicación a la docencia de la ingeniería",
+    curseName: "Recursos en línea y software open source de aplicación a la docencia de la ingeniería",
     curseKey: "8704",
     controlKey: "20322",
     centerKey: "14",
@@ -2404,8 +2391,7 @@ let curseInformation = [
   },
   {
     number: "72",
-    curseName:
-      "Uso de series uniformes desestacionalizadas para el análisis económico",
+    curseName: "Uso de series uniformes desestacionalizadas para el análisis económico",
     curseKey: "8713",
     controlKey: "20331",
     centerKey: "15",
@@ -2567,8 +2553,7 @@ let curseInformation = [
   },
   {
     number: "78",
-    curseName:
-      "Tropicalización de los hábitos de consumo, sectores de recuperación en la nueva normalidad",
+    curseName: "Tropicalización de los hábitos de consumo, sectores de recuperación en la nueva normalidad",
     curseKey: "8719",
     controlKey: "20337",
     centerKey: "15",
@@ -2622,8 +2607,7 @@ let curseInformation = [
   },
   {
     number: "80",
-    curseName:
-      "Como detectar mentiras en el proceso de selección de recursos humanos",
+    curseName: "Como detectar mentiras en el proceso de selección de recursos humanos",
     curseKey: "8721",
     controlKey: "20339",
     centerKey: "15",
@@ -2677,8 +2661,7 @@ let curseInformation = [
   },
   {
     number: "82",
-    curseName:
-      "LMA: Lean Maturity Assessment como instrumento de productividad de clase mundial",
+    curseName: "LMA: Lean Maturity Assessment como instrumento de productividad de clase mundial",
     curseKey: "8723",
     controlKey: "20341",
     centerKey: "15",
@@ -2867,8 +2850,7 @@ let curseInformation = [
   },
   {
     number: "89",
-    curseName:
-      "Uso de Wordpress para creación de páginas web y blogs para materias prácticas de comunicación",
+    curseName: "Uso de Wordpress para creación de páginas web y blogs para materias prácticas de comunicación",
     curseKey: "8730",
     controlKey: "20348",
     centerKey: "16",
@@ -2922,8 +2904,7 @@ let curseInformation = [
   },
   {
     number: "91",
-    curseName:
-      "Uso del aula virtual , de la plataforma educativa institucional ámbito académico en el rol del profesor",
+    curseName: "Uso del aula virtual , de la plataforma educativa institucional ámbito académico en el rol del profesor",
     curseKey: "8732",
     controlKey: "20350",
     centerKey: "17",
@@ -2950,8 +2931,7 @@ let curseInformation = [
   },
   {
     number: "92",
-    curseName:
-      "Diseño de experiencias de aprendizaje y elaboración de material",
+    curseName: "Diseño de experiencias de aprendizaje y elaboración de material",
     curseKey: "8733",
     controlKey: "20351",
     centerKey: "17",
@@ -3086,8 +3066,7 @@ let curseInformation = [
   },
   {
     number: "97",
-    curseName:
-      "Arte y misticismo de las culturas indígenas Raramuri y Wixárica",
+    curseName: "Arte y misticismo de las culturas indígenas Raramuri y Wixárica",
     curseKey: "8738",
     controlKey: "20356",
     centerKey: "18",
@@ -3249,8 +3228,7 @@ let curseInformation = [
   },
   {
     number: "103",
-    curseName:
-      "Estrategias de escritura para evitar el plagio: la paráfrasis y la citación.",
+    curseName: "Estrategias de escritura para evitar el plagio: la paráfrasis y la citación.",
     curseKey: "8744",
     controlKey: "20362",
     centerKey: "18",
@@ -3485,8 +3463,7 @@ let curseInformation = [
   },
   {
     number: "112",
-    curseName:
-      "Taller de producción radiofónica desde casa: Ventana al sonido.",
+    curseName: "Taller de producción radiofónica desde casa: Ventana al sonido.",
     curseKey: "8753",
     controlKey: "20371",
     centerKey: "18",
@@ -3567,8 +3544,7 @@ let curseInformation = [
   },
   {
     number: "115",
-    curseName:
-      "Diseño de técnicas de control para sistemas neumáticos, hidráulicos y eléctricos",
+    curseName: "Diseño de técnicas de control para sistemas neumáticos, hidráulicos y eléctricos",
     curseKey: "8756",
     controlKey: "20374",
     centerKey: "19",
@@ -3617,8 +3593,7 @@ let curseInformation = [
   },
   {
     number: "117",
-    curseName:
-      "Metodologías de evaluación en los aprendizajes orientados a proyectos de ingeniería",
+    curseName: "Metodologías de evaluación en los aprendizajes orientados a proyectos de ingeniería",
     curseKey: "8758",
     controlKey: "20376",
     centerKey: "19",
@@ -3724,8 +3699,7 @@ let curseInformation = [
   },
   {
     number: "121",
-    curseName:
-      "Manejo de herramientas tecnológicas en el aula y en clases en línea en Comercio Electrónico",
+    curseName: "Manejo de herramientas tecnológicas en el aula y en clases en línea en Comercio Electrónico",
     curseKey: "8762",
     controlKey: "20380",
     centerKey: "20",
@@ -3779,8 +3753,7 @@ let curseInformation = [
   },
   {
     number: "123",
-    curseName:
-      "Pasos básicos para la conformación de evidencias de aprendizaje a través de diferentes estrategias y tecnologías",
+    curseName: "Pasos básicos para la conformación de evidencias de aprendizaje a través de diferentes estrategias y tecnologías",
     curseKey: "N/A",
     controlKey: "N/A",
     centerKey: "6",
@@ -3828,8 +3801,7 @@ let curseInformation = [
   },
   {
     number: "125",
-    curseName:
-      "Enseñanza del feminismo y perspectiva de género en la educación universitaria",
+    curseName: "Enseñanza del feminismo y perspectiva de género en la educación universitaria",
     curseKey: "-",
     controlKey: "-",
     centerKey: "16",
@@ -3948,8 +3920,7 @@ let curseInformation = [
   },
   {
     number: "130",
-    curseName:
-      "Reflexiones filosófico-éticas sobre las implicaciones sociales de la pandemia Covid-19",
+    curseName: "Reflexiones filosófico-éticas sobre las implicaciones sociales de la pandemia Covid-19",
     curseKey: "8766",
     controlKey: "20396",
     centerKey: "16",
@@ -3976,8 +3947,7 @@ let curseInformation = [
   },
   {
     number: "131",
-    curseName:
-      "Emociones, sentimientos y afectos.    Miradas desde los estudios socioculturales",
+    curseName: "Emociones, sentimientos y afectos.    Miradas desde los estudios socioculturales",
     curseKey: "-",
     controlKey: "-",
     centerKey: "16",
@@ -4407,8 +4377,7 @@ let curseInformation = [
   },
   {
     number: "147",
-    curseName:
-      "Compartiendo testimonios, tips y experiencias de aprendizaje en escenarios virtuales",
+    curseName: "Compartiendo testimonios, tips y experiencias de aprendizaje en escenarios virtuales",
     curseKey: "8771",
     controlKey: "20403",
     centerKey: "16",
@@ -4435,8 +4404,7 @@ let curseInformation = [
   },
   {
     number: "148",
-    curseName:
-      "Elementos del diseño tecno-pedagógico para cursos en ambientes virtuales",
+    curseName: "Elementos del diseño tecno-pedagógico para cursos en ambientes virtuales",
     curseKey: "8772",
     controlKey: "20404",
     centerKey: "16",
@@ -4582,6 +4550,16 @@ function setScrollHeight(flag = false) {
   if (!flag) {
     $(window).scroll(function () {
       let initTopPosition = $(".table-wrap").offset().top;
+      let lineamentsPosition = $("#lineamiento").offset().top;
+      if ($(window).scrollTop() > lineamentsPosition)
+        $(".scrollTop").css({
+          display: "none",
+        });
+      else
+        $(".scrollTop").css({
+          display: "initial",
+        });
+
       if ($(window).scrollTop() > initTopPosition)
         $(".scrollTop").css({
           position: "fixed",
