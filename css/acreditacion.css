@@ -722,9 +722,13 @@ tr {
 
 
 /* lineamientos */
+#lineamiento {
+	margin-top: 100px;
+}
+
 .title {
-	font-size: 34px;
-	font-weight: 500;
+	font-size: 2.7vw;
+	font-weight: 600;
 	text-align: center;
 	margin-bottom: 15px;
 	color: #00224e;
