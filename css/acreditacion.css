@@ -15,6 +15,14 @@ hr {
 	margin: 0 !important;
 }
 
+.redRow {
+	background-color: rgb(255, 90, 90);
+}
+
+.redRow:hover {
+	background-color: rgb(255, 90, 90) !important;
+}
+
 .top-menu {
 	background-color: #00224e;
 	max-height: 35px;
