@@ -9,11 +9,12 @@
 
 .new-item {
   position: relative;
-  border: 2px solid rgba(255, 0, 0, 0.692);
+  /* border: 2px solid rgba(255, 0, 0, 0.692); */
   border-top: none;
   border-right: none;
   border-left: none;
   padding-bottom: 5px !important;
+  color: red !important;
 }
 
 html,
@@ -133,6 +134,10 @@ body {
   color: rgb(32, 32, 32);
   line-height: 1.1;
   font-weight: 500;
+}
+
+.new-item .index-item {
+  color: red;
 }
 
 .index-item:link {
