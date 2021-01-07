@@ -266,6 +266,79 @@ dropdown-menu .active {
     margin: 50px auto 0 auto;
 }
 
+
+.text{
+    font-size: 15px;
+}
+.container ol {
+    color: black;
+  }
+  
+  .paragraph-item {
+    font-size: 18px;
+  }
+  
+  .highlight {
+    font-weight: 700;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  .list-item {
+    font-size: 15px !important;
+  }
+  
+  .list-item,
+  .list-item-none {
+    margin-bottom: 5px;
+    width: 80%;
+    margin: 0 auto 5px auto;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+    padding: 4px !important;
+    transition: all 0.5s ease-out;
+    font-weight: 600;
+  }
+  
+  .list-title {
+    font-size: 22px !important;
+  }
+  
+  .list-item-none {
+    margin-top: 10px;
+  }
+  
+  .list-info {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+
+  ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+  }
+  
+  ol>li {
+    margin: 0;
+    padding: 0 0 0 1em;
+    text-indent: -1em;
+    list-style-type: none;
+    counter-increment: item;
+  }
+  
+  ol>li:before {
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+  }
+  
 footer {
     margin-top: 100px;
     min-height: 250px;
