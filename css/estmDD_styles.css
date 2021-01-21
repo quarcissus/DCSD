@@ -278,6 +278,10 @@ dropdown-menu .active {
     font-size: 18px;
   }
   
+  .paragraph{
+    margin-top: 25px;
+    text-align: justify;
+  }
   .highlight {
     font-weight: 700;
   }

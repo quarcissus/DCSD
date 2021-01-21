@@ -1,247 +1,1125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/avisos_styles.css">
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/31de0ff71f.js" crossorigin="anonymous"></script>
-    <!-- Fav Icon -->
-    <link href="https://dgdp.uaa.mx/defaa/images/favicon.ico" rel="icon" type="image/x-icon">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Directorio</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/avisos_styles.css" />
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/31de0ff71f.js" crossorigin="anonymous"></script>
+	<!-- Fav Icon -->
+	<link href="https://dgdp.uaa.mx/defaa/images/favicon.ico" rel="icon" type="image/x-icon" />
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<title>Avisos</title>
 </head>
+
 <body>
-    <div class="top-menu">
-        <ul class="nav top-nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.uaa.mx/dgdp/">Departamentos</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link top-active" href="https://www.uaa.mx/">UAA</a>
-            </li>
-        </ul>
-    </div>
-    <div class="menu">
-        <div class="left">
-            <a href="./index.html"><img src="./imgs/logo_completo.gif" alt=""></a>
-        </div>
-        <div class="right">
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="menu-bars"><i class="fas fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link link hover-effect" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Funciones
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./eBienal.html">Evaluacion Bienal</a>
-                                <a class="dropdown-item" href="./evalDesDoc.html">Evaluacion al Desempeño Docente</a>
-                                <a class="dropdown-item " href="./estmDesDoc.html">Estimulo al Desempeño Docente</a>
-                                <a class="dropdown-item" href="./sabatico.html">Seguimiento de Año Sabatico</a>
-                            </div>
-                            </li>
-                        <li class="nav-item">
-                            <a class="nav-link link hover-active" href="#">Avisos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link hover-effect" href="./directorio.html">Directorio</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <main>
+	<div class="top-menu">
+		<ul class="nav top-nav justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.uaa.mx/dgdp/">Departamentos</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link top-active" href="https://www.uaa.mx/">UAA</a>
+			</li>
+		</ul>
+	</div>
+	<div class="menu">
+		<div class="left">
+			<a href="./index.html"><img src="./imgs/logo_completo.gif" alt="" /></a>
+		</div>
+		<div class="right">
+			<nav class="navbar navbar-expand-lg">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="menu-bars"><i class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link link hover-effect" href="./index.html">Inicio
+								<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Funciones
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item new-item" href="./acreditacion.html">Acreditación de cursos</a>
 
-        <div class="index-news-wrap">
-            <div class="index-news container">
-                <div class="title-table news-title">
-                    INDICE DE AVISOS
-                </div>
-                <div class="index-content">
-                    <ul>
-                        <li><a href="#eval_bienal" class="index-item">Instrucciones para entrega de Evaluación Bienal</a></li>
-                        
-                        <li><a href="#ptc" class="index-item">Carrera Docente U040 indicadores</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+								<a class="dropdown-item" href="./eBienal.html">Evaluacion Bienal</a>
+								<a class="dropdown-item" href="./evalDesDoc.html">Evaluacion al Desempeño Docente</a>
+								<a class="dropdown-item" href="./estmDesDoc.html">Estimulo al Desempeño Docente</a>
+								<a class="dropdown-item" href="./sabatico.html">Seguimiento de Año Sabatico</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link hover-active" href="#">Avisos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link hover-effect" href="./directorio.html">Directorio</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<main>
+		<div class="index-news-wrap">
+			<div class="index-news container">
+				<div class="title-table news-title">
+					INDICE DE AVISOS
+				</div>
+				<div class="index-content">
+					<ul>
+						<li class="new-item">
+							<a href="#acre-act" class="index-item">Acreditación de cursos en la actualización en la
+								disciplina</a>
+							<!-- <span class="animated infinite pulse pop-up unselectable" unselectable="on">Nuevo</span> -->
+						</li>
 
-        <section class="container first-section">
-            <section id="eval_bienal" class="title-table news-title">
-                ACTUALIZACIÓN PARA ENTREGAS DE EVALUACIONES BIENALES Y EVIDENCIAS
-            </section>
-            <p class="paragraph-item">A todos los profesores numerarios que les corresponde Evaluación Bienal en este periodo y que les habíamos informado esto mediante oficio, se les informa que se ha <span class="highlight">ampliado quince días naturales</span> el plazo para entregar el formato de Evaluación Bienal junto a sus evidencias, las cuales deberán ser: O bien escaneadas o bien mediante foto de su celular o en el peor de los casos impresas.</p>
+						<li>
+							<a href="#resultados" class="index-item">Resultados de los profesores solicitantes
+								al Programa Carrera Docente U040 ejercicio
+								2020</a>
+						</li>
+						<li>
+							<a href="#convocatoria" class="index-item">Convocatoria para participar en el Programa
+								de Carrera Docente en UPES 2020(U040)</a>
+						</li>
 
-            <p class="paragraph-item">
-                El <span class="highlight">procedimiento de entrega </span>será:
-            </p>
-            <div class="container">
-                <ol>
-                    <li class="list-item-none font-18">
-                        <span class="list-title">Si <span class="underline">son evidencias y formato digital:</span></span>
-                    
-                        <div class="list-info">se enviarán a la dirección de correo electrónico: <span class="highlight">evaluacionbienal@edu.uaa.mx</span>.
-                        </div>
-                    <span class="note">La fecha límite para su envío será el 22 de mayo de 2020.</span></li>
+						<li class="delete">
+							<a href="#coordinadores" class="index-item">Periodo de reporte de Coordinadores de
+								Academia</a>
+						</li>
 
+						<li class="new-item delete">
+							<a href="#decano" class="index-item">Periodo de evaluación de Profesores por
+								Decanos</a>
+							<span class="animated infinite pulse pop-up unselectable" unselectable="on">Nuevo</span>
+						</li>
+						<li class="delete">
+							<a href="#profesores" class="index-item">Periodo de evaluación de Profesores por Jefes de
+								Departamento</a>
+						</li>
 
-                    <li class="list-item-none font-18">
-                        <span class="list-title">Si son <span class="underline">impresas:</span></span>
-                        <div class="list-info">Se colocará un buzón en la planta baja de la torre de rectoría (edificio Académico-Administrativo) sin personal que reciba para conservar la sana distancia, lo dejaría ahí y posteriormente lo recogeremos y sanitizaremos antes de manipularlo, generando una constancia de entrega que se le enviará mediante correo electrónico posteriormente.</div>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-                        <div class="list-info">
-                            El buzón estará disponible a partir del día <span class="highlight">miércoles 22 de abril de 2020, a las 9 am</span> y se dejará hasta la fecha límite que será el <span class="note">22 de mayo de 2020 </span>. 
-                        </div>
+		<section class="container first-section">
+			<section id="acre-act" class="title-table news-title">
+				Acreditación de cursos en la actualización en la disciplina
+			</section>
+			<p class="paragraph-item">
+				En relación a la acreditación de cursos en la actualización en la disciplina se les informa que a partir
+				de hoy lunes 5 de octubre podrán capturar los profesores que aprobaron los cursos en las actas
+				disponibles en las cuentas de los responsables de los cursos en el e-siima.
+				Así mismo a partir de esta fecha podrán recoger las constancias de sus cursos los días lunes, martes y
+				jueves con la Ing. Nancy Lara en el departamento de Control y Seguimiento Docente.
+				Los cursos que no se hayan comprobado su impartición o bien que no se haya mandado la lista definitiva
+				de profesores aprobados ya no se acreditara.
 
+			</p>
+		</section>
+		<div class="index-news-wrap">
+			<div class="index-news container">
+				<div class="title-table news-title">
+					INDICE PROGRAMA DE CARRERA DOCENTE
+				</div>
+				<div class="index-content">
+					<ul>
+						<li>
+							<a href="#convocatoria" class="index-item">Convocatoria para participar en el Programa
+								de Carrera Docente en UPES 2020(U040)</a>
+						</li>
 
-                    </li>
-                </ol>
-            </div>
-        </section>
-        <section class="container first-section">
-            <section id="ptc"class="title-table news-title">
-                CRITERIOS DE ASIGNACIÓN A LOS PTC DE NIVELES DEL PROGRAMA DE CARRERA DOCENTE EN UPES U040,<br> EJERCICIO 2020
-            </section>
-            <table class="table table-bordered news-table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th class="text-center"style="width: 50%" scope="col">Criterios de asignación individual</th>
-                        <th class="text-center" style="width: 50%" scope="col">Presupuesto asignado a cada criterio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="table-bold">1er criterio.</span> Dedicación a la labor docente: 
-                            PTC que imparten al menos 10hrs/semana/mes en cada periodo lectivo 
-                            regular de 2019.(Semestres Enero-Junio, Agosto-Diciembre del 2019), y haber impartido 
-                            por lo menos una materia en licenciatura en cada semestre.<strong>*</strong>
-                        </td>
-                        <td>60% del presupuesto neto.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="table-bold">2do criterio.</span> Contribución a las trayectorias escolares: PTC que registran en los controles 
-                            escolares tasas de aprobación históricas iguales o superiores al 70% 
-                            (promedio de todos los periodos lectivos regulares de Enero 2017 a Diciembre de 2019).<strong>**</strong>
-                        </td>
-                        <td>20% del presupuesto neto.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="table-bold">3er criterio.</span> Alcance de la labor docente: PTC que atendieron en cada periodo lectivo regular de 
-                            2019 al menos 50 estudiantes. Cuando sea el caso también se considerará válido que el promedio de 
-                            alumnos atendidos por el periodo lectivo, durante 2019, sea igual o mayor a 50 estudiantes</td>
-                        <td>20% del presupuesto neto.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <section class="caption-table">
-                <div class="first-caption">
-                <strong>*</strong>En el caso de asignaturas a distancia para definir el número de horas se 
-                    tomará en cuenta el número de creditos.
-                </div>
-                <div class="second-caption">
-                    <strong>**</strong>Para los PTC que no completen seis periodos lectivos se tomará en cuenta 
-                    la información disponible, que deberá comprender todos los periodos lectivos de 2019.
-                </div>
-                <div class="third-caption">
-                    <strong>***</strong>Quien tuvo un semestre o dos de sabatico en el año 2019, no podra participar
-                </div>
-            </section>
-        </section>
-        <section class="second-section">
-            <section class="container">
-                <div class="news-title">REQUISITOS DE PARTICIPACIÓN PARA LOS PTC</div>
-                <div class="container">
-                    <ol>
-                        <li class="list-item list-item--succes">Presentar solicitud para participar de acuerdo con la convocatoria que emita su institución.</li>
-                        <li class="list-item list-item--succes">Haber tenido el perfil deseable otorgado por el PRODEP vigente durante algún periodo del 2019</li>
-                        <li class="list-item list-item--succes">Haber impartido con el carácter de titular, al menos 10hrs/semana/mes en cada periodo lectivo regular de 2019.</li>
-                        <li class="list-item list-item--succes">Con el mismo carácter del punto anterior, haber impartido al menos una asignatura en los programas de licenciatura de su institución en cada periodo lectivo de 2019.</li>
+						<li>
+							<a href="#convocatoria" class="index-item">Convocatoria</a>
+						</li>
+						<li>
+							<a href="#requisitos" class="index-item">Requisitos de participación</a>
+						</li>
+						<li>
+							<a href="#no_participar" class="index-item">No podrán participar</a>
+						</li>
+						<li>
+							<a href="#caracteristicas" class="index-item">Características de los estímulos</a>
+						</li>
+						<li>
+							<a href="#criterios" class="index-item">Criterios de asignación de los estímulos</a>
+						</li>
+						<li>
+							<a href="#componentes" class="index-item">Componentes del estímulo</a>
+						</li>
+						<li>
+							<a href="#proceso" class="index-item">Proceso para la solicitud del Estímulo</a>
+						</li>
+						<li>
+							<a href="#notificacion" class="index-item">Notificación de resultados</a>
+						</li>
+						<li>
+							<a href="#recurso" class="index-item">Recurso de revisión/Apelación</a>
+						</li>
+						<li>
+							<a href="#periodo" class="index-item">Periodo del Pago</a>
+						</li>
+						<li>
+							<a href="#motivos" class="index-item">Motivos de cancelación del estímulo</a>
+						</li>
+						<li>
+							<a href="#disposiciones" class="index-item">Disposiciones complementarias</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section class="container first-section">
+			<section id="resultados" class="title-table news-title">
+				RESULTADOS DE LOS PROFESORES SOLICITANTES AL PROGRAMA
+				CARRERA DOCENTE U040 EJERCICIO 2020
+			</section>
+			<p class="paragraph-item">
+				<strong>
+					NIVELES OBTENIDOS POR PROFESORES SOLICITANTES</strong>
+			</p>
+			<table class="table table-hover table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Profesor</th>
+						<th scope="col">Nivel obtenido</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">8585</th>
+						<td>ABRAJAN VILLASEÑOR MYRNA ALICIA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">7081</th>
+						<td>AGUILAR ROMERO MARIA MAYELA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">291</th>
+						<td>ANDRADE LOZANO PAULINA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">18569</th>
+						<td>ANDRADE ZAMARRIPA ARMANDO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9643</th>
+						<td>BARBA GALLARDO LUIS FERNANDO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">62046</th>
+						<td>BARRERA CASTAÑEDA JOSE MANUEL</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">155771</th>
+						<td>CAMPOS GARCIA ROCIO MONTSERRAT</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8772</th>
+						<td>CASILLAS CASILLAS ELIZABETH</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9399</th>
+						<td>CASTAÑEDA LEYVA NETZAHUALCOYOTL</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<th scope="row">10866</th>
+						<td>DE LA BARRERA MEDINA MONICA SUSANA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8625</th>
+						<td>DE LA ROSA CARRILLO LAURA MARIA DE LOURDES</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">36810</th>
+						<td>DIAZ OLIVARES ABEL</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10588</th>
+						<td>FLORES OROPEZA LUIS ALEJANDRO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">11516</th>
+						<td>GARCIA MARTINEZ BOGAR</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">184674</th>
+						<td>GARCIA MUNGUIA ALBERTO MARGARITO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10231</th>
+						<td>GARCIA RAMIREZ RICARDO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">31695</th>
+						<td>GARCIA VIDALES ALEJANDRO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8332</th>
+						<td>GARZA GONZALEZ LAURA ARMINDA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8742</th>
+						<td>GOMEZ REYNOSO JUAN MANUEL</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8819</th>
+						<td>GONZALEZ CADENA ALEJANDRO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">24730</th>
+						<td>GRANADOS MACIAS CLAUDIO ANTONIO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">22837</th>
+						<td>GUERRERO MOJICA NERY</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8885</th>
+						<td>GUTIERREZ CAMPOS RAFAEL</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10868</th>
+						<td>GUTIERREZ MEDINA ROMMEL ULISES</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">13446</th>
+						<td>HERNANDEZ CUELLAR EDGAR EDUARDO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">185823</th>
+						<td>HERNANDEZ QUINTERO ANGELICA</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="row">66358</th>
+						<td>HERNANDEZ ZAMORA MARIA ALEJANDRA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">95356</th>
+						<td>HERRERA DIAZ DE LEON LUIS LENIN</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">23073</th>
+						<td>LOPEZ DELGADILLO EDGAR</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8317</th>
+						<td>LOPEZ GARCIA JUVENTINO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">7094</th>
+						<td>LOPEZ LOPEZ JOSE LUIS</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9153</th>
+						<td>LUJAN SALAZAR ENRIQUE</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="row">8325</th>
+						<td>MACIAS LUEVANO JORGE EDUARDO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10157</th>
+						<td>MACIAS MORA GEORGINA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">24884</th>
+						<td>MARTEL CAMPOS LETICIA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">16686</th>
+						<td>MARTIN DEL CAMPO CERVANTES JUDITH</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">46305</th>
+						<td>MARTIN RODRIGUEZ ALFONSO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8100</th>
+						<td>MARTINEZ SALDAÑA MA. CONSOLACION</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9871</th>
+						<td>MATA JURADO LAURA PATRICIA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8242</th>
+						<td>MENDEZ SANCHEZ CECILIA</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="row">10185</th>
+						<td>MONTEJANO GARCIA SALOMON</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9923</th>
+						<td>MUÑOZ ANDRADE ESTELA LIZBETH</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<th scope="row">10328</th>
+						<td>OROPEZA TAGLE MIGUEL ANGEL</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">57938</th>
+						<td>PEREZ CABRERA LAURA EUGENIA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">16484</th>
+						<td>PLANCARTE HERNANDEZ SALVADOR</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8465</th>
+						<td>PLASCENCIA MARTINEZ FERNANDO</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="row">10410</th>
+						<td>PONCE GALLEGOS JULIO CESAR</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8387</th>
+						<td>RAMIREZ GOMEZ MARIA MAGDALENA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8773</th>
+						<td>RAMIREZ GONZALEZ SERGIO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">231960</th>
+						<td>RAMIREZ OROZCO RICARDO ERNESTO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">8484</th>
+						<td>RAMOS GOURCY FERNANDO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">26076</th>
+						<td>REAL PAREDES ALMA ROSA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">49099</th>
+						<td>ROBLES CUELLAR LETICIA JACQUELINE</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">60877</th>
+						<td>RODRIGUEZ RODRIGUEZ BRENDA MARIA ANTONIETA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">7151</th>
+						<td>ROMAN LOERA ALEJANDRO</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="row">9544</th>
+						<td>RUIZ ESPARZA DIAZ DE LEON BLANCA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">23755</th>
+						<td>RUIZ ESPARZA GUTIERREZ AARON ALBERTO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9748</th>
+						<td>RUIZ GARCIA SERGIO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">18058</th>
+						<td>SALAS HERNANDEZ LUIS HECTOR</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9250</th>
+						<td>SHAADI RODRIGUEZ LETICIA DEL SOCORRO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9295</th>
+						<td>SHAADI RODRIGUEZ ROSA MARIA ANGELICA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10875</th>
+						<td>SOLANO ROMO LIZETH ITZIGUERY</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">14134</th>
+						<td>SOLANO VILLARRUEL GABRIELA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">895</th>
+						<td>SOTO ZAMORA MIGUEL ANGEL</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">45333</th>
+						<td>TAFOYA RANGEL FELIPE</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="row">10049</th>
+						<td>TORRES SOTO AURORA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10123</th>
+						<td>TORRES SOTO MARIA DOLORES</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">9511</th>
+						<td>URZUA SALAS ANA MARIA</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10855</th>
+						<td>VACIO MURO MA. DE LOS ANGELES</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="row">8775</th>
+						<td>VAZQUEZ MARTINEZ OTILIO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">23013</th>
+						<td>ZACARIAS MENA JUAN ANTONIO</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th scope="row">10230</th>
+						<td>ZARAGOZA VELAZQUEZ NICOLAS</td>
+						<td>4</td>
+					</tr>
+				</tbody>
+			</table>
+			<strong>No cumplen con los requisitos</strong>
+			<table class="table table-hover table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Profesor</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">146171</th>
+						<td>HERNANDEZ MARIN MARTIN</td>
+					</tr>
+					<tr>
+						<th scope="row">94866</th>
+						<td>PACHECO MARTINEZ JESUS</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="container first-section">
+			<section id="convocatoria" class="title-table news-title">
+				CONVOCATORIA PARA PARTICIPAR EN EL PROGRAMA DE CARRERA
+				DOCENTE EN UPES2020(U040)
+			</section>
+			<p class="paragraph-item">
+				Considerando que el Plan Nacional de Desarrollo establece
+				como una de las prioridades de la actual administración el
+				ampliar significativamente la cobertura de la educación
+				superior, de alcanzar la excelencia educativa, de mejorar el
+				bienestar de los estudiantes, de alcanzar una mejora
+				sustantiva en sus trayectorias escolares y de utilizar como
+				instrumento principal de esta transformación un nuevo modelo
+				de involucramiento de la planta de profesores de tiempo
+				completo
+			</p>
+			<section class="banner-title">
+				La Universidad Autónoma de Aguascalientes convoca a sus
+				profesores de tiempo completo a participar en el Programa de
+				Carrera Docente, ejercicio 2020.
+			</section>
+			<p class="paragraph-item">
+				El programa tiene como propósito reconocer la labor docente
+				de los profesores de tiempo completo de las universidades
+				públicas estatales que contribuyan a ampliar la capacidad de
+				atención docente de las UPES, con el objetivo de responder a
+				la nueva demanda de educación superior que se está generando
+				como consecuencia de la aplicación de la nueva política de
+				garantizar su obligatoriedad y la gratuidad
+			</p>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="requisitos">
+					I. REQUISITOS DE PARTICIPACIÓN
+				</div>
+				<div class="container">
+					<ol>
+						<li class="list-item list-item--succes">
+							Haber tenido el perfil deseable otorgado por el
+							PRODEP vigente durante algún periodo del 2019.
+						</li>
+						<li class="list-item list-item--succes">
+							Haber impartido con carácter de titular, al
+							menos 10 horas/semana/mes en cada periodo
+							lectivo regular de 2019.
+						</li>
+						<li class="list-item list-item--succes">
+							Con el mismo carácter del punto anterior, haber
+							impartido al menos una asignatura en los
+							programas de licenciatura de su institución en
+							cada periodo
+						</li>
+						<li class="list-item list-item--succes">
+							Presentar solicitud firmada ante el Departamento
+							de Control y Seguimiento Docente.
+						</li>
+					</ol>
+				</div>
+			</section>
+		</section>
+		<section class="container">
+			<div class="news-title" id="no_participar">
+				II. NO PODRÁN PARTICIPAR
+			</div>
+			<div class="container">
+				<ol>
+					<li class="list-item list-item--danger">
+						Los PTC que tengan vigente un apoyo del PRODEP para
+						estudios de posgrado de alta calidad o beca CONACYT
+					</li>
+					<li class="list-item list-item--danger">
+						Los PTC con cargos de mando medio superior y
+						superior
+					</li>
+				</ol>
+			</div>
+		</section>
+		<section class="container">
+			<div class="news-title" id="caracteristicas">
+				III. CARACTERISTICAS DE LOS ESTIMULOS
+			</div>
+			<div class="container">
+				<ul>
+					<li class="list-item">
+						Los estímulos son apoyos económicos diferenciados
+						en cuatro niveles que se otorgarán bajo tres
+						criterios a los profesores de tiempo completo que
+						cumplan con los requisitos del apartado I.
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="container">
+			<div class="news-title" id="criterios">
+				IV. CRITERIOS DE ASIGNACION DE LOS ESTIMULOS
+			</div>
+			<div class="container">
+				<ul>
+					<li class="list-item">
+						Los PTC podrán recibir estímulos que resulten del
+						cumplimiento de uno, dos o tres criterios, siendo la
+						dedicación a la labor docente, requisito de ingreso
+						del programa
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="container first-section">
+			<table class="table table-bordered news-table">
+				<thead class="thead-dark">
+					<tr>
+						<th class="text-center" style="width: 50%;" scope="col">
+							Criterios de asignación individual
+						</th>
+						<th class="text-center" style="width: 50%;" scope="col">
+							Presupuesto asignado a cada criterio
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<span class="table-bold">1er criterio.</span>
+							Dedicación a la labor docente: PTC que imparten
+							al menos 10hrs/semana/mes en cada periodo
+							lectivo regular de 2019.(Semestres Enero-Junio,
+							Agosto-Diciembre del 2019), y haber impartido
+							por lo menos una materia en licenciatura en cada
+							semestre.<strong>*</strong>
+						</td>
+						<td>60% del presupuesto neto.</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="table-bold">2do criterio.</span>
+							Contribución a las trayectorias escolares: PTC
+							que registran en los controles escolares tasas
+							de aprobación históricas iguales o superiores al
+							70% (promedio de todos los periodos lectivos
+							regulares de Enero 2017 a Diciembre de
+							2019).<strong>**</strong>
+						</td>
+						<td>20% del presupuesto neto.</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="table-bold">3er criterio.</span>
+							Alcance de la labor docente: PTC que atendieron
+							en cada periodo lectivo regular de 2019 al menos
+							50 estudiantes. Cuando sea el caso también se
+							considerará válido que el promedio de alumnos
+							atendidos por el periodo lectivo, durante 2019,
+							sea igual o mayor a 50 estudiantes
+						</td>
+						<td>20% del presupuesto neto.</td>
+					</tr>
+				</tbody>
+			</table>
+			<section class="caption-table">
+				<div class="first-caption">
+					<strong>*</strong>En el caso de asignaturas a distancia
+					para definir el número de horas se tomará en cuenta el
+					número de créditos.
+				</div>
+				<div class="second-caption">
+					<strong>**</strong>Para los PTC que no completen seis
+					periodos lectivos se tomará en cuenta la información
+					disponible, que deberá comprender todos los periodos
+					lectivos de 2019.
+				</div>
+				<div class="third-caption">
+					<strong>***</strong>Quien tuvo un semestre o dos de
+					sabático en el año 2019, no podrá participar
+				</div>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="componentes">
+					V. COMPONENTES DEL ESTIMULO
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							En cada concordancia con los criterios cumplidos
+							por los participantes, el estímulo tiene tres
+							componentes independientes.
+						</li>
+						<li class="list-item">
+							Para calcular el componente del estímulo que
+							corresponde al primer criterio, denominado
+							Dedicación a la labor docente, el 60% del
+							presupuesto neto se dividirá entre los PTC
+							participantes de las 35 Universidades Públicas
+							Estatales (UPES) que acreditaron este criterio
+						</li>
+						<li class="list-item">
+							En lo que refiere al segundo componente,
+							denominado Contribución a las trayectorias
+							escolares, el 20% del presupuesto neto se
+							dividirá entre los PTC de las 35 UPES que
+							acreditaron el segundo criterio.
+						</li>
+						<li class="list-item">
+							En cuanto al tercer componente, denominado
+							Alcance de la labor docente, el 20% del
+							presupuesto neto restante se dividirá entre los
+							PTC de las 35 UPES que acreditaron este
+							criterio.
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title">
+					VI. DE LOS NIVELES
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							De acuerdo con la siguiente tabla, los niveles a
+							otorgar son cuatro y están en función del
+							cumplimiento de los criterios de asignación.
+						</li>
+					</ul>
+					<table class="table table-bordered news-table">
+						<thead class="thead-dark">
+							<tr>
+								<th class="text-center" style="width: 15%;" scope="col">
+									Nivel
+								</th>
+								<th class="text-center" style="width: 75%;" scope="col" colspan="2">
+									Criterio
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>C1</td>
+								<td>Dedicación a la labor docente</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>C1+C3</td>
+								<td>
+									Dedicación a la labor docente + Alcance
+									de la labor docente
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>C1+C2</td>
+								<td>
+									Dedicación a la labor docente +
+									Contribución a las trayectorias
+									escolares
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>C1+C2+C3</td>
+								<td>
+									Dedicación a la labor docente +
+									Contribución a las trayectorias
+									escolares + Alcance de la labor docente
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="paragraph-item">
+					<strong>Importante</strong> Dado que los componentes de
+					los estímulos descritos en el apartado IV aún no están
+					determinados, puede darse el caso de que en términos
+					monetarios el nivel 2 sea superior al nivel 3.
+				</p>
+				<p class="paragraph-item">
+					Una vez que la UPES entreguen los listados definitivos
+					de los beneficiarios con los criterios que acreditó cada
+					uno de ellos y el nivel obtenido, la Dirección General
+					de Educación Superior Universitaria (DGESU) determinará,
+					a nivel nacional, los montos de los componentes de los
+					estímulos, así como los montos correspondientes a cada
+					nivel y los publicará en la página de la Subsecretaría
+					de Educación Superior
+				</p>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="proceso">
+					VII. PROCESO PARA LA SOLICITUD DEL ESTÍMULO
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							Los profesores con perfil deseable vigente en
+							algún momento del año 2019, podrán verificar
+							en el Departamento de Control y Seguimiento Docente
+							si cumplen con el resto de los requisitos de
+							ingreso, en cuyo caso podrán obtener vía correo
+							electrónico el formato de solicitud para ingreso
+							al Programa, realizándose este proceso del día
+							16 al 26 de junio del 2020
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="notificacion">
+					VIII. NOTIFICACION DE RESULTADOS
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							La notificación de resultados se hará a través
+							de la página del Departamento de Control y
+							Seguimiento Docente en la liga
+							<a href="https://dgdp.uaa.mx/fep/avisos.html"
+								target="_blank">htps://dgdp.uaa.mx/fep/avisos.hml</a>
+							el día 29 de junio del 2020
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="recurso">
+					IX. RECURSOS DE REVISIÓN/APELACIÓN
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							Las inconformidades al resultado obtenido se
+							podrán realizar del 30 de junio al 1 de julio de
+							2020, de forma impresa, fundamentadas y
+							entregadas ante del Departamento de Control y
+							Seguimiento Docente dirigidas a la Comisión
+							Ejecutiva Universitaria. El resultado de su
+							revisión le será dado a conocer el 2 de julio del
+							2020
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="periodo">
+					X. PERIODICIDAD DEL PAGO
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							El pago al estímulo será realizado en dos
+							exhibiciones mensuales, octubre y noviembre de
+							2020./
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="motivos">
+					XI. MOTIVOS DE CANCELACIÓN DEL ESTÍMULO
+				</div>
+				<div class="container">
+					<p class="paragraph-item">
+						Los motivos de suspensión tendrán efecto durante el
+						tiempo que la institución establezca como periodo de
+						pago:
+					</p>
+					<ol>
+						<li class="list-item">
+							Dejar de prestar servicios en la institución por
+							motivos derivados de muerte, renuncia,
+							jubilación, pensión y por cese dictaminado por
+							tribunal laboral competente.
+						</li>
+						<li class="list-item">
+							Por el goce de licencia con o sin goce de sueldo
+							mayor a seis meses.
+						</li>
+						<li class="list-item">
+							Por estar cubriendo comisiones oficiales mayores
+							a seis meses.
+						</li>
+						<li class="list-item">
+							Por ocupar cargos directivos de confianza en la
+							institución
+						</li>
+						<li class="list-item">
+							Por vigencia de becas o apoyos de manutención
+							para realizar estudios de posgrado
+						</li>
+					</ol>
+				</div>
+			</section>
+		</section>
+		<section class="second-section">
+			<section class="container">
+				<div class="news-title" id="disposiciones">
+					XII. DISPOSICIONES COMPLEMENTARIAS
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							Los apoyos económicos que entrega este programa
+							son beneficios económicos independientes al
+							sueldo, por lo que no constituyen un ingreso
+							fijo, regular, ni permanente y en consecuencia
+							no podrán estar, bajo ninguna circunstancia,
+							sujetos a negociaciones con organizaciones
+							sindicales; así como tampoco podrán ser
+							demandables ante otra autoridad jurisdiccional.
+						</li>
+						<li class="list-item">
+							Lo no previsto en la presente convocatoria será
+							resuelto por la Comisión Ejecutiva Universitaria
+							en conjunto con las autoridades de la SEP
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
 
-                    </ol>
-                </div>
-                
-            </section>
-            
-            
-        </section>
-        <section class="second-section">
-            <section class="container">
-                <div class="news-title">IMPEDIMIENTOS PARA LA PARTICIPACIÓN DE LOS PTC</div>
-                <div class="container">
-                    <ul>
-                        <li class="list-item list-item--danger">Los PTC que tengan vigente un apoyo del PRODEP para estudios de posgrado de alta calidad o beca CONACYT, no podrán recibir el estímulo</li>
-                        <li class="list-item list-item--danger">Los PTC con cargos de mando medio superior y superior no podrán participar en este programa.</li>
-                    </ul>
-                </div>
-                
-            </section>
-            
-            
-        </section>
-        <section class="second-section">
-            <section class="container">
-                <div class="news-title">PROCESO PARA LA SOLICITUD DEL ESTÍMULO</div>
-                <div class="container">
-                    <ol>
-                        <li class="list-item">Cada UPE deberá publicar una convocatoria.</li>
-                        <li class="list-item">Los profesores interesados deberán presentar solicitud escrita en el lugar y fecha señalada en la convocatoria.</li>
-                        <li class="list-item">La UPE revisará que los profesores cumplan con los requisitos de elegibilidad; asimismo determinará los niveles de estímulo de acuerdo con los criterios de asignación individual descritos en el apartado: “Criterios de asignación a los PTC” de este mismo documento.</li>
-                        <li class="list-item">Notificación de resultados.</li>
-                        <li class="list-item">Periodo de apelación.</li>
-                        <li class="list-item">Publicación de beneficiarios y niveles.</li>
+		<hr>
+		<hr>
+		<section class="second-section ">
+			<section class="container delete">
+				<div class="news-title" id="coordinadores">
+					Periodo de reporte de Coordinadores de Academia
+				</div>
+				<div class="container">
+					<ul>
+						<li class="list-item">
+							Del 15 al 22 de junio del 2020
+						</li>
 
-                    </ol>
-                </div>
-                
-            </section>
-            
-            
-        </section>
-    </main>
-    <footer>
-        <div class="container footer-wrapper">
-            <div class="row ">
-                <div class="col-md-4 logo_wrap">
-                    <img class="footer_logo"src="./imgs/logo_gris.png" alt="">
-                </div>
-                <div class="col-md-3">
-                    <div class="uaa-links">
-                        <div><i class="fab fa-facebook-square"> </i><a href="https://www.facebook.com/uaa.mexico/" target="_blank">&nbsp;Facebook UAA</a></div>
-                        <div><i class="fab fa-twitter-square twitter"> </i><a href="https://twitter.com/uaa_mx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">&nbsp;Twitter UAA</a></div>
-                        <div><i class="fab fa-instagram-square"></i><a href="https://www.instagram.com/uaa_mx/?hl=es-la" target="_blank">&nbsp;Instagram UAA</a></div>
-                    </div>
-                </div>
-                <div class="col-md-5 left-text">
-                    <div class="l-t-wrapper">
-                        <div>Av. Universidad # 940, Ciudad Universitaria, C. P. 20131,</div>
-                        <div>Aguascalientes, Ags. MÉXICO.</div>
-                        <div>Tel. conmutador: +52 (449) 910 74 00</div>
-                        <div><a href="https://www.uaa.mx/portal/" target="_blank">uaa.mx/</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script
-        src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"
-        integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc="
-        crossorigin="anonymous"></script>
+					</ul>
+				</div>
+			</section>
+
+			<section class="second-section delete">
+				<section class="container ">
+					<div class="news-title" id="decano">
+						Evaluación de Profesores por Decano
+					</div>
+					<div class="container">
+						<ul>
+							<li class="list-item">
+								Del 13 de julio al 24 de julio
+							</li>
+
+						</ul>
+					</div>
+				</section>
+				<hr>
+				<hr>
+				<section class="second-section delete">
+					<section class="container">
+						<div class="news-title" id="profesores">
+							Periodo de evaluación de Profesores por Jefes de Departamento
+						</div>
+						<div class="container">
+							<ul>
+								<li class="list-item">
+									Del 29 de junio al 3 de julio del 2020
+									<br>
+									<br>
+									<p class="paragraph-item">
+										La primer semana será para la evaluación de profesores que apoyan a las
+										carreras
+										de su departamento en tanto que la segunda semana será para los profesores
+										adscritos en su área
+									</p>
+								</li>
+
+							</ul>
+						</div>
+					</section>
+	</main>
+	<footer>
+		<div class="container footer-wrapper">
+			<div class="row">
+				<div class="col-md-4 logo_wrap">
+					<img class="footer_logo" src="./imgs/logo_gris.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<div class="uaa-links">
+						<div>
+							<i class="fab fa-facebook-square"> </i><a href="https://www.facebook.com/uaa.mexico/"
+								target="_blank">&nbsp;Facebook UAA</a>
+						</div>
+						<div>
+							<i class="fab fa-twitter-square twitter"> </i><a
+								href="https://twitter.com/uaa_mx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+								target="_blank">&nbsp;Twitter UAA</a>
+						</div>
+						<div>
+							<i class="fab fa-instagram-square"></i><a href="https://www.instagram.com/uaa_mx/?hl=es-la"
+								target="_blank">&nbsp;Instagram UAA</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 left-text">
+					<div class="l-t-wrapper">
+						<div>
+							Av. Universidad # 940, Ciudad Universitaria, C.
+							P. 20131,
+						</div>
+						<div>Aguascalientes, Ags. MÉXICO.</div>
+						<div>Tel. conmutador: +52 (449) 910 74 00</div>
+						<div>
+							<a href="https://www.uaa.mx/portal/" target="_blank">uaa.mx/</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"
+		integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=" crossorigin="anonymous"></script>
 </body>
+
 </html>
