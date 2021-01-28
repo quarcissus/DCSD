@@ -477,7 +477,19 @@ footer {
     line-height: 1.7;
     text-align: justify;
 }
+.guide-img{
+    width: 100%;
+    border: 2px solid rgb(156, 156, 156);
+    border-radius:5px;
+    margin-top: 40px;
+}
 
+.guide-img__select{
+    width:50%;
+    border: 2px solid rgb(156, 156, 156);
+    border-radius:5px;
+    margin-top: 40px;
+}
 /*media querys*/
 
 @media only screen and (max-width: 1600px) {
