@@ -756,10 +756,10 @@ let curseInformation = [
     responId: "8655",
     comprobation: "9/25/20",
     teachersCapture: "9/25/20",
-    requestToControl: "-",
+    requestToControl: "25/09/2020",
     controlReception: "-",
     fullRequestReceive: "-",
-    constMade: "-",
+    constMade: "12/10/2020",
     constDelivered: "-",
   },
   {
