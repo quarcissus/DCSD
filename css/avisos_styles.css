@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Enriqueta:400&display=swap");
 
+
+.dis-none {
+  display: none;
+}
+
+.min-height {
+  min-height: 30vh;
+  height: 30vh;
+}
+
 * {
   margin: 0;
   padding: 0;
